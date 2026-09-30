@@ -1,0 +1,247 @@
+[cmd] CUDA_VISIBLE_DEVICES=3 python3 /mnt/data2/monitor_command.py --name cifar10_tc_l3_e5_c6_seed44 --out-dir /mnt/data2/cifar10_resnet50_repair_sweep_seed44/metrics --gpu-index 3 -- python3 /mnt/data2/tc_resicache_resnet50_cifar_finetune.py --dataset cifar10 --data_root /mnt/data2/data --output_json /mnt/data2/cifar10_resnet50_repair_sweep_seed44/results/cifar10_tc_l3_e5_c6_seed44.jsonl     --epochs 10 --batch_size 32 --num_workers 4     --seed 44 --target_acc 96.10 --train_aug smartfrz --norm imagenet     --weights default --lr 0.001 --scheduler none --gpu_cache_samples 50000     --mode tc_resicache --bank_dtype fp16  --boundary layer3 --freeze_epoch 5 --cache_start_epoch 6
+/mnt/data2/tc_resicache_resnet50_cifar_finetune.py:577: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=args.amp)
+[Main] TC-ResiCache ResNet50 CIFAR fine-tuning
+[Main] dataset=cifar10 classes=10 mode=tc_resicache boundary=layer3
+[Main] epochs=10 target=96.1 aug=smartfrz norm=imagenet
+[Main] weights=default lr=0.001 scheduler=none amp=False
+[Main] batch=32 input=224 seed=44
+/mnt/data2/tc_resicache_resnet50_cifar_finetune.py:473: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=args.amp):
+    [Train] epoch=0 [0/1563] loss=2.3006 acc=12.50 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [100/1563] loss=2.1651 acc=23.45 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [200/1563] loss=1.9640 acc=33.46 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [300/1563] loss=1.8042 acc=39.06 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [400/1563] loss=1.6651 acc=44.01 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [500/1563] loss=1.5464 acc=47.82 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [600/1563] loss=1.4509 acc=51.06 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [700/1563] loss=1.3738 acc=53.66 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [800/1563] loss=1.3064 acc=55.95 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [900/1563] loss=1.2488 acc=57.82 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [1000/1563] loss=1.2067 acc=59.22 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [1100/1563] loss=1.1670 acc=60.55 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [1200/1563] loss=1.1292 acc=61.77 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [1300/1563] loss=1.0952 acc=62.89 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [1400/1563] loss=1.0673 acc=63.82 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=0 [1500/1563] loss=1.0395 acc=64.75 frozen=False cache=False hits=0 stored=0
+/mnt/data2/tc_resicache_resnet50_cifar_finetune.py:381: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp):
+[Main] Epoch 0 | Test 92.85% | Best 92.85% | TTA@96.1: None | Time 184.2s | frozen=False | hits=0 | stored=0
+    [Train] epoch=1 [0/1563] loss=0.4100 acc=87.50 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [100/1563] loss=0.6439 acc=77.29 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [200/1563] loss=0.6373 acc=77.63 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [300/1563] loss=0.6391 acc=77.78 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [400/1563] loss=0.6290 acc=78.23 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [500/1563] loss=0.6235 acc=78.52 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [600/1563] loss=0.6201 acc=78.45 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [700/1563] loss=0.6183 acc=78.51 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [800/1563] loss=0.6131 acc=78.73 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [900/1563] loss=0.6108 acc=78.80 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [1000/1563] loss=0.6092 acc=78.88 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [1100/1563] loss=0.6073 acc=78.95 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [1200/1563] loss=0.6026 acc=79.09 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [1300/1563] loss=0.5998 acc=79.26 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [1400/1563] loss=0.5974 acc=79.36 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=1 [1500/1563] loss=0.5949 acc=79.46 frozen=False cache=False hits=0 stored=0
+[Main] Epoch 1 | Test 94.90% | Best 94.90% | TTA@96.1: None | Time 175.9s | frozen=False | hits=0 | stored=0
+    [Train] epoch=2 [0/1563] loss=0.6332 acc=75.00 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [100/1563] loss=0.5377 acc=81.47 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [200/1563] loss=0.5253 acc=82.01 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [300/1563] loss=0.5243 acc=82.02 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [400/1563] loss=0.5158 acc=82.48 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [500/1563] loss=0.5175 acc=82.34 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [600/1563] loss=0.5201 acc=82.24 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [700/1563] loss=0.5207 acc=82.24 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [800/1563] loss=0.5200 acc=82.17 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [900/1563] loss=0.5206 acc=82.07 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [1000/1563] loss=0.5176 acc=82.21 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [1100/1563] loss=0.5180 acc=82.20 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [1200/1563] loss=0.5193 acc=82.14 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [1300/1563] loss=0.5176 acc=82.23 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [1400/1563] loss=0.5163 acc=82.28 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=2 [1500/1563] loss=0.5151 acc=82.32 frozen=False cache=False hits=0 stored=0
+[Main] Epoch 2 | Test 95.50% | Best 95.50% | TTA@96.1: None | Time 175.9s | frozen=False | hits=0 | stored=0
+    [Train] epoch=3 [0/1563] loss=0.2090 acc=90.62 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [100/1563] loss=0.4828 acc=83.29 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [200/1563] loss=0.4804 acc=83.29 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [300/1563] loss=0.4841 acc=83.15 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [400/1563] loss=0.4819 acc=83.41 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [500/1563] loss=0.4817 acc=83.41 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [600/1563] loss=0.4848 acc=83.28 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [700/1563] loss=0.4818 acc=83.32 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [800/1563] loss=0.4810 acc=83.28 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [900/1563] loss=0.4777 acc=83.40 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [1000/1563] loss=0.4774 acc=83.42 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [1100/1563] loss=0.4783 acc=83.36 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [1200/1563] loss=0.4792 acc=83.30 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [1300/1563] loss=0.4768 acc=83.37 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [1400/1563] loss=0.4769 acc=83.37 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=3 [1500/1563] loss=0.4768 acc=83.37 frozen=False cache=False hits=0 stored=0
+[Main] Epoch 3 | Test 95.70% | Best 95.70% | TTA@96.1: None | Time 175.9s | frozen=False | hits=0 | stored=0
+    [Train] epoch=4 [0/1563] loss=0.5543 acc=81.25 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [100/1563] loss=0.4830 acc=83.60 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [200/1563] loss=0.4655 acc=84.02 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [300/1563] loss=0.4551 acc=84.36 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [400/1563] loss=0.4491 acc=84.60 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [500/1563] loss=0.4453 acc=84.79 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [600/1563] loss=0.4462 acc=84.61 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [700/1563] loss=0.4485 acc=84.54 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [800/1563] loss=0.4475 acc=84.64 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [900/1563] loss=0.4497 acc=84.60 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [1000/1563] loss=0.4470 acc=84.67 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [1100/1563] loss=0.4484 acc=84.63 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [1200/1563] loss=0.4446 acc=84.74 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [1300/1563] loss=0.4443 acc=84.69 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [1400/1563] loss=0.4436 acc=84.67 frozen=False cache=False hits=0 stored=0
+    [Train] epoch=4 [1500/1563] loss=0.4439 acc=84.61 frozen=False cache=False hits=0 stored=0
+[Main] Epoch 4 | Test 95.98% | Best 95.98% | TTA@96.1: None | Time 176.1s | frozen=False | hits=0 | stored=0
+[Freeze] epoch=5 boundary=layer3
+/mnt/data2/tc_resicache_resnet50_cifar_finetune.py:466: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=args.amp):
+    [Train] epoch=5 [0/1563] loss=0.5016 acc=84.38 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [100/1563] loss=0.3974 acc=86.70 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [200/1563] loss=0.3941 acc=86.64 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [300/1563] loss=0.4102 acc=85.91 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [400/1563] loss=0.4073 acc=86.07 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [500/1563] loss=0.4020 acc=86.30 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [600/1563] loss=0.4019 acc=86.30 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [700/1563] loss=0.4003 acc=86.32 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [800/1563] loss=0.3979 acc=86.37 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [900/1563] loss=0.3979 acc=86.38 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [1000/1563] loss=0.3977 acc=86.32 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [1100/1563] loss=0.3975 acc=86.31 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [1200/1563] loss=0.3966 acc=86.34 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [1300/1563] loss=0.3958 acc=86.37 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [1400/1563] loss=0.3944 acc=86.41 frozen=True cache=False hits=0 stored=0
+    [Train] epoch=5 [1500/1563] loss=0.3940 acc=86.39 frozen=True cache=False hits=0 stored=0
+[Main] Epoch 5 | Test 96.56% | Best 96.56% | TTA@96.1: 971.6705629825592 | Time 83.8s | frozen=True | hits=0 | stored=0
+[Bank] boundary=layer3 shape=(50000, 1024, 14, 14) allocated_gb=18.69 gpu_cache_samples=50000
+/mnt/data2/tc_resicache_resnet50_cifar_finetune.py:450: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=args.amp):
+    [Train] epoch=6 [0/1563] loss=0.3873 acc=87.50 frozen=True cache=True hits=0 stored=32
+    [Train] epoch=6 [100/1563] loss=0.3786 acc=87.04 frozen=True cache=True hits=0 stored=3232
+    [Train] epoch=6 [200/1563] loss=0.3821 acc=86.58 frozen=True cache=True hits=0 stored=6432
+    [Train] epoch=6 [300/1563] loss=0.3881 acc=86.35 frozen=True cache=True hits=0 stored=9632
+    [Train] epoch=6 [400/1563] loss=0.3921 acc=86.20 frozen=True cache=True hits=0 stored=12832
+    [Train] epoch=6 [500/1563] loss=0.3905 acc=86.27 frozen=True cache=True hits=0 stored=16032
+    [Train] epoch=6 [600/1563] loss=0.3857 acc=86.59 frozen=True cache=True hits=0 stored=19232
+    [Train] epoch=6 [700/1563] loss=0.3877 acc=86.48 frozen=True cache=True hits=0 stored=22432
+    [Train] epoch=6 [800/1563] loss=0.3888 acc=86.46 frozen=True cache=True hits=0 stored=25632
+    [Train] epoch=6 [900/1563] loss=0.3870 acc=86.59 frozen=True cache=True hits=0 stored=28832
+    [Train] epoch=6 [1000/1563] loss=0.3864 acc=86.58 frozen=True cache=True hits=0 stored=32032
+    [Train] epoch=6 [1100/1563] loss=0.3847 acc=86.65 frozen=True cache=True hits=0 stored=35232
+    [Train] epoch=6 [1200/1563] loss=0.3843 acc=86.64 frozen=True cache=True hits=0 stored=38432
+    [Train] epoch=6 [1300/1563] loss=0.3851 acc=86.59 frozen=True cache=True hits=0 stored=41632
+    [Train] epoch=6 [1400/1563] loss=0.3854 acc=86.60 frozen=True cache=True hits=0 stored=44832
+    [Train] epoch=6 [1500/1563] loss=0.3860 acc=86.56 frozen=True cache=True hits=0 stored=48032
+[Main] Epoch 6 | Test 96.45% | Best 96.56% | TTA@96.1: 971.6705629825592 | Time 88.6s | frozen=True | hits=0 | stored=50000
+    [Train] epoch=7 [0/1563] loss=0.1721 acc=93.75 frozen=True cache=True hits=32 stored=0
+    [Train] epoch=7 [100/1563] loss=0.2944 acc=90.38 frozen=True cache=True hits=3232 stored=0
+    [Train] epoch=7 [200/1563] loss=0.3083 acc=89.80 frozen=True cache=True hits=6432 stored=0
+    [Train] epoch=7 [300/1563] loss=0.3131 acc=89.64 frozen=True cache=True hits=9632 stored=0
+    [Train] epoch=7 [400/1563] loss=0.3129 acc=89.52 frozen=True cache=True hits=12832 stored=0
+    [Train] epoch=7 [500/1563] loss=0.3197 acc=89.20 frozen=True cache=True hits=16032 stored=0
+    [Train] epoch=7 [600/1563] loss=0.3194 acc=89.23 frozen=True cache=True hits=19232 stored=0
+    [Train] epoch=7 [700/1563] loss=0.3185 acc=89.24 frozen=True cache=True hits=22432 stored=0
+    [Train] epoch=7 [800/1563] loss=0.3217 acc=89.11 frozen=True cache=True hits=25632 stored=0
+    [Train] epoch=7 [900/1563] loss=0.3219 acc=89.11 frozen=True cache=True hits=28832 stored=0
+    [Train] epoch=7 [1000/1563] loss=0.3232 acc=89.02 frozen=True cache=True hits=32032 stored=0
+    [Train] epoch=7 [1100/1563] loss=0.3232 acc=89.01 frozen=True cache=True hits=35232 stored=0
+    [Train] epoch=7 [1200/1563] loss=0.3247 acc=88.95 frozen=True cache=True hits=38432 stored=0
+    [Train] epoch=7 [1300/1563] loss=0.3249 acc=88.91 frozen=True cache=True hits=41632 stored=0
+    [Train] epoch=7 [1400/1563] loss=0.3264 acc=88.89 frozen=True cache=True hits=44832 stored=0
+    [Train] epoch=7 [1500/1563] loss=0.3266 acc=88.90 frozen=True cache=True hits=48032 stored=0
+[Main] Epoch 7 | Test 96.45% | Best 96.56% | TTA@96.1: 971.6705629825592 | Time 48.7s | frozen=True | hits=50000 | stored=0
+    [Train] epoch=8 [0/1563] loss=0.1895 acc=90.62 frozen=True cache=True hits=32 stored=0
+    [Train] epoch=8 [100/1563] loss=0.2737 acc=91.03 frozen=True cache=True hits=3232 stored=0
+    [Train] epoch=8 [200/1563] loss=0.2691 acc=91.08 frozen=True cache=True hits=6432 stored=0
+    [Train] epoch=8 [300/1563] loss=0.2717 acc=91.10 frozen=True cache=True hits=9632 stored=0
+    [Train] epoch=8 [400/1563] loss=0.2698 acc=91.21 frozen=True cache=True hits=12832 stored=0
+    [Train] epoch=8 [500/1563] loss=0.2698 acc=91.12 frozen=True cache=True hits=16032 stored=0
+    [Train] epoch=8 [600/1563] loss=0.2729 acc=90.97 frozen=True cache=True hits=19232 stored=0
+    [Train] epoch=8 [700/1563] loss=0.2712 acc=90.95 frozen=True cache=True hits=22432 stored=0
+    [Train] epoch=8 [800/1563] loss=0.2740 acc=90.84 frozen=True cache=True hits=25632 stored=0
+    [Train] epoch=8 [900/1563] loss=0.2732 acc=90.89 frozen=True cache=True hits=28832 stored=0
+    [Train] epoch=8 [1000/1563] loss=0.2724 acc=90.87 frozen=True cache=True hits=32032 stored=0
+    [Train] epoch=8 [1100/1563] loss=0.2728 acc=90.87 frozen=True cache=True hits=35232 stored=0
+    [Train] epoch=8 [1200/1563] loss=0.2718 acc=90.90 frozen=True cache=True hits=38432 stored=0
+    [Train] epoch=8 [1300/1563] loss=0.2723 acc=90.85 frozen=True cache=True hits=41632 stored=0
+    [Train] epoch=8 [1400/1563] loss=0.2723 acc=90.82 frozen=True cache=True hits=44832 stored=0
+    [Train] epoch=8 [1500/1563] loss=0.2723 acc=90.82 frozen=True cache=True hits=48032 stored=0
+[Main] Epoch 8 | Test 96.64% | Best 96.64% | TTA@96.1: 971.6705629825592 | Time 48.3s | frozen=True | hits=50000 | stored=0
+    [Train] epoch=9 [0/1563] loss=0.2425 acc=90.62 frozen=True cache=True hits=32 stored=0
+    [Train] epoch=9 [100/1563] loss=0.2318 acc=92.30 frozen=True cache=True hits=3232 stored=0
+    [Train] epoch=9 [200/1563] loss=0.2179 acc=92.75 frozen=True cache=True hits=6432 stored=0
+    [Train] epoch=9 [300/1563] loss=0.2206 acc=92.76 frozen=True cache=True hits=9632 stored=0
+    [Train] epoch=9 [400/1563] loss=0.2143 acc=92.97 frozen=True cache=True hits=12832 stored=0
+    [Train] epoch=9 [500/1563] loss=0.2172 acc=92.85 frozen=True cache=True hits=16032 stored=0
+    [Train] epoch=9 [600/1563] loss=0.2185 acc=92.75 frozen=True cache=True hits=19232 stored=0
+    [Train] epoch=9 [700/1563] loss=0.2181 acc=92.72 frozen=True cache=True hits=22432 stored=0
+    [Train] epoch=9 [800/1563] loss=0.2193 acc=92.73 frozen=True cache=True hits=25632 stored=0
+    [Train] epoch=9 [900/1563] loss=0.2193 acc=92.76 frozen=True cache=True hits=28832 stored=0
+    [Train] epoch=9 [1000/1563] loss=0.2199 acc=92.77 frozen=True cache=True hits=32032 stored=0
+    [Train] epoch=9 [1100/1563] loss=0.2208 acc=92.73 frozen=True cache=True hits=35232 stored=0
+    [Train] epoch=9 [1200/1563] loss=0.2202 acc=92.78 frozen=True cache=True hits=38432 stored=0
+    [Train] epoch=9 [1300/1563] loss=0.2217 acc=92.71 frozen=True cache=True hits=41632 stored=0
+    [Train] epoch=9 [1400/1563] loss=0.2206 acc=92.74 frozen=True cache=True hits=44832 stored=0
+    [Train] epoch=9 [1500/1563] loss=0.2215 acc=92.70 frozen=True cache=True hits=48032 stored=0
+[Main] Epoch 9 | Test 96.20% | Best 96.64% | TTA@96.1: 971.6705629825592 | Time 48.3s | frozen=True | hits=50000 | stored=0
+[Done] wrote /mnt/data2/cifar10_resnet50_repair_sweep_seed44/results/cifar10_tc_l3_e5_c6_seed44.jsonl
+[monitor] launching: python3 /mnt/data2/tc_resicache_resnet50_cifar_finetune.py --dataset cifar10 --data_root /mnt/data2/data --output_json /mnt/data2/cifar10_resnet50_repair_sweep_seed44/results/cifar10_tc_l3_e5_c6_seed44.jsonl --epochs 10 --batch_size 32 --num_workers 4 --seed 44 --target_acc 96.10 --train_aug smartfrz --norm imagenet --weights default --lr 0.001 --scheduler none --gpu_cache_samples 50000 --mode tc_resicache --bank_dtype fp16 --boundary layer3 --freeze_epoch 5 --cache_start_epoch 6
+[monitor] metrics: /mnt/data2/cifar10_resnet50_repair_sweep_seed44/metrics/cifar10_tc_l3_e5_c6_seed44_metrics.csv
+{
+  "name": "cifar10_tc_l3_e5_c6_seed44",
+  "cmd": [
+    "python3",
+    "/mnt/data2/tc_resicache_resnet50_cifar_finetune.py",
+    "--dataset",
+    "cifar10",
+    "--data_root",
+    "/mnt/data2/data",
+    "--output_json",
+    "/mnt/data2/cifar10_resnet50_repair_sweep_seed44/results/cifar10_tc_l3_e5_c6_seed44.jsonl",
+    "--epochs",
+    "10",
+    "--batch_size",
+    "32",
+    "--num_workers",
+    "4",
+    "--seed",
+    "44",
+    "--target_acc",
+    "96.10",
+    "--train_aug",
+    "smartfrz",
+    "--norm",
+    "imagenet",
+    "--weights",
+    "default",
+    "--lr",
+    "0.001",
+    "--scheduler",
+    "none",
+    "--gpu_cache_samples",
+    "50000",
+    "--mode",
+    "tc_resicache",
+    "--bank_dtype",
+    "fp16",
+    "--boundary",
+    "layer3",
+    "--freeze_epoch",
+    "5",
+    "--cache_start_epoch",
+    "6"
+  ],
+  "returncode": 0,
+  "wall_time_sec": 1214.0399975776672,
+  "gpu_index": 3,
+  "energy_j_est": 220483.4840239168,
+  "energy_wh_est": 61.245412228865774,
+  "peak_gpu_mem_mb": 21124.0,
+  "peak_gpu_util_pct": 100.0,
+  "peak_process_tree_rss_mb": 31178.1015625,
+  "final_read_bytes": 0,
+  "final_write_bytes": 0,
+  "metrics_csv": "/mnt/data2/cifar10_resnet50_repair_sweep_seed44/metrics/cifar10_tc_l3_e5_c6_seed44_metrics.csv"
+}

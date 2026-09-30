@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "TC-ResiCache: Transformation-Consistent Caching for Compute Reuse in Deep Network Training"
+message: "If you use this code, please cite it as below."
+type: software
+authors:
+  - family-names: "K C"
+    given-names: "Sanjeeb"
+repository-code: "https://github.com/kcsanjeeb/tc-resicache"
+abstract: >-
+  Reference implementation and reproducibility artifact for TC-ResiCache,
+  a compute-reuse method for deep network training with two gating regimes:
+  TC-SI (sample-index cache gate, fine-tuning) and TC-CR (transformation-
+  consistent residual caching gate, full training). Ships the training
+  scripts, baseline reimplementations, probes, runners, and the reference
+  result logs (JSONL/CSV) behind the thesis experiments.
+keywords:
+  - deep learning
+  - compute reuse
+  - layer freezing
+  - activation caching
+  - efficient training
+license: MIT
+date-released: "2026-09-30"

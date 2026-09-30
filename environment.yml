@@ -1,0 +1,23 @@
+# TC-ResiCache reference environment (conda)
+# Validated on the GPU server where all reference results were produced:
+#   Python 3.10 + PyTorch 2.6.0 with CUDA 12.4, 4x NVIDIA V100 32GB
+#
+# Create with:
+#   conda env create -f environment.yml
+#   conda activate tc-resicache
+
+name: tc-resicache
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.6.0
+  - torchvision=0.21.0
+  - pytorch-cuda=12.4
+  - numpy>=1.24,<2.2
+  - pillow>=10.0
+  - pyyaml>=6.0
+  - tqdm>=4.65

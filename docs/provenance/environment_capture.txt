@@ -1,0 +1,81 @@
+Python 3.13.5
+Linux inspur 4.15.0-156-generic #163-Ubuntu SMP Thu Aug 19 23:31:58 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+3329082
+ M ../experiments/exp1_redsync_cifar.py
+ M ../experiments/exp2_egeria_baseline.py
+ M ../experiments/exp3_autofreeze_baseline.py
+ M ../experiments/unified_autofreeze.py
+ M ../experiments/unified_egeria.py
+ M ../experiments/unified_redsync.py
+?? ../ResiCache_workshop_package/
+?? ../docs/backup/
+?? ../docs/paper/00_abstract.md
+?? ../docs/paper/01_introduction.md
+?? ../docs/paper/02_background.md
+?? ../docs/paper/03_design.md
+?? ../docs/paper/03_design_archie.md
+?? ../docs/paper/03_design_delta.md
+?? ../docs/paper/03_design_drift.md
+?? ../docs/paper/04_implementation.md
+?? ../docs/paper/05_evaluation.md
+?? ../docs/paper/06_results.md
+?? ../docs/paper/07_discussion.md
+?? ../docs/paper/08_conclusion.md
+?? ../docs/paper/09_academic_description.md
+?? ../docs/paper/main.md
+?? ../download_tiny_imagenet.sh
+?? ../experiments/Egeria_CIFAR100_ResNet56.py
+?? ../experiments/ResiCache_CIFAR100_ResNet56.py
+?? ../experiments/comparision/
+?? ../experiments/exp1_redsync_resnet56_cifar10.py
+?? ../experiments/exp2_egeria_baseline-without-freezing.py
+?? ../experiments/exp2_egeria_baseline_resnet56_cifar10.py
+?? ../experiments/exp_baseline_imagenet_resnet50.py
+?? ../experiments/exp_egeria_imagenet_resnet50.py
+?? ../experiments/exp_redsync_imagenet_resnet50.py
+?? ../experiments/freezeout_repro_package/
+?? ../experiments/generalization/
+?? ../experiments/generalization_2/
+?? ../experiments/generalization_3/
+?? ../experiments/nohup.out
+?? ../experiments/run_cifar10_final_hardware_metrics_4gpu.sh
+?? ../experiments/run_tiny_imagenet_long_boundary_sweep.sh
+?? ../experiments/shuffle_true/
+?? ../experiments/smoke_test.py
+?? ../experiments/tc_resicache_repro_manager/
+?? ../experiments/tinyimagenet/
+?? ../figures/architecture-diagram.md
+?? ./
+?? ../verify_tiny_imagenet.py
+Sat May 23 00:13:49 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-PCIE-32GB            On | 00000000:3B:00.0 Off |                    0 |
+| N/A   31C    P0               23W / 250W|      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  Tesla V100-PCIE-32GB            On | 00000000:86:00.0 Off |                    0 |
+| N/A   31C    P0               25W / 250W|      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  Tesla V100-PCIE-32GB            On | 00000000:AF:00.0 Off |                    0 |
+| N/A   30C    P0               23W / 250W|      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  Tesla V100-PCIE-32GB            On | 00000000:D9:00.0 Off |                    0 |
+| N/A   31C    P0               22W / 250W|      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+

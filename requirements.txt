@@ -1,0 +1,14 @@
+# TC-ResiCache dependencies
+# Reference environment: Python 3.10, PyTorch 2.6.0 + CUDA 12.4 (see environment.yml)
+#
+# The GPU training scripts in code/ were developed and validated with:
+#   torch 2.6.0+cu124, torchvision 0.21.0+cu124
+# Newer torch/torchvision versions are expected to work but are not the
+# validated reference configuration.
+
+torch==2.6.0
+torchvision==0.21.0
+numpy>=1.24,<2.2
+Pillow>=10.0
+pyyaml>=6.0
+tqdm>=4.65

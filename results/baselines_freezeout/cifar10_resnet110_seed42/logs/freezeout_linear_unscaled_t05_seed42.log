@@ -1,0 +1,1853 @@
+[cmd] CUDA_VISIBLE_DEVICES=1 python3 /mnt/data2/monitor_command.py --name freezeout_linear_unscaled_t05_seed42 --out-dir /mnt/data2/freezeout_repro_cifar10_resnet110_seed42/metrics --gpu-index 1 -- python3 /mnt/data2/freezeout_resnet_cifar_repro.py --dataset cifar10 --depth 110 --data_root /mnt/data2/data --output_json /mnt/data2/freezeout_repro_cifar10_resnet110_seed42/results/freezeout_linear_unscaled_t05_seed42.jsonl --epochs 200 --batch_size 128 --num_workers 2 --lr 0.1 --target_acc 92.1 --seed 42 --device cuda --schedule linear --t0 0.5 --no_scale_lr
+[Main] FreezeOut reproduction
+[Main] dataset=cifar10 depth=110 classes=10 seed=42
+[Main] epochs=200 target=92.1 t0=0.5 schedule=linear scale_lr=False
+[Main] freeze blocks=54 total_steps=78200
+    [Train] Epoch 0 [0/391] Loss 3.775 Acc 10.94% ActiveBlocks=54
+    [Train] Epoch 0 [50/391] Loss 3.387 Acc 10.22% ActiveBlocks=54
+    [Train] Epoch 0 [100/391] Loss 2.850 Acc 10.53% ActiveBlocks=54
+    [Train] Epoch 0 [150/391] Loss 2.669 Acc 10.60% ActiveBlocks=54
+    [Train] Epoch 0 [200/391] Loss 2.577 Acc 10.63% ActiveBlocks=54
+    [Train] Epoch 0 [250/391] Loss 2.520 Acc 10.64% ActiveBlocks=54
+    [Train] Epoch 0 [300/391] Loss 2.483 Acc 10.69% ActiveBlocks=54
+    [Train] Epoch 0 [350/391] Loss 2.457 Acc 10.70% ActiveBlocks=54
+[Main] Epoch 0 | Test 11.51% | Best 11.51% | TTA@92.1: None | FrozenBlocks 0/54 | Time 56.4s
+    [Train] Epoch 1 [0/391] Loss 2.317 Acc 10.16% ActiveBlocks=54
+    [Train] Epoch 1 [50/391] Loss 2.283 Acc 10.69% ActiveBlocks=54
+    [Train] Epoch 1 [100/391] Loss 2.279 Acc 11.29% ActiveBlocks=54
+    [Train] Epoch 1 [150/391] Loss 2.273 Acc 12.30% ActiveBlocks=54
+    [Train] Epoch 1 [200/391] Loss 2.264 Acc 13.29% ActiveBlocks=54
+    [Train] Epoch 1 [250/391] Loss 2.232 Acc 14.70% ActiveBlocks=54
+    [Train] Epoch 1 [300/391] Loss 2.195 Acc 16.03% ActiveBlocks=54
+    [Train] Epoch 1 [350/391] Loss 2.159 Acc 17.26% ActiveBlocks=54
+[Main] Epoch 1 | Test 24.90% | Best 24.90% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.5s
+    [Train] Epoch 2 [0/391] Loss 1.867 Acc 24.22% ActiveBlocks=54
+    [Train] Epoch 2 [50/391] Loss 1.847 Acc 29.95% ActiveBlocks=54
+    [Train] Epoch 2 [100/391] Loss 1.827 Acc 30.92% ActiveBlocks=54
+    [Train] Epoch 2 [150/391] Loss 1.800 Acc 32.11% ActiveBlocks=54
+    [Train] Epoch 2 [200/391] Loss 1.776 Acc 33.25% ActiveBlocks=54
+    [Train] Epoch 2 [250/391] Loss 1.757 Acc 33.88% ActiveBlocks=54
+    [Train] Epoch 2 [300/391] Loss 1.737 Acc 34.87% ActiveBlocks=54
+    [Train] Epoch 2 [350/391] Loss 1.720 Acc 35.66% ActiveBlocks=54
+[Main] Epoch 2 | Test 31.41% | Best 31.41% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 3 [0/391] Loss 1.589 Acc 39.84% ActiveBlocks=54
+    [Train] Epoch 3 [50/391] Loss 1.568 Acc 41.94% ActiveBlocks=54
+    [Train] Epoch 3 [100/391] Loss 1.555 Acc 42.71% ActiveBlocks=54
+    [Train] Epoch 3 [150/391] Loss 1.549 Acc 42.96% ActiveBlocks=54
+    [Train] Epoch 3 [200/391] Loss 1.543 Acc 43.23% ActiveBlocks=54
+    [Train] Epoch 3 [250/391] Loss 1.531 Acc 43.68% ActiveBlocks=54
+    [Train] Epoch 3 [300/391] Loss 1.523 Acc 44.07% ActiveBlocks=54
+    [Train] Epoch 3 [350/391] Loss 1.512 Acc 44.55% ActiveBlocks=54
+[Main] Epoch 3 | Test 43.95% | Best 43.95% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 4 [0/391] Loss 1.482 Acc 42.97% ActiveBlocks=54
+    [Train] Epoch 4 [50/391] Loss 1.415 Acc 48.12% ActiveBlocks=54
+    [Train] Epoch 4 [100/391] Loss 1.421 Acc 48.10% ActiveBlocks=54
+    [Train] Epoch 4 [150/391] Loss 1.411 Acc 48.72% ActiveBlocks=54
+    [Train] Epoch 4 [200/391] Loss 1.402 Acc 49.04% ActiveBlocks=54
+    [Train] Epoch 4 [250/391] Loss 1.394 Acc 49.37% ActiveBlocks=54
+    [Train] Epoch 4 [300/391] Loss 1.383 Acc 49.85% ActiveBlocks=54
+    [Train] Epoch 4 [350/391] Loss 1.379 Acc 49.85% ActiveBlocks=54
+[Main] Epoch 4 | Test 47.15% | Best 47.15% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 5 [0/391] Loss 1.318 Acc 49.22% ActiveBlocks=54
+    [Train] Epoch 5 [50/391] Loss 1.298 Acc 52.24% ActiveBlocks=54
+    [Train] Epoch 5 [100/391] Loss 1.298 Acc 52.26% ActiveBlocks=54
+    [Train] Epoch 5 [150/391] Loss 1.296 Acc 52.49% ActiveBlocks=54
+    [Train] Epoch 5 [200/391] Loss 1.290 Acc 52.98% ActiveBlocks=54
+    [Train] Epoch 5 [250/391] Loss 1.280 Acc 53.28% ActiveBlocks=54
+    [Train] Epoch 5 [300/391] Loss 1.274 Acc 53.70% ActiveBlocks=54
+    [Train] Epoch 5 [350/391] Loss 1.269 Acc 53.94% ActiveBlocks=54
+[Main] Epoch 5 | Test 49.90% | Best 49.90% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.0s
+    [Train] Epoch 6 [0/391] Loss 1.171 Acc 56.25% ActiveBlocks=54
+    [Train] Epoch 6 [50/391] Loss 1.169 Acc 57.81% ActiveBlocks=54
+    [Train] Epoch 6 [100/391] Loss 1.171 Acc 57.74% ActiveBlocks=54
+    [Train] Epoch 6 [150/391] Loss 1.161 Acc 58.21% ActiveBlocks=54
+    [Train] Epoch 6 [200/391] Loss 1.160 Acc 58.15% ActiveBlocks=54
+    [Train] Epoch 6 [250/391] Loss 1.154 Acc 58.44% ActiveBlocks=54
+    [Train] Epoch 6 [300/391] Loss 1.143 Acc 58.84% ActiveBlocks=54
+    [Train] Epoch 6 [350/391] Loss 1.138 Acc 59.07% ActiveBlocks=54
+[Main] Epoch 6 | Test 51.76% | Best 51.76% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 7 [0/391] Loss 1.105 Acc 61.72% ActiveBlocks=54
+    [Train] Epoch 7 [50/391] Loss 1.064 Acc 61.80% ActiveBlocks=54
+    [Train] Epoch 7 [100/391] Loss 1.052 Acc 62.72% ActiveBlocks=54
+    [Train] Epoch 7 [150/391] Loss 1.032 Acc 63.28% ActiveBlocks=54
+    [Train] Epoch 7 [200/391] Loss 1.030 Acc 63.43% ActiveBlocks=54
+    [Train] Epoch 7 [250/391] Loss 1.023 Acc 63.73% ActiveBlocks=54
+    [Train] Epoch 7 [300/391] Loss 1.011 Acc 64.09% ActiveBlocks=54
+    [Train] Epoch 7 [350/391] Loss 0.999 Acc 64.61% ActiveBlocks=54
+[Main] Epoch 7 | Test 60.11% | Best 60.11% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 8 [0/391] Loss 0.919 Acc 68.75% ActiveBlocks=54
+    [Train] Epoch 8 [50/391] Loss 0.924 Acc 67.39% ActiveBlocks=54
+    [Train] Epoch 8 [100/391] Loss 0.898 Acc 68.50% ActiveBlocks=54
+    [Train] Epoch 8 [150/391] Loss 0.880 Acc 69.02% ActiveBlocks=54
+    [Train] Epoch 8 [200/391] Loss 0.873 Acc 69.20% ActiveBlocks=54
+    [Train] Epoch 8 [250/391] Loss 0.867 Acc 69.49% ActiveBlocks=54
+    [Train] Epoch 8 [300/391] Loss 0.857 Acc 69.84% ActiveBlocks=54
+    [Train] Epoch 8 [350/391] Loss 0.849 Acc 70.10% ActiveBlocks=54
+[Main] Epoch 8 | Test 61.97% | Best 61.97% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 9 [0/391] Loss 0.819 Acc 69.53% ActiveBlocks=54
+    [Train] Epoch 9 [50/391] Loss 0.774 Acc 73.07% ActiveBlocks=54
+    [Train] Epoch 9 [100/391] Loss 0.793 Acc 72.44% ActiveBlocks=54
+    [Train] Epoch 9 [150/391] Loss 0.792 Acc 72.36% ActiveBlocks=54
+    [Train] Epoch 9 [200/391] Loss 0.780 Acc 72.63% ActiveBlocks=54
+    [Train] Epoch 9 [250/391] Loss 0.773 Acc 72.90% ActiveBlocks=54
+    [Train] Epoch 9 [300/391] Loss 0.767 Acc 73.12% ActiveBlocks=54
+    [Train] Epoch 9 [350/391] Loss 0.757 Acc 73.53% ActiveBlocks=54
+[Main] Epoch 9 | Test 71.17% | Best 71.17% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 10 [0/391] Loss 0.558 Acc 82.03% ActiveBlocks=54
+    [Train] Epoch 10 [50/391] Loss 0.667 Acc 77.18% ActiveBlocks=54
+    [Train] Epoch 10 [100/391] Loss 0.673 Acc 77.04% ActiveBlocks=54
+    [Train] Epoch 10 [150/391] Loss 0.678 Acc 76.87% ActiveBlocks=54
+    [Train] Epoch 10 [200/391] Loss 0.675 Acc 76.73% ActiveBlocks=54
+    [Train] Epoch 10 [250/391] Loss 0.677 Acc 76.61% ActiveBlocks=54
+    [Train] Epoch 10 [300/391] Loss 0.678 Acc 76.67% ActiveBlocks=54
+    [Train] Epoch 10 [350/391] Loss 0.681 Acc 76.48% ActiveBlocks=54
+[Main] Epoch 10 | Test 72.08% | Best 72.08% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 11 [0/391] Loss 0.642 Acc 77.34% ActiveBlocks=54
+    [Train] Epoch 11 [50/391] Loss 0.655 Acc 77.68% ActiveBlocks=54
+    [Train] Epoch 11 [100/391] Loss 0.654 Acc 77.57% ActiveBlocks=54
+    [Train] Epoch 11 [150/391] Loss 0.647 Acc 77.69% ActiveBlocks=54
+    [Train] Epoch 11 [200/391] Loss 0.651 Acc 77.49% ActiveBlocks=54
+    [Train] Epoch 11 [250/391] Loss 0.647 Acc 77.60% ActiveBlocks=54
+    [Train] Epoch 11 [300/391] Loss 0.641 Acc 77.79% ActiveBlocks=54
+    [Train] Epoch 11 [350/391] Loss 0.636 Acc 77.99% ActiveBlocks=54
+[Main] Epoch 11 | Test 71.31% | Best 72.08% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 12 [0/391] Loss 0.661 Acc 77.34% ActiveBlocks=54
+    [Train] Epoch 12 [50/391] Loss 0.632 Acc 78.31% ActiveBlocks=54
+    [Train] Epoch 12 [100/391] Loss 0.619 Acc 78.80% ActiveBlocks=54
+    [Train] Epoch 12 [150/391] Loss 0.614 Acc 78.98% ActiveBlocks=54
+    [Train] Epoch 12 [200/391] Loss 0.611 Acc 79.05% ActiveBlocks=54
+    [Train] Epoch 12 [250/391] Loss 0.614 Acc 78.92% ActiveBlocks=54
+    [Train] Epoch 12 [300/391] Loss 0.613 Acc 78.98% ActiveBlocks=54
+    [Train] Epoch 12 [350/391] Loss 0.612 Acc 78.94% ActiveBlocks=54
+[Main] Epoch 12 | Test 60.01% | Best 72.08% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 13 [0/391] Loss 0.465 Acc 83.59% ActiveBlocks=54
+    [Train] Epoch 13 [50/391] Loss 0.571 Acc 80.21% ActiveBlocks=54
+    [Train] Epoch 13 [100/391] Loss 0.576 Acc 80.28% ActiveBlocks=54
+    [Train] Epoch 13 [150/391] Loss 0.574 Acc 80.09% ActiveBlocks=54
+    [Train] Epoch 13 [200/391] Loss 0.573 Acc 80.05% ActiveBlocks=54
+    [Train] Epoch 13 [250/391] Loss 0.580 Acc 79.80% ActiveBlocks=54
+    [Train] Epoch 13 [300/391] Loss 0.583 Acc 79.80% ActiveBlocks=54
+    [Train] Epoch 13 [350/391] Loss 0.585 Acc 79.75% ActiveBlocks=54
+[Main] Epoch 13 | Test 74.11% | Best 74.11% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.0s
+    [Train] Epoch 14 [0/391] Loss 0.650 Acc 76.56% ActiveBlocks=54
+    [Train] Epoch 14 [50/391] Loss 0.557 Acc 80.47% ActiveBlocks=54
+    [Train] Epoch 14 [100/391] Loss 0.557 Acc 80.61% ActiveBlocks=54
+    [Train] Epoch 14 [150/391] Loss 0.557 Acc 80.74% ActiveBlocks=54
+    [Train] Epoch 14 [200/391] Loss 0.560 Acc 80.82% ActiveBlocks=54
+    [Train] Epoch 14 [250/391] Loss 0.560 Acc 80.70% ActiveBlocks=54
+    [Train] Epoch 14 [300/391] Loss 0.559 Acc 80.66% ActiveBlocks=54
+    [Train] Epoch 14 [350/391] Loss 0.563 Acc 80.58% ActiveBlocks=54
+[Main] Epoch 14 | Test 72.58% | Best 74.11% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 15 [0/391] Loss 0.553 Acc 82.03% ActiveBlocks=54
+    [Train] Epoch 15 [50/391] Loss 0.544 Acc 81.39% ActiveBlocks=54
+    [Train] Epoch 15 [100/391] Loss 0.551 Acc 80.95% ActiveBlocks=54
+    [Train] Epoch 15 [150/391] Loss 0.555 Acc 80.82% ActiveBlocks=54
+    [Train] Epoch 15 [200/391] Loss 0.551 Acc 80.93% ActiveBlocks=54
+    [Train] Epoch 15 [250/391] Loss 0.552 Acc 80.96% ActiveBlocks=54
+    [Train] Epoch 15 [300/391] Loss 0.554 Acc 80.91% ActiveBlocks=54
+    [Train] Epoch 15 [350/391] Loss 0.548 Acc 81.10% ActiveBlocks=54
+[Main] Epoch 15 | Test 74.28% | Best 74.28% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 16 [0/391] Loss 0.370 Acc 88.28% ActiveBlocks=54
+    [Train] Epoch 16 [50/391] Loss 0.509 Acc 82.48% ActiveBlocks=54
+    [Train] Epoch 16 [100/391] Loss 0.525 Acc 81.83% ActiveBlocks=54
+    [Train] Epoch 16 [150/391] Loss 0.523 Acc 81.93% ActiveBlocks=54
+    [Train] Epoch 16 [200/391] Loss 0.523 Acc 82.02% ActiveBlocks=54
+    [Train] Epoch 16 [250/391] Loss 0.524 Acc 81.99% ActiveBlocks=54
+    [Train] Epoch 16 [300/391] Loss 0.531 Acc 81.69% ActiveBlocks=54
+    [Train] Epoch 16 [350/391] Loss 0.531 Acc 81.70% ActiveBlocks=54
+[Main] Epoch 16 | Test 74.80% | Best 74.80% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 17 [0/391] Loss 0.612 Acc 81.25% ActiveBlocks=54
+    [Train] Epoch 17 [50/391] Loss 0.518 Acc 82.35% ActiveBlocks=54
+    [Train] Epoch 17 [100/391] Loss 0.512 Acc 82.60% ActiveBlocks=54
+    [Train] Epoch 17 [150/391] Loss 0.519 Acc 82.23% ActiveBlocks=54
+    [Train] Epoch 17 [200/391] Loss 0.517 Acc 82.34% ActiveBlocks=54
+    [Train] Epoch 17 [250/391] Loss 0.521 Acc 82.21% ActiveBlocks=54
+    [Train] Epoch 17 [300/391] Loss 0.524 Acc 82.07% ActiveBlocks=54
+    [Train] Epoch 17 [350/391] Loss 0.523 Acc 82.05% ActiveBlocks=54
+[Main] Epoch 17 | Test 75.30% | Best 75.30% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.0s
+    [Train] Epoch 18 [0/391] Loss 0.445 Acc 86.72% ActiveBlocks=54
+    [Train] Epoch 18 [50/391] Loss 0.494 Acc 83.50% ActiveBlocks=54
+    [Train] Epoch 18 [100/391] Loss 0.502 Acc 83.04% ActiveBlocks=54
+    [Train] Epoch 18 [150/391] Loss 0.509 Acc 82.72% ActiveBlocks=54
+    [Train] Epoch 18 [200/391] Loss 0.511 Acc 82.59% ActiveBlocks=54
+    [Train] Epoch 18 [250/391] Loss 0.510 Acc 82.61% ActiveBlocks=54
+    [Train] Epoch 18 [300/391] Loss 0.510 Acc 82.57% ActiveBlocks=54
+    [Train] Epoch 18 [350/391] Loss 0.509 Acc 82.53% ActiveBlocks=54
+[Main] Epoch 18 | Test 66.13% | Best 75.30% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 19 [0/391] Loss 0.417 Acc 86.72% ActiveBlocks=54
+    [Train] Epoch 19 [50/391] Loss 0.487 Acc 83.38% ActiveBlocks=54
+    [Train] Epoch 19 [100/391] Loss 0.495 Acc 83.01% ActiveBlocks=54
+    [Train] Epoch 19 [150/391] Loss 0.493 Acc 83.22% ActiveBlocks=54
+    [Train] Epoch 19 [200/391] Loss 0.496 Acc 83.16% ActiveBlocks=54
+    [Train] Epoch 19 [250/391] Loss 0.499 Acc 83.03% ActiveBlocks=54
+    [Train] Epoch 19 [300/391] Loss 0.501 Acc 82.90% ActiveBlocks=54
+    [Train] Epoch 19 [350/391] Loss 0.502 Acc 82.83% ActiveBlocks=54
+[Main] Epoch 19 | Test 77.31% | Best 77.31% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 20 [0/391] Loss 0.521 Acc 82.03% ActiveBlocks=54
+    [Train] Epoch 20 [50/391] Loss 0.467 Acc 84.33% ActiveBlocks=54
+    [Train] Epoch 20 [100/391] Loss 0.484 Acc 83.69% ActiveBlocks=54
+    [Train] Epoch 20 [150/391] Loss 0.486 Acc 83.61% ActiveBlocks=54
+    [Train] Epoch 20 [200/391] Loss 0.490 Acc 83.36% ActiveBlocks=54
+    [Train] Epoch 20 [250/391] Loss 0.493 Acc 83.12% ActiveBlocks=54
+    [Train] Epoch 20 [300/391] Loss 0.492 Acc 83.12% ActiveBlocks=54
+    [Train] Epoch 20 [350/391] Loss 0.495 Acc 82.95% ActiveBlocks=54
+[Main] Epoch 20 | Test 76.85% | Best 77.31% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 21 [0/391] Loss 0.510 Acc 82.81% ActiveBlocks=54
+    [Train] Epoch 21 [50/391] Loss 0.493 Acc 83.46% ActiveBlocks=54
+    [Train] Epoch 21 [100/391] Loss 0.485 Acc 83.66% ActiveBlocks=54
+    [Train] Epoch 21 [150/391] Loss 0.487 Acc 83.45% ActiveBlocks=54
+    [Train] Epoch 21 [200/391] Loss 0.488 Acc 83.33% ActiveBlocks=54
+    [Train] Epoch 21 [250/391] Loss 0.487 Acc 83.33% ActiveBlocks=54
+    [Train] Epoch 21 [300/391] Loss 0.485 Acc 83.38% ActiveBlocks=54
+    [Train] Epoch 21 [350/391] Loss 0.485 Acc 83.41% ActiveBlocks=54
+[Main] Epoch 21 | Test 73.79% | Best 77.31% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 22 [0/391] Loss 0.461 Acc 86.72% ActiveBlocks=54
+    [Train] Epoch 22 [50/391] Loss 0.479 Acc 83.88% ActiveBlocks=54
+    [Train] Epoch 22 [100/391] Loss 0.473 Acc 84.25% ActiveBlocks=54
+    [Train] Epoch 22 [150/391] Loss 0.469 Acc 84.03% ActiveBlocks=54
+    [Train] Epoch 22 [200/391] Loss 0.474 Acc 83.87% ActiveBlocks=54
+    [Train] Epoch 22 [250/391] Loss 0.475 Acc 83.86% ActiveBlocks=54
+    [Train] Epoch 22 [300/391] Loss 0.477 Acc 83.69% ActiveBlocks=54
+    [Train] Epoch 22 [350/391] Loss 0.479 Acc 83.56% ActiveBlocks=54
+[Main] Epoch 22 | Test 78.90% | Best 78.90% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 23 [0/391] Loss 0.403 Acc 85.16% ActiveBlocks=54
+    [Train] Epoch 23 [50/391] Loss 0.463 Acc 83.92% ActiveBlocks=54
+    [Train] Epoch 23 [100/391] Loss 0.477 Acc 83.53% ActiveBlocks=54
+    [Train] Epoch 23 [150/391] Loss 0.470 Acc 83.77% ActiveBlocks=54
+    [Train] Epoch 23 [200/391] Loss 0.469 Acc 83.80% ActiveBlocks=54
+    [Train] Epoch 23 [250/391] Loss 0.471 Acc 83.82% ActiveBlocks=54
+    [Train] Epoch 23 [300/391] Loss 0.476 Acc 83.62% ActiveBlocks=54
+    [Train] Epoch 23 [350/391] Loss 0.475 Acc 83.61% ActiveBlocks=54
+[Main] Epoch 23 | Test 80.58% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 24 [0/391] Loss 0.366 Acc 89.06% ActiveBlocks=54
+    [Train] Epoch 24 [50/391] Loss 0.466 Acc 84.18% ActiveBlocks=54
+    [Train] Epoch 24 [100/391] Loss 0.468 Acc 83.97% ActiveBlocks=54
+    [Train] Epoch 24 [150/391] Loss 0.469 Acc 83.90% ActiveBlocks=54
+    [Train] Epoch 24 [200/391] Loss 0.468 Acc 83.91% ActiveBlocks=54
+    [Train] Epoch 24 [250/391] Loss 0.465 Acc 84.01% ActiveBlocks=54
+    [Train] Epoch 24 [300/391] Loss 0.467 Acc 83.94% ActiveBlocks=54
+    [Train] Epoch 24 [350/391] Loss 0.468 Acc 83.86% ActiveBlocks=54
+[Main] Epoch 24 | Test 71.49% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 25 [0/391] Loss 0.574 Acc 82.03% ActiveBlocks=54
+    [Train] Epoch 25 [50/391] Loss 0.465 Acc 84.19% ActiveBlocks=54
+    [Train] Epoch 25 [100/391] Loss 0.464 Acc 84.20% ActiveBlocks=54
+    [Train] Epoch 25 [150/391] Loss 0.463 Acc 84.20% ActiveBlocks=54
+    [Train] Epoch 25 [200/391] Loss 0.459 Acc 84.30% ActiveBlocks=54
+    [Train] Epoch 25 [250/391] Loss 0.457 Acc 84.35% ActiveBlocks=54
+    [Train] Epoch 25 [300/391] Loss 0.460 Acc 84.28% ActiveBlocks=54
+    [Train] Epoch 25 [350/391] Loss 0.458 Acc 84.31% ActiveBlocks=54
+[Main] Epoch 25 | Test 69.54% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.5s
+    [Train] Epoch 26 [0/391] Loss 0.516 Acc 83.59% ActiveBlocks=54
+    [Train] Epoch 26 [50/391] Loss 0.434 Acc 84.80% ActiveBlocks=54
+    [Train] Epoch 26 [100/391] Loss 0.445 Acc 84.31% ActiveBlocks=54
+    [Train] Epoch 26 [150/391] Loss 0.447 Acc 84.45% ActiveBlocks=54
+    [Train] Epoch 26 [200/391] Loss 0.452 Acc 84.33% ActiveBlocks=54
+    [Train] Epoch 26 [250/391] Loss 0.450 Acc 84.50% ActiveBlocks=54
+    [Train] Epoch 26 [300/391] Loss 0.451 Acc 84.43% ActiveBlocks=54
+    [Train] Epoch 26 [350/391] Loss 0.452 Acc 84.34% ActiveBlocks=54
+[Main] Epoch 26 | Test 78.91% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 27 [0/391] Loss 0.380 Acc 85.94% ActiveBlocks=54
+    [Train] Epoch 27 [50/391] Loss 0.430 Acc 85.23% ActiveBlocks=54
+    [Train] Epoch 27 [100/391] Loss 0.439 Acc 85.14% ActiveBlocks=54
+    [Train] Epoch 27 [150/391] Loss 0.448 Acc 84.81% ActiveBlocks=54
+    [Train] Epoch 27 [200/391] Loss 0.454 Acc 84.57% ActiveBlocks=54
+    [Train] Epoch 27 [250/391] Loss 0.453 Acc 84.49% ActiveBlocks=54
+    [Train] Epoch 27 [300/391] Loss 0.453 Acc 84.42% ActiveBlocks=54
+    [Train] Epoch 27 [350/391] Loss 0.454 Acc 84.38% ActiveBlocks=54
+[Main] Epoch 27 | Test 64.69% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 28 [0/391] Loss 0.424 Acc 85.16% ActiveBlocks=54
+    [Train] Epoch 28 [50/391] Loss 0.423 Acc 85.09% ActiveBlocks=54
+    [Train] Epoch 28 [100/391] Loss 0.433 Acc 84.69% ActiveBlocks=54
+    [Train] Epoch 28 [150/391] Loss 0.431 Acc 85.06% ActiveBlocks=54
+    [Train] Epoch 28 [200/391] Loss 0.433 Acc 84.88% ActiveBlocks=54
+    [Train] Epoch 28 [250/391] Loss 0.443 Acc 84.61% ActiveBlocks=54
+    [Train] Epoch 28 [300/391] Loss 0.445 Acc 84.52% ActiveBlocks=54
+    [Train] Epoch 28 [350/391] Loss 0.447 Acc 84.46% ActiveBlocks=54
+[Main] Epoch 28 | Test 78.50% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 29 [0/391] Loss 0.391 Acc 89.06% ActiveBlocks=54
+    [Train] Epoch 29 [50/391] Loss 0.442 Acc 84.30% ActiveBlocks=54
+    [Train] Epoch 29 [100/391] Loss 0.433 Acc 84.82% ActiveBlocks=54
+    [Train] Epoch 29 [150/391] Loss 0.433 Acc 84.90% ActiveBlocks=54
+    [Train] Epoch 29 [200/391] Loss 0.435 Acc 84.84% ActiveBlocks=54
+    [Train] Epoch 29 [250/391] Loss 0.440 Acc 84.67% ActiveBlocks=54
+    [Train] Epoch 29 [300/391] Loss 0.446 Acc 84.60% ActiveBlocks=54
+    [Train] Epoch 29 [350/391] Loss 0.447 Acc 84.54% ActiveBlocks=54
+[Main] Epoch 29 | Test 74.35% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 30 [0/391] Loss 0.420 Acc 86.72% ActiveBlocks=54
+    [Train] Epoch 30 [50/391] Loss 0.420 Acc 85.37% ActiveBlocks=54
+    [Train] Epoch 30 [100/391] Loss 0.429 Acc 85.19% ActiveBlocks=54
+    [Train] Epoch 30 [150/391] Loss 0.433 Acc 85.08% ActiveBlocks=54
+    [Train] Epoch 30 [200/391] Loss 0.428 Acc 85.06% ActiveBlocks=54
+    [Train] Epoch 30 [250/391] Loss 0.433 Acc 84.95% ActiveBlocks=54
+    [Train] Epoch 30 [300/391] Loss 0.434 Acc 84.98% ActiveBlocks=54
+    [Train] Epoch 30 [350/391] Loss 0.434 Acc 84.97% ActiveBlocks=54
+[Main] Epoch 30 | Test 80.47% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.6s
+    [Train] Epoch 31 [0/391] Loss 0.263 Acc 90.62% ActiveBlocks=54
+    [Train] Epoch 31 [50/391] Loss 0.424 Acc 85.28% ActiveBlocks=54
+    [Train] Epoch 31 [100/391] Loss 0.427 Acc 85.31% ActiveBlocks=54
+    [Train] Epoch 31 [150/391] Loss 0.429 Acc 85.11% ActiveBlocks=54
+    [Train] Epoch 31 [200/391] Loss 0.431 Acc 85.06% ActiveBlocks=54
+    [Train] Epoch 31 [250/391] Loss 0.428 Acc 85.13% ActiveBlocks=54
+    [Train] Epoch 31 [300/391] Loss 0.433 Acc 85.03% ActiveBlocks=54
+    [Train] Epoch 31 [350/391] Loss 0.433 Acc 85.12% ActiveBlocks=54
+[Main] Epoch 31 | Test 78.03% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 32 [0/391] Loss 0.443 Acc 85.16% ActiveBlocks=54
+    [Train] Epoch 32 [50/391] Loss 0.433 Acc 85.25% ActiveBlocks=54
+    [Train] Epoch 32 [100/391] Loss 0.421 Acc 85.63% ActiveBlocks=54
+    [Train] Epoch 32 [150/391] Loss 0.423 Acc 85.56% ActiveBlocks=54
+    [Train] Epoch 32 [200/391] Loss 0.423 Acc 85.58% ActiveBlocks=54
+    [Train] Epoch 32 [250/391] Loss 0.429 Acc 85.38% ActiveBlocks=54
+    [Train] Epoch 32 [300/391] Loss 0.430 Acc 85.29% ActiveBlocks=54
+    [Train] Epoch 32 [350/391] Loss 0.430 Acc 85.28% ActiveBlocks=54
+[Main] Epoch 32 | Test 75.73% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 33 [0/391] Loss 0.316 Acc 89.84% ActiveBlocks=54
+    [Train] Epoch 33 [50/391] Loss 0.427 Acc 85.26% ActiveBlocks=54
+    [Train] Epoch 33 [100/391] Loss 0.424 Acc 85.36% ActiveBlocks=54
+    [Train] Epoch 33 [150/391] Loss 0.424 Acc 85.55% ActiveBlocks=54
+    [Train] Epoch 33 [200/391] Loss 0.430 Acc 85.35% ActiveBlocks=54
+    [Train] Epoch 33 [250/391] Loss 0.425 Acc 85.54% ActiveBlocks=54
+    [Train] Epoch 33 [300/391] Loss 0.426 Acc 85.49% ActiveBlocks=54
+    [Train] Epoch 33 [350/391] Loss 0.428 Acc 85.40% ActiveBlocks=54
+[Main] Epoch 33 | Test 80.03% | Best 80.58% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 34 [0/391] Loss 0.439 Acc 85.16% ActiveBlocks=54
+    [Train] Epoch 34 [50/391] Loss 0.422 Acc 85.69% ActiveBlocks=54
+    [Train] Epoch 34 [100/391] Loss 0.429 Acc 85.23% ActiveBlocks=54
+    [Train] Epoch 34 [150/391] Loss 0.435 Acc 84.98% ActiveBlocks=54
+    [Train] Epoch 34 [200/391] Loss 0.434 Acc 85.09% ActiveBlocks=54
+    [Train] Epoch 34 [250/391] Loss 0.430 Acc 85.19% ActiveBlocks=54
+    [Train] Epoch 34 [300/391] Loss 0.428 Acc 85.29% ActiveBlocks=54
+    [Train] Epoch 34 [350/391] Loss 0.430 Acc 85.26% ActiveBlocks=54
+[Main] Epoch 34 | Test 81.51% | Best 81.51% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 35 [0/391] Loss 0.583 Acc 79.69% ActiveBlocks=54
+    [Train] Epoch 35 [50/391] Loss 0.390 Acc 86.73% ActiveBlocks=54
+    [Train] Epoch 35 [100/391] Loss 0.399 Acc 86.56% ActiveBlocks=54
+    [Train] Epoch 35 [150/391] Loss 0.405 Acc 86.24% ActiveBlocks=54
+    [Train] Epoch 35 [200/391] Loss 0.409 Acc 86.08% ActiveBlocks=54
+    [Train] Epoch 35 [250/391] Loss 0.412 Acc 85.91% ActiveBlocks=54
+    [Train] Epoch 35 [300/391] Loss 0.414 Acc 85.79% ActiveBlocks=54
+    [Train] Epoch 35 [350/391] Loss 0.417 Acc 85.70% ActiveBlocks=54
+[Main] Epoch 35 | Test 76.74% | Best 81.51% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 36 [0/391] Loss 0.430 Acc 82.81% ActiveBlocks=54
+    [Train] Epoch 36 [50/391] Loss 0.414 Acc 85.59% ActiveBlocks=54
+    [Train] Epoch 36 [100/391] Loss 0.417 Acc 85.77% ActiveBlocks=54
+    [Train] Epoch 36 [150/391] Loss 0.419 Acc 85.67% ActiveBlocks=54
+    [Train] Epoch 36 [200/391] Loss 0.417 Acc 85.76% ActiveBlocks=54
+    [Train] Epoch 36 [250/391] Loss 0.414 Acc 85.75% ActiveBlocks=54
+    [Train] Epoch 36 [300/391] Loss 0.419 Acc 85.58% ActiveBlocks=54
+    [Train] Epoch 36 [350/391] Loss 0.422 Acc 85.53% ActiveBlocks=54
+[Main] Epoch 36 | Test 79.33% | Best 81.51% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 37 [0/391] Loss 0.454 Acc 84.38% ActiveBlocks=54
+    [Train] Epoch 37 [50/391] Loss 0.393 Acc 86.24% ActiveBlocks=54
+    [Train] Epoch 37 [100/391] Loss 0.414 Acc 85.55% ActiveBlocks=54
+    [Train] Epoch 37 [150/391] Loss 0.414 Acc 85.74% ActiveBlocks=54
+    [Train] Epoch 37 [200/391] Loss 0.416 Acc 85.67% ActiveBlocks=54
+    [Train] Epoch 37 [250/391] Loss 0.417 Acc 85.74% ActiveBlocks=54
+    [Train] Epoch 37 [300/391] Loss 0.415 Acc 85.78% ActiveBlocks=54
+    [Train] Epoch 37 [350/391] Loss 0.415 Acc 85.76% ActiveBlocks=54
+[Main] Epoch 37 | Test 80.55% | Best 81.51% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 38 [0/391] Loss 0.406 Acc 83.59% ActiveBlocks=54
+    [Train] Epoch 38 [50/391] Loss 0.406 Acc 86.15% ActiveBlocks=54
+    [Train] Epoch 38 [100/391] Loss 0.396 Acc 86.29% ActiveBlocks=54
+    [Train] Epoch 38 [150/391] Loss 0.406 Acc 86.00% ActiveBlocks=54
+    [Train] Epoch 38 [200/391] Loss 0.404 Acc 86.08% ActiveBlocks=54
+    [Train] Epoch 38 [250/391] Loss 0.407 Acc 86.01% ActiveBlocks=54
+    [Train] Epoch 38 [300/391] Loss 0.409 Acc 85.95% ActiveBlocks=54
+    [Train] Epoch 38 [350/391] Loss 0.411 Acc 85.84% ActiveBlocks=54
+[Main] Epoch 38 | Test 82.11% | Best 82.11% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 39 [0/391] Loss 0.470 Acc 81.25% ActiveBlocks=54
+    [Train] Epoch 39 [50/391] Loss 0.367 Acc 87.19% ActiveBlocks=54
+    [Train] Epoch 39 [100/391] Loss 0.395 Acc 86.54% ActiveBlocks=54
+    [Train] Epoch 39 [150/391] Loss 0.395 Acc 86.48% ActiveBlocks=54
+    [Train] Epoch 39 [200/391] Loss 0.402 Acc 86.27% ActiveBlocks=54
+    [Train] Epoch 39 [250/391] Loss 0.402 Acc 86.24% ActiveBlocks=54
+    [Train] Epoch 39 [300/391] Loss 0.404 Acc 86.16% ActiveBlocks=54
+    [Train] Epoch 39 [350/391] Loss 0.407 Acc 86.09% ActiveBlocks=54
+[Main] Epoch 39 | Test 75.50% | Best 82.11% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 40 [0/391] Loss 0.460 Acc 85.16% ActiveBlocks=54
+    [Train] Epoch 40 [50/391] Loss 0.392 Acc 86.26% ActiveBlocks=54
+    [Train] Epoch 40 [100/391] Loss 0.390 Acc 86.34% ActiveBlocks=54
+    [Train] Epoch 40 [150/391] Loss 0.400 Acc 86.03% ActiveBlocks=54
+    [Train] Epoch 40 [200/391] Loss 0.404 Acc 86.00% ActiveBlocks=54
+    [Train] Epoch 40 [250/391] Loss 0.408 Acc 85.93% ActiveBlocks=54
+    [Train] Epoch 40 [300/391] Loss 0.404 Acc 86.10% ActiveBlocks=54
+    [Train] Epoch 40 [350/391] Loss 0.408 Acc 86.00% ActiveBlocks=54
+[Main] Epoch 40 | Test 79.44% | Best 82.11% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 41 [0/391] Loss 0.535 Acc 81.25% ActiveBlocks=54
+    [Train] Epoch 41 [50/391] Loss 0.392 Acc 86.73% ActiveBlocks=54
+    [Train] Epoch 41 [100/391] Loss 0.396 Acc 86.32% ActiveBlocks=54
+    [Train] Epoch 41 [150/391] Loss 0.397 Acc 86.33% ActiveBlocks=54
+    [Train] Epoch 41 [200/391] Loss 0.403 Acc 86.06% ActiveBlocks=54
+    [Train] Epoch 41 [250/391] Loss 0.399 Acc 86.22% ActiveBlocks=54
+    [Train] Epoch 41 [300/391] Loss 0.402 Acc 86.14% ActiveBlocks=54
+    [Train] Epoch 41 [350/391] Loss 0.404 Acc 86.08% ActiveBlocks=54
+[Main] Epoch 41 | Test 82.94% | Best 82.94% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 42 [0/391] Loss 0.485 Acc 83.59% ActiveBlocks=54
+    [Train] Epoch 42 [50/391] Loss 0.396 Acc 86.41% ActiveBlocks=54
+    [Train] Epoch 42 [100/391] Loss 0.387 Acc 86.54% ActiveBlocks=54
+    [Train] Epoch 42 [150/391] Loss 0.389 Acc 86.49% ActiveBlocks=54
+    [Train] Epoch 42 [200/391] Loss 0.391 Acc 86.49% ActiveBlocks=54
+    [Train] Epoch 42 [250/391] Loss 0.392 Acc 86.49% ActiveBlocks=54
+    [Train] Epoch 42 [300/391] Loss 0.397 Acc 86.37% ActiveBlocks=54
+    [Train] Epoch 42 [350/391] Loss 0.400 Acc 86.34% ActiveBlocks=54
+[Main] Epoch 42 | Test 74.29% | Best 82.94% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 43 [0/391] Loss 0.426 Acc 83.59% ActiveBlocks=54
+    [Train] Epoch 43 [50/391] Loss 0.378 Acc 86.66% ActiveBlocks=54
+    [Train] Epoch 43 [100/391] Loss 0.395 Acc 86.15% ActiveBlocks=54
+    [Train] Epoch 43 [150/391] Loss 0.395 Acc 86.27% ActiveBlocks=54
+    [Train] Epoch 43 [200/391] Loss 0.398 Acc 86.20% ActiveBlocks=54
+    [Train] Epoch 43 [250/391] Loss 0.394 Acc 86.39% ActiveBlocks=54
+    [Train] Epoch 43 [300/391] Loss 0.395 Acc 86.35% ActiveBlocks=54
+    [Train] Epoch 43 [350/391] Loss 0.397 Acc 86.35% ActiveBlocks=54
+[Main] Epoch 43 | Test 77.30% | Best 82.94% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.5s
+    [Train] Epoch 44 [0/391] Loss 0.398 Acc 86.72% ActiveBlocks=54
+    [Train] Epoch 44 [50/391] Loss 0.379 Acc 87.13% ActiveBlocks=54
+    [Train] Epoch 44 [100/391] Loss 0.383 Acc 87.05% ActiveBlocks=54
+    [Train] Epoch 44 [150/391] Loss 0.386 Acc 86.74% ActiveBlocks=54
+    [Train] Epoch 44 [200/391] Loss 0.384 Acc 86.73% ActiveBlocks=54
+    [Train] Epoch 44 [250/391] Loss 0.389 Acc 86.55% ActiveBlocks=54
+    [Train] Epoch 44 [300/391] Loss 0.391 Acc 86.51% ActiveBlocks=54
+    [Train] Epoch 44 [350/391] Loss 0.393 Acc 86.49% ActiveBlocks=54
+[Main] Epoch 44 | Test 76.98% | Best 82.94% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 45 [0/391] Loss 0.365 Acc 89.84% ActiveBlocks=54
+    [Train] Epoch 45 [50/391] Loss 0.377 Acc 87.48% ActiveBlocks=54
+    [Train] Epoch 45 [100/391] Loss 0.380 Acc 87.38% ActiveBlocks=54
+    [Train] Epoch 45 [150/391] Loss 0.393 Acc 86.79% ActiveBlocks=54
+    [Train] Epoch 45 [200/391] Loss 0.390 Acc 86.85% ActiveBlocks=54
+    [Train] Epoch 45 [250/391] Loss 0.389 Acc 86.80% ActiveBlocks=54
+    [Train] Epoch 45 [300/391] Loss 0.388 Acc 86.82% ActiveBlocks=54
+    [Train] Epoch 45 [350/391] Loss 0.387 Acc 86.87% ActiveBlocks=54
+[Main] Epoch 45 | Test 81.45% | Best 82.94% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 46 [0/391] Loss 0.340 Acc 87.50% ActiveBlocks=54
+    [Train] Epoch 46 [50/391] Loss 0.340 Acc 88.20% ActiveBlocks=54
+    [Train] Epoch 46 [100/391] Loss 0.365 Acc 87.40% ActiveBlocks=54
+    [Train] Epoch 46 [150/391] Loss 0.372 Acc 87.05% ActiveBlocks=54
+    [Train] Epoch 46 [200/391] Loss 0.375 Acc 87.09% ActiveBlocks=54
+    [Train] Epoch 46 [250/391] Loss 0.378 Acc 86.96% ActiveBlocks=54
+    [Train] Epoch 46 [300/391] Loss 0.380 Acc 86.85% ActiveBlocks=54
+    [Train] Epoch 46 [350/391] Loss 0.383 Acc 86.74% ActiveBlocks=54
+[Main] Epoch 46 | Test 77.89% | Best 82.94% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 47 [0/391] Loss 0.278 Acc 91.41% ActiveBlocks=54
+    [Train] Epoch 47 [50/391] Loss 0.389 Acc 86.40% ActiveBlocks=54
+    [Train] Epoch 47 [100/391] Loss 0.382 Acc 86.77% ActiveBlocks=54
+    [Train] Epoch 47 [150/391] Loss 0.380 Acc 86.93% ActiveBlocks=54
+    [Train] Epoch 47 [200/391] Loss 0.378 Acc 87.02% ActiveBlocks=54
+    [Train] Epoch 47 [250/391] Loss 0.384 Acc 86.85% ActiveBlocks=54
+    [Train] Epoch 47 [300/391] Loss 0.384 Acc 86.87% ActiveBlocks=54
+    [Train] Epoch 47 [350/391] Loss 0.385 Acc 86.84% ActiveBlocks=54
+[Main] Epoch 47 | Test 79.98% | Best 82.94% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 48 [0/391] Loss 0.358 Acc 86.72% ActiveBlocks=54
+    [Train] Epoch 48 [50/391] Loss 0.379 Acc 87.13% ActiveBlocks=54
+    [Train] Epoch 48 [100/391] Loss 0.368 Acc 87.38% ActiveBlocks=54
+    [Train] Epoch 48 [150/391] Loss 0.373 Acc 87.10% ActiveBlocks=54
+    [Train] Epoch 48 [200/391] Loss 0.379 Acc 86.97% ActiveBlocks=54
+    [Train] Epoch 48 [250/391] Loss 0.379 Acc 86.99% ActiveBlocks=54
+    [Train] Epoch 48 [300/391] Loss 0.379 Acc 86.96% ActiveBlocks=54
+    [Train] Epoch 48 [350/391] Loss 0.380 Acc 86.93% ActiveBlocks=54
+[Main] Epoch 48 | Test 83.06% | Best 83.06% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 49 [0/391] Loss 0.178 Acc 94.53% ActiveBlocks=54
+    [Train] Epoch 49 [50/391] Loss 0.360 Acc 87.39% ActiveBlocks=54
+    [Train] Epoch 49 [100/391] Loss 0.364 Acc 87.31% ActiveBlocks=54
+    [Train] Epoch 49 [150/391] Loss 0.363 Acc 87.34% ActiveBlocks=54
+    [Train] Epoch 49 [200/391] Loss 0.370 Acc 87.17% ActiveBlocks=54
+    [Train] Epoch 49 [250/391] Loss 0.374 Acc 87.09% ActiveBlocks=54
+    [Train] Epoch 49 [300/391] Loss 0.376 Acc 87.05% ActiveBlocks=54
+    [Train] Epoch 49 [350/391] Loss 0.376 Acc 87.03% ActiveBlocks=54
+[Main] Epoch 49 | Test 84.24% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.5s
+    [Train] Epoch 50 [0/391] Loss 0.331 Acc 88.28% ActiveBlocks=54
+    [Train] Epoch 50 [50/391] Loss 0.360 Acc 87.78% ActiveBlocks=54
+    [Train] Epoch 50 [100/391] Loss 0.364 Acc 87.48% ActiveBlocks=54
+    [Train] Epoch 50 [150/391] Loss 0.368 Acc 87.24% ActiveBlocks=54
+    [Train] Epoch 50 [200/391] Loss 0.371 Acc 87.24% ActiveBlocks=54
+    [Train] Epoch 50 [250/391] Loss 0.371 Acc 87.19% ActiveBlocks=54
+    [Train] Epoch 50 [300/391] Loss 0.378 Acc 86.97% ActiveBlocks=54
+    [Train] Epoch 50 [350/391] Loss 0.379 Acc 87.02% ActiveBlocks=54
+[Main] Epoch 50 | Test 82.30% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 51 [0/391] Loss 0.303 Acc 89.84% ActiveBlocks=54
+    [Train] Epoch 51 [50/391] Loss 0.373 Acc 87.36% ActiveBlocks=54
+    [Train] Epoch 51 [100/391] Loss 0.359 Acc 87.79% ActiveBlocks=54
+    [Train] Epoch 51 [150/391] Loss 0.363 Acc 87.60% ActiveBlocks=54
+    [Train] Epoch 51 [200/391] Loss 0.364 Acc 87.53% ActiveBlocks=54
+    [Train] Epoch 51 [250/391] Loss 0.365 Acc 87.50% ActiveBlocks=54
+    [Train] Epoch 51 [300/391] Loss 0.365 Acc 87.49% ActiveBlocks=54
+    [Train] Epoch 51 [350/391] Loss 0.368 Acc 87.35% ActiveBlocks=54
+[Main] Epoch 51 | Test 82.52% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 52 [0/391] Loss 0.366 Acc 87.50% ActiveBlocks=54
+    [Train] Epoch 52 [50/391] Loss 0.357 Acc 88.07% ActiveBlocks=54
+    [Train] Epoch 52 [100/391] Loss 0.363 Acc 87.59% ActiveBlocks=54
+    [Train] Epoch 52 [150/391] Loss 0.367 Acc 87.45% ActiveBlocks=54
+    [Train] Epoch 52 [200/391] Loss 0.366 Acc 87.51% ActiveBlocks=54
+    [Train] Epoch 52 [250/391] Loss 0.365 Acc 87.49% ActiveBlocks=54
+    [Train] Epoch 52 [300/391] Loss 0.367 Acc 87.37% ActiveBlocks=54
+    [Train] Epoch 52 [350/391] Loss 0.368 Acc 87.33% ActiveBlocks=54
+[Main] Epoch 52 | Test 84.09% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 53 [0/391] Loss 0.346 Acc 90.62% ActiveBlocks=54
+    [Train] Epoch 53 [50/391] Loss 0.359 Acc 87.93% ActiveBlocks=54
+    [Train] Epoch 53 [100/391] Loss 0.374 Acc 87.26% ActiveBlocks=54
+    [Train] Epoch 53 [150/391] Loss 0.371 Acc 87.30% ActiveBlocks=54
+    [Train] Epoch 53 [200/391] Loss 0.369 Acc 87.32% ActiveBlocks=54
+    [Train] Epoch 53 [250/391] Loss 0.369 Acc 87.28% ActiveBlocks=54
+    [Train] Epoch 53 [300/391] Loss 0.369 Acc 87.36% ActiveBlocks=54
+    [Train] Epoch 53 [350/391] Loss 0.367 Acc 87.39% ActiveBlocks=54
+[Main] Epoch 53 | Test 81.08% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 54 [0/391] Loss 0.372 Acc 88.28% ActiveBlocks=54
+    [Train] Epoch 54 [50/391] Loss 0.325 Acc 88.76% ActiveBlocks=54
+    [Train] Epoch 54 [100/391] Loss 0.342 Acc 88.09% ActiveBlocks=54
+    [Train] Epoch 54 [150/391] Loss 0.350 Acc 87.79% ActiveBlocks=54
+    [Train] Epoch 54 [200/391] Loss 0.354 Acc 87.69% ActiveBlocks=54
+    [Train] Epoch 54 [250/391] Loss 0.357 Acc 87.65% ActiveBlocks=54
+    [Train] Epoch 54 [300/391] Loss 0.359 Acc 87.54% ActiveBlocks=54
+    [Train] Epoch 54 [350/391] Loss 0.363 Acc 87.42% ActiveBlocks=54
+[Main] Epoch 54 | Test 84.16% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.5s
+    [Train] Epoch 55 [0/391] Loss 0.321 Acc 89.84% ActiveBlocks=54
+    [Train] Epoch 55 [50/391] Loss 0.348 Acc 88.08% ActiveBlocks=54
+    [Train] Epoch 55 [100/391] Loss 0.364 Acc 87.21% ActiveBlocks=54
+    [Train] Epoch 55 [150/391] Loss 0.362 Acc 87.41% ActiveBlocks=54
+    [Train] Epoch 55 [200/391] Loss 0.360 Acc 87.50% ActiveBlocks=54
+    [Train] Epoch 55 [250/391] Loss 0.359 Acc 87.55% ActiveBlocks=54
+    [Train] Epoch 55 [300/391] Loss 0.357 Acc 87.66% ActiveBlocks=54
+    [Train] Epoch 55 [350/391] Loss 0.360 Acc 87.55% ActiveBlocks=54
+[Main] Epoch 55 | Test 83.29% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 56 [0/391] Loss 0.326 Acc 89.84% ActiveBlocks=54
+    [Train] Epoch 56 [50/391] Loss 0.339 Acc 88.60% ActiveBlocks=54
+    [Train] Epoch 56 [100/391] Loss 0.355 Acc 87.90% ActiveBlocks=54
+    [Train] Epoch 56 [150/391] Loss 0.354 Acc 87.87% ActiveBlocks=54
+    [Train] Epoch 56 [200/391] Loss 0.356 Acc 87.85% ActiveBlocks=54
+    [Train] Epoch 56 [250/391] Loss 0.358 Acc 87.73% ActiveBlocks=54
+    [Train] Epoch 56 [300/391] Loss 0.360 Acc 87.66% ActiveBlocks=54
+    [Train] Epoch 56 [350/391] Loss 0.361 Acc 87.62% ActiveBlocks=54
+[Main] Epoch 56 | Test 78.99% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 57 [0/391] Loss 0.447 Acc 90.62% ActiveBlocks=54
+    [Train] Epoch 57 [50/391] Loss 0.321 Acc 89.05% ActiveBlocks=54
+    [Train] Epoch 57 [100/391] Loss 0.341 Acc 88.51% ActiveBlocks=54
+    [Train] Epoch 57 [150/391] Loss 0.341 Acc 88.45% ActiveBlocks=54
+    [Train] Epoch 57 [200/391] Loss 0.345 Acc 88.21% ActiveBlocks=54
+    [Train] Epoch 57 [250/391] Loss 0.350 Acc 88.04% ActiveBlocks=54
+    [Train] Epoch 57 [300/391] Loss 0.351 Acc 87.93% ActiveBlocks=54
+    [Train] Epoch 57 [350/391] Loss 0.354 Acc 87.81% ActiveBlocks=54
+[Main] Epoch 57 | Test 81.32% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 58 [0/391] Loss 0.382 Acc 87.50% ActiveBlocks=54
+    [Train] Epoch 58 [50/391] Loss 0.350 Acc 87.78% ActiveBlocks=54
+    [Train] Epoch 58 [100/391] Loss 0.344 Acc 88.03% ActiveBlocks=54
+    [Train] Epoch 58 [150/391] Loss 0.342 Acc 88.28% ActiveBlocks=54
+    [Train] Epoch 58 [200/391] Loss 0.343 Acc 88.22% ActiveBlocks=54
+    [Train] Epoch 58 [250/391] Loss 0.346 Acc 88.09% ActiveBlocks=54
+    [Train] Epoch 58 [300/391] Loss 0.350 Acc 87.95% ActiveBlocks=54
+    [Train] Epoch 58 [350/391] Loss 0.353 Acc 87.87% ActiveBlocks=54
+[Main] Epoch 58 | Test 83.11% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 59 [0/391] Loss 0.301 Acc 87.50% ActiveBlocks=54
+    [Train] Epoch 59 [50/391] Loss 0.332 Acc 88.53% ActiveBlocks=54
+    [Train] Epoch 59 [100/391] Loss 0.345 Acc 88.04% ActiveBlocks=54
+    [Train] Epoch 59 [150/391] Loss 0.350 Acc 88.03% ActiveBlocks=54
+    [Train] Epoch 59 [200/391] Loss 0.350 Acc 88.11% ActiveBlocks=54
+    [Train] Epoch 59 [250/391] Loss 0.348 Acc 88.19% ActiveBlocks=54
+    [Train] Epoch 59 [300/391] Loss 0.351 Acc 88.11% ActiveBlocks=54
+    [Train] Epoch 59 [350/391] Loss 0.351 Acc 88.08% ActiveBlocks=54
+[Main] Epoch 59 | Test 82.04% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 60 [0/391] Loss 0.325 Acc 87.50% ActiveBlocks=54
+    [Train] Epoch 60 [50/391] Loss 0.329 Acc 88.85% ActiveBlocks=54
+    [Train] Epoch 60 [100/391] Loss 0.325 Acc 89.12% ActiveBlocks=54
+    [Train] Epoch 60 [150/391] Loss 0.327 Acc 89.08% ActiveBlocks=54
+    [Train] Epoch 60 [200/391] Loss 0.336 Acc 88.75% ActiveBlocks=54
+    [Train] Epoch 60 [250/391] Loss 0.340 Acc 88.57% ActiveBlocks=54
+    [Train] Epoch 60 [300/391] Loss 0.345 Acc 88.36% ActiveBlocks=54
+    [Train] Epoch 60 [350/391] Loss 0.345 Acc 88.34% ActiveBlocks=54
+[Main] Epoch 60 | Test 83.47% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 61 [0/391] Loss 0.362 Acc 90.62% ActiveBlocks=54
+    [Train] Epoch 61 [50/391] Loss 0.335 Acc 88.47% ActiveBlocks=54
+    [Train] Epoch 61 [100/391] Loss 0.341 Acc 88.21% ActiveBlocks=54
+    [Train] Epoch 61 [150/391] Loss 0.341 Acc 88.23% ActiveBlocks=54
+    [Train] Epoch 61 [200/391] Loss 0.340 Acc 88.29% ActiveBlocks=54
+    [Train] Epoch 61 [250/391] Loss 0.340 Acc 88.31% ActiveBlocks=54
+    [Train] Epoch 61 [300/391] Loss 0.339 Acc 88.33% ActiveBlocks=54
+    [Train] Epoch 61 [350/391] Loss 0.339 Acc 88.33% ActiveBlocks=54
+[Main] Epoch 61 | Test 83.32% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.0s
+    [Train] Epoch 62 [0/391] Loss 0.521 Acc 84.38% ActiveBlocks=54
+    [Train] Epoch 62 [50/391] Loss 0.318 Acc 89.20% ActiveBlocks=54
+    [Train] Epoch 62 [100/391] Loss 0.326 Acc 88.98% ActiveBlocks=54
+    [Train] Epoch 62 [150/391] Loss 0.334 Acc 88.71% ActiveBlocks=54
+    [Train] Epoch 62 [200/391] Loss 0.338 Acc 88.50% ActiveBlocks=54
+    [Train] Epoch 62 [250/391] Loss 0.341 Acc 88.34% ActiveBlocks=54
+    [Train] Epoch 62 [300/391] Loss 0.343 Acc 88.26% ActiveBlocks=54
+    [Train] Epoch 62 [350/391] Loss 0.343 Acc 88.24% ActiveBlocks=54
+[Main] Epoch 62 | Test 83.45% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 63 [0/391] Loss 0.339 Acc 85.16% ActiveBlocks=54
+    [Train] Epoch 63 [50/391] Loss 0.317 Acc 88.99% ActiveBlocks=54
+    [Train] Epoch 63 [100/391] Loss 0.319 Acc 88.88% ActiveBlocks=54
+    [Train] Epoch 63 [150/391] Loss 0.324 Acc 88.79% ActiveBlocks=54
+    [Train] Epoch 63 [200/391] Loss 0.330 Acc 88.67% ActiveBlocks=54
+    [Train] Epoch 63 [250/391] Loss 0.330 Acc 88.60% ActiveBlocks=54
+    [Train] Epoch 63 [300/391] Loss 0.333 Acc 88.49% ActiveBlocks=54
+    [Train] Epoch 63 [350/391] Loss 0.336 Acc 88.49% ActiveBlocks=54
+[Main] Epoch 63 | Test 83.14% | Best 84.24% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.0s
+    [Train] Epoch 64 [0/391] Loss 0.320 Acc 86.72% ActiveBlocks=54
+    [Train] Epoch 64 [50/391] Loss 0.300 Acc 89.28% ActiveBlocks=54
+    [Train] Epoch 64 [100/391] Loss 0.315 Acc 89.01% ActiveBlocks=54
+    [Train] Epoch 64 [150/391] Loss 0.324 Acc 88.77% ActiveBlocks=54
+    [Train] Epoch 64 [200/391] Loss 0.329 Acc 88.55% ActiveBlocks=54
+    [Train] Epoch 64 [250/391] Loss 0.329 Acc 88.60% ActiveBlocks=54
+    [Train] Epoch 64 [300/391] Loss 0.331 Acc 88.60% ActiveBlocks=54
+    [Train] Epoch 64 [350/391] Loss 0.335 Acc 88.47% ActiveBlocks=54
+[Main] Epoch 64 | Test 85.46% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 65 [0/391] Loss 0.301 Acc 91.41% ActiveBlocks=54
+    [Train] Epoch 65 [50/391] Loss 0.331 Acc 89.08% ActiveBlocks=54
+    [Train] Epoch 65 [100/391] Loss 0.316 Acc 89.42% ActiveBlocks=54
+    [Train] Epoch 65 [150/391] Loss 0.324 Acc 89.10% ActiveBlocks=54
+    [Train] Epoch 65 [200/391] Loss 0.322 Acc 89.12% ActiveBlocks=54
+    [Train] Epoch 65 [250/391] Loss 0.327 Acc 88.90% ActiveBlocks=54
+    [Train] Epoch 65 [300/391] Loss 0.328 Acc 88.85% ActiveBlocks=54
+    [Train] Epoch 65 [350/391] Loss 0.327 Acc 88.89% ActiveBlocks=54
+[Main] Epoch 65 | Test 81.12% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 66 [0/391] Loss 0.344 Acc 87.50% ActiveBlocks=54
+    [Train] Epoch 66 [50/391] Loss 0.303 Acc 89.43% ActiveBlocks=54
+    [Train] Epoch 66 [100/391] Loss 0.317 Acc 88.99% ActiveBlocks=54
+    [Train] Epoch 66 [150/391] Loss 0.318 Acc 89.07% ActiveBlocks=54
+    [Train] Epoch 66 [200/391] Loss 0.322 Acc 88.93% ActiveBlocks=54
+    [Train] Epoch 66 [250/391] Loss 0.324 Acc 88.89% ActiveBlocks=54
+    [Train] Epoch 66 [300/391] Loss 0.325 Acc 88.86% ActiveBlocks=54
+    [Train] Epoch 66 [350/391] Loss 0.328 Acc 88.73% ActiveBlocks=54
+[Main] Epoch 66 | Test 82.12% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 67 [0/391] Loss 0.264 Acc 89.84% ActiveBlocks=54
+    [Train] Epoch 67 [50/391] Loss 0.291 Acc 90.00% ActiveBlocks=54
+    [Train] Epoch 67 [100/391] Loss 0.297 Acc 89.92% ActiveBlocks=54
+    [Train] Epoch 67 [150/391] Loss 0.309 Acc 89.51% ActiveBlocks=54
+    [Train] Epoch 67 [200/391] Loss 0.315 Acc 89.27% ActiveBlocks=54
+    [Train] Epoch 67 [250/391] Loss 0.317 Acc 89.23% ActiveBlocks=54
+    [Train] Epoch 67 [300/391] Loss 0.318 Acc 89.20% ActiveBlocks=54
+    [Train] Epoch 67 [350/391] Loss 0.318 Acc 89.18% ActiveBlocks=54
+[Main] Epoch 67 | Test 83.52% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 68 [0/391] Loss 0.313 Acc 87.50% ActiveBlocks=54
+    [Train] Epoch 68 [50/391] Loss 0.314 Acc 89.26% ActiveBlocks=54
+    [Train] Epoch 68 [100/391] Loss 0.308 Acc 89.18% ActiveBlocks=54
+    [Train] Epoch 68 [150/391] Loss 0.315 Acc 89.06% ActiveBlocks=54
+    [Train] Epoch 68 [200/391] Loss 0.317 Acc 89.04% ActiveBlocks=54
+    [Train] Epoch 68 [250/391] Loss 0.320 Acc 88.90% ActiveBlocks=54
+    [Train] Epoch 68 [300/391] Loss 0.323 Acc 88.86% ActiveBlocks=54
+    [Train] Epoch 68 [350/391] Loss 0.324 Acc 88.80% ActiveBlocks=54
+[Main] Epoch 68 | Test 82.41% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 69 [0/391] Loss 0.230 Acc 92.19% ActiveBlocks=54
+    [Train] Epoch 69 [50/391] Loss 0.308 Acc 89.71% ActiveBlocks=54
+    [Train] Epoch 69 [100/391] Loss 0.323 Acc 89.02% ActiveBlocks=54
+    [Train] Epoch 69 [150/391] Loss 0.317 Acc 89.19% ActiveBlocks=54
+    [Train] Epoch 69 [200/391] Loss 0.312 Acc 89.33% ActiveBlocks=54
+    [Train] Epoch 69 [250/391] Loss 0.319 Acc 89.14% ActiveBlocks=54
+    [Train] Epoch 69 [300/391] Loss 0.320 Acc 89.05% ActiveBlocks=54
+    [Train] Epoch 69 [350/391] Loss 0.321 Acc 89.05% ActiveBlocks=54
+[Main] Epoch 69 | Test 83.56% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.5s
+    [Train] Epoch 70 [0/391] Loss 0.383 Acc 88.28% ActiveBlocks=54
+    [Train] Epoch 70 [50/391] Loss 0.326 Acc 88.97% ActiveBlocks=54
+    [Train] Epoch 70 [100/391] Loss 0.310 Acc 89.53% ActiveBlocks=54
+    [Train] Epoch 70 [150/391] Loss 0.309 Acc 89.58% ActiveBlocks=54
+    [Train] Epoch 70 [200/391] Loss 0.312 Acc 89.39% ActiveBlocks=54
+    [Train] Epoch 70 [250/391] Loss 0.311 Acc 89.39% ActiveBlocks=54
+    [Train] Epoch 70 [300/391] Loss 0.313 Acc 89.34% ActiveBlocks=54
+    [Train] Epoch 70 [350/391] Loss 0.316 Acc 89.24% ActiveBlocks=54
+[Main] Epoch 70 | Test 82.96% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 71 [0/391] Loss 0.313 Acc 90.62% ActiveBlocks=54
+    [Train] Epoch 71 [50/391] Loss 0.290 Acc 90.03% ActiveBlocks=54
+    [Train] Epoch 71 [100/391] Loss 0.305 Acc 89.62% ActiveBlocks=54
+    [Train] Epoch 71 [150/391] Loss 0.305 Acc 89.55% ActiveBlocks=54
+    [Train] Epoch 71 [200/391] Loss 0.305 Acc 89.57% ActiveBlocks=54
+    [Train] Epoch 71 [250/391] Loss 0.307 Acc 89.46% ActiveBlocks=54
+    [Train] Epoch 71 [300/391] Loss 0.307 Acc 89.47% ActiveBlocks=54
+    [Train] Epoch 71 [350/391] Loss 0.310 Acc 89.37% ActiveBlocks=54
+[Main] Epoch 71 | Test 84.04% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 72 [0/391] Loss 0.245 Acc 92.19% ActiveBlocks=54
+    [Train] Epoch 72 [50/391] Loss 0.283 Acc 90.61% ActiveBlocks=54
+    [Train] Epoch 72 [100/391] Loss 0.290 Acc 90.13% ActiveBlocks=54
+    [Train] Epoch 72 [150/391] Loss 0.292 Acc 90.10% ActiveBlocks=54
+    [Train] Epoch 72 [200/391] Loss 0.298 Acc 89.85% ActiveBlocks=54
+    [Train] Epoch 72 [250/391] Loss 0.297 Acc 89.92% ActiveBlocks=54
+    [Train] Epoch 72 [300/391] Loss 0.299 Acc 89.79% ActiveBlocks=54
+    [Train] Epoch 72 [350/391] Loss 0.303 Acc 89.70% ActiveBlocks=54
+[Main] Epoch 72 | Test 83.48% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 73 [0/391] Loss 0.342 Acc 84.38% ActiveBlocks=54
+    [Train] Epoch 73 [50/391] Loss 0.307 Acc 89.60% ActiveBlocks=54
+    [Train] Epoch 73 [100/391] Loss 0.300 Acc 89.87% ActiveBlocks=54
+    [Train] Epoch 73 [150/391] Loss 0.302 Acc 89.80% ActiveBlocks=54
+    [Train] Epoch 73 [200/391] Loss 0.304 Acc 89.63% ActiveBlocks=54
+    [Train] Epoch 73 [250/391] Loss 0.302 Acc 89.61% ActiveBlocks=54
+    [Train] Epoch 73 [300/391] Loss 0.303 Acc 89.59% ActiveBlocks=54
+    [Train] Epoch 73 [350/391] Loss 0.305 Acc 89.58% ActiveBlocks=54
+[Main] Epoch 73 | Test 83.50% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 74 [0/391] Loss 0.279 Acc 89.06% ActiveBlocks=54
+    [Train] Epoch 74 [50/391] Loss 0.279 Acc 90.78% ActiveBlocks=54
+    [Train] Epoch 74 [100/391] Loss 0.285 Acc 90.41% ActiveBlocks=54
+    [Train] Epoch 74 [150/391] Loss 0.290 Acc 90.12% ActiveBlocks=54
+    [Train] Epoch 74 [200/391] Loss 0.291 Acc 90.15% ActiveBlocks=54
+    [Train] Epoch 74 [250/391] Loss 0.293 Acc 90.06% ActiveBlocks=54
+    [Train] Epoch 74 [300/391] Loss 0.296 Acc 89.90% ActiveBlocks=54
+    [Train] Epoch 74 [350/391] Loss 0.297 Acc 89.87% ActiveBlocks=54
+[Main] Epoch 74 | Test 78.62% | Best 85.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 75 [0/391] Loss 0.325 Acc 89.84% ActiveBlocks=54
+    [Train] Epoch 75 [50/391] Loss 0.289 Acc 89.97% ActiveBlocks=54
+    [Train] Epoch 75 [100/391] Loss 0.294 Acc 89.79% ActiveBlocks=54
+    [Train] Epoch 75 [150/391] Loss 0.288 Acc 90.00% ActiveBlocks=54
+    [Train] Epoch 75 [200/391] Loss 0.290 Acc 90.02% ActiveBlocks=54
+    [Train] Epoch 75 [250/391] Loss 0.294 Acc 89.88% ActiveBlocks=54
+    [Train] Epoch 75 [300/391] Loss 0.294 Acc 89.87% ActiveBlocks=54
+    [Train] Epoch 75 [350/391] Loss 0.294 Acc 89.85% ActiveBlocks=54
+[Main] Epoch 75 | Test 87.46% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.6s
+    [Train] Epoch 76 [0/391] Loss 0.170 Acc 94.53% ActiveBlocks=54
+    [Train] Epoch 76 [50/391] Loss 0.284 Acc 90.49% ActiveBlocks=54
+    [Train] Epoch 76 [100/391] Loss 0.288 Acc 90.32% ActiveBlocks=54
+    [Train] Epoch 76 [150/391] Loss 0.288 Acc 90.26% ActiveBlocks=54
+    [Train] Epoch 76 [200/391] Loss 0.287 Acc 90.20% ActiveBlocks=54
+    [Train] Epoch 76 [250/391] Loss 0.288 Acc 90.19% ActiveBlocks=54
+    [Train] Epoch 76 [300/391] Loss 0.291 Acc 90.07% ActiveBlocks=54
+    [Train] Epoch 76 [350/391] Loss 0.292 Acc 90.08% ActiveBlocks=54
+[Main] Epoch 76 | Test 85.42% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 77 [0/391] Loss 0.243 Acc 92.19% ActiveBlocks=54
+    [Train] Epoch 77 [50/391] Loss 0.291 Acc 90.09% ActiveBlocks=54
+    [Train] Epoch 77 [100/391] Loss 0.295 Acc 89.89% ActiveBlocks=54
+    [Train] Epoch 77 [150/391] Loss 0.290 Acc 90.11% ActiveBlocks=54
+    [Train] Epoch 77 [200/391] Loss 0.289 Acc 90.11% ActiveBlocks=54
+    [Train] Epoch 77 [250/391] Loss 0.291 Acc 90.09% ActiveBlocks=54
+    [Train] Epoch 77 [300/391] Loss 0.291 Acc 90.07% ActiveBlocks=54
+    [Train] Epoch 77 [350/391] Loss 0.289 Acc 90.07% ActiveBlocks=54
+[Main] Epoch 77 | Test 85.59% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 78 [0/391] Loss 0.191 Acc 94.53% ActiveBlocks=54
+    [Train] Epoch 78 [50/391] Loss 0.267 Acc 91.31% ActiveBlocks=54
+    [Train] Epoch 78 [100/391] Loss 0.272 Acc 90.69% ActiveBlocks=54
+    [Train] Epoch 78 [150/391] Loss 0.277 Acc 90.54% ActiveBlocks=54
+    [Train] Epoch 78 [200/391] Loss 0.281 Acc 90.38% ActiveBlocks=54
+    [Train] Epoch 78 [250/391] Loss 0.283 Acc 90.25% ActiveBlocks=54
+    [Train] Epoch 78 [300/391] Loss 0.284 Acc 90.30% ActiveBlocks=54
+    [Train] Epoch 78 [350/391] Loss 0.284 Acc 90.33% ActiveBlocks=54
+[Main] Epoch 78 | Test 84.31% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 79 [0/391] Loss 0.287 Acc 89.06% ActiveBlocks=54
+    [Train] Epoch 79 [50/391] Loss 0.274 Acc 90.89% ActiveBlocks=54
+    [Train] Epoch 79 [100/391] Loss 0.275 Acc 90.59% ActiveBlocks=54
+    [Train] Epoch 79 [150/391] Loss 0.279 Acc 90.49% ActiveBlocks=54
+    [Train] Epoch 79 [200/391] Loss 0.281 Acc 90.38% ActiveBlocks=54
+    [Train] Epoch 79 [250/391] Loss 0.283 Acc 90.27% ActiveBlocks=54
+    [Train] Epoch 79 [300/391] Loss 0.283 Acc 90.26% ActiveBlocks=54
+    [Train] Epoch 79 [350/391] Loss 0.282 Acc 90.33% ActiveBlocks=54
+[Main] Epoch 79 | Test 84.93% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 80 [0/391] Loss 0.226 Acc 92.97% ActiveBlocks=54
+    [Train] Epoch 80 [50/391] Loss 0.249 Acc 91.28% ActiveBlocks=54
+    [Train] Epoch 80 [100/391] Loss 0.268 Acc 90.56% ActiveBlocks=54
+    [Train] Epoch 80 [150/391] Loss 0.270 Acc 90.46% ActiveBlocks=54
+    [Train] Epoch 80 [200/391] Loss 0.276 Acc 90.40% ActiveBlocks=54
+    [Train] Epoch 80 [250/391] Loss 0.276 Acc 90.37% ActiveBlocks=54
+    [Train] Epoch 80 [300/391] Loss 0.281 Acc 90.22% ActiveBlocks=54
+    [Train] Epoch 80 [350/391] Loss 0.282 Acc 90.22% ActiveBlocks=54
+[Main] Epoch 80 | Test 84.63% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 81 [0/391] Loss 0.219 Acc 92.19% ActiveBlocks=54
+    [Train] Epoch 81 [50/391] Loss 0.248 Acc 91.61% ActiveBlocks=54
+    [Train] Epoch 81 [100/391] Loss 0.252 Acc 91.36% ActiveBlocks=54
+    [Train] Epoch 81 [150/391] Loss 0.262 Acc 90.99% ActiveBlocks=54
+    [Train] Epoch 81 [200/391] Loss 0.266 Acc 90.78% ActiveBlocks=54
+    [Train] Epoch 81 [250/391] Loss 0.268 Acc 90.76% ActiveBlocks=54
+    [Train] Epoch 81 [300/391] Loss 0.270 Acc 90.70% ActiveBlocks=54
+    [Train] Epoch 81 [350/391] Loss 0.274 Acc 90.59% ActiveBlocks=54
+[Main] Epoch 81 | Test 85.01% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 82 [0/391] Loss 0.389 Acc 85.94% ActiveBlocks=54
+    [Train] Epoch 82 [50/391] Loss 0.275 Acc 90.85% ActiveBlocks=54
+    [Train] Epoch 82 [100/391] Loss 0.265 Acc 90.95% ActiveBlocks=54
+    [Train] Epoch 82 [150/391] Loss 0.266 Acc 90.82% ActiveBlocks=54
+    [Train] Epoch 82 [200/391] Loss 0.270 Acc 90.66% ActiveBlocks=54
+    [Train] Epoch 82 [250/391] Loss 0.275 Acc 90.52% ActiveBlocks=54
+    [Train] Epoch 82 [300/391] Loss 0.273 Acc 90.58% ActiveBlocks=54
+    [Train] Epoch 82 [350/391] Loss 0.274 Acc 90.58% ActiveBlocks=54
+[Main] Epoch 82 | Test 84.97% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 83 [0/391] Loss 0.201 Acc 91.41% ActiveBlocks=54
+    [Train] Epoch 83 [50/391] Loss 0.249 Acc 91.47% ActiveBlocks=54
+    [Train] Epoch 83 [100/391] Loss 0.251 Acc 91.34% ActiveBlocks=54
+    [Train] Epoch 83 [150/391] Loss 0.263 Acc 90.82% ActiveBlocks=54
+    [Train] Epoch 83 [200/391] Loss 0.262 Acc 90.90% ActiveBlocks=54
+    [Train] Epoch 83 [250/391] Loss 0.266 Acc 90.80% ActiveBlocks=54
+    [Train] Epoch 83 [300/391] Loss 0.268 Acc 90.71% ActiveBlocks=54
+    [Train] Epoch 83 [350/391] Loss 0.267 Acc 90.76% ActiveBlocks=54
+[Main] Epoch 83 | Test 84.95% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 84 [0/391] Loss 0.288 Acc 90.62% ActiveBlocks=54
+    [Train] Epoch 84 [50/391] Loss 0.246 Acc 91.68% ActiveBlocks=54
+    [Train] Epoch 84 [100/391] Loss 0.244 Acc 91.67% ActiveBlocks=54
+    [Train] Epoch 84 [150/391] Loss 0.245 Acc 91.61% ActiveBlocks=54
+    [Train] Epoch 84 [200/391] Loss 0.253 Acc 91.43% ActiveBlocks=54
+    [Train] Epoch 84 [250/391] Loss 0.255 Acc 91.40% ActiveBlocks=54
+    [Train] Epoch 84 [300/391] Loss 0.257 Acc 91.31% ActiveBlocks=54
+    [Train] Epoch 84 [350/391] Loss 0.259 Acc 91.24% ActiveBlocks=54
+[Main] Epoch 84 | Test 84.42% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 85 [0/391] Loss 0.155 Acc 94.53% ActiveBlocks=54
+    [Train] Epoch 85 [50/391] Loss 0.241 Acc 91.74% ActiveBlocks=54
+    [Train] Epoch 85 [100/391] Loss 0.251 Acc 91.33% ActiveBlocks=54
+    [Train] Epoch 85 [150/391] Loss 0.254 Acc 91.29% ActiveBlocks=54
+    [Train] Epoch 85 [200/391] Loss 0.261 Acc 91.03% ActiveBlocks=54
+    [Train] Epoch 85 [250/391] Loss 0.259 Acc 91.09% ActiveBlocks=54
+    [Train] Epoch 85 [300/391] Loss 0.259 Acc 91.10% ActiveBlocks=54
+    [Train] Epoch 85 [350/391] Loss 0.261 Acc 90.97% ActiveBlocks=54
+[Main] Epoch 85 | Test 87.17% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.2s
+    [Train] Epoch 86 [0/391] Loss 0.297 Acc 89.84% ActiveBlocks=54
+    [Train] Epoch 86 [50/391] Loss 0.242 Acc 91.80% ActiveBlocks=54
+    [Train] Epoch 86 [100/391] Loss 0.242 Acc 91.75% ActiveBlocks=54
+    [Train] Epoch 86 [150/391] Loss 0.243 Acc 91.60% ActiveBlocks=54
+    [Train] Epoch 86 [200/391] Loss 0.247 Acc 91.57% ActiveBlocks=54
+    [Train] Epoch 86 [250/391] Loss 0.250 Acc 91.47% ActiveBlocks=54
+    [Train] Epoch 86 [300/391] Loss 0.255 Acc 91.31% ActiveBlocks=54
+    [Train] Epoch 86 [350/391] Loss 0.256 Acc 91.23% ActiveBlocks=54
+[Main] Epoch 86 | Test 86.90% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.3s
+    [Train] Epoch 87 [0/391] Loss 0.181 Acc 94.53% ActiveBlocks=54
+    [Train] Epoch 87 [50/391] Loss 0.236 Acc 91.90% ActiveBlocks=54
+    [Train] Epoch 87 [100/391] Loss 0.233 Acc 91.96% ActiveBlocks=54
+    [Train] Epoch 87 [150/391] Loss 0.236 Acc 91.86% ActiveBlocks=54
+    [Train] Epoch 87 [200/391] Loss 0.245 Acc 91.52% ActiveBlocks=54
+    [Train] Epoch 87 [250/391] Loss 0.247 Acc 91.45% ActiveBlocks=54
+    [Train] Epoch 87 [300/391] Loss 0.248 Acc 91.40% ActiveBlocks=54
+    [Train] Epoch 87 [350/391] Loss 0.251 Acc 91.30% ActiveBlocks=54
+[Main] Epoch 87 | Test 84.09% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 88 [0/391] Loss 0.182 Acc 94.53% ActiveBlocks=54
+    [Train] Epoch 88 [50/391] Loss 0.221 Acc 92.89% ActiveBlocks=54
+    [Train] Epoch 88 [100/391] Loss 0.228 Acc 92.53% ActiveBlocks=54
+    [Train] Epoch 88 [150/391] Loss 0.233 Acc 92.10% ActiveBlocks=54
+    [Train] Epoch 88 [200/391] Loss 0.234 Acc 91.99% ActiveBlocks=54
+    [Train] Epoch 88 [250/391] Loss 0.239 Acc 91.81% ActiveBlocks=54
+    [Train] Epoch 88 [300/391] Loss 0.241 Acc 91.77% ActiveBlocks=54
+    [Train] Epoch 88 [350/391] Loss 0.244 Acc 91.72% ActiveBlocks=54
+[Main] Epoch 88 | Test 86.80% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 89 [0/391] Loss 0.222 Acc 91.41% ActiveBlocks=54
+    [Train] Epoch 89 [50/391] Loss 0.222 Acc 92.45% ActiveBlocks=54
+    [Train] Epoch 89 [100/391] Loss 0.229 Acc 92.08% ActiveBlocks=54
+    [Train] Epoch 89 [150/391] Loss 0.234 Acc 91.88% ActiveBlocks=54
+    [Train] Epoch 89 [200/391] Loss 0.238 Acc 91.85% ActiveBlocks=54
+    [Train] Epoch 89 [250/391] Loss 0.239 Acc 91.80% ActiveBlocks=54
+    [Train] Epoch 89 [300/391] Loss 0.240 Acc 91.81% ActiveBlocks=54
+    [Train] Epoch 89 [350/391] Loss 0.243 Acc 91.70% ActiveBlocks=54
+[Main] Epoch 89 | Test 84.25% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 90 [0/391] Loss 0.381 Acc 87.50% ActiveBlocks=54
+    [Train] Epoch 90 [50/391] Loss 0.239 Acc 92.02% ActiveBlocks=54
+    [Train] Epoch 90 [100/391] Loss 0.233 Acc 91.97% ActiveBlocks=54
+    [Train] Epoch 90 [150/391] Loss 0.230 Acc 92.07% ActiveBlocks=54
+    [Train] Epoch 90 [200/391] Loss 0.235 Acc 91.98% ActiveBlocks=54
+    [Train] Epoch 90 [250/391] Loss 0.239 Acc 91.78% ActiveBlocks=54
+    [Train] Epoch 90 [300/391] Loss 0.241 Acc 91.78% ActiveBlocks=54
+    [Train] Epoch 90 [350/391] Loss 0.241 Acc 91.77% ActiveBlocks=54
+[Main] Epoch 90 | Test 86.31% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 91 [0/391] Loss 0.266 Acc 92.19% ActiveBlocks=54
+    [Train] Epoch 91 [50/391] Loss 0.233 Acc 92.03% ActiveBlocks=54
+    [Train] Epoch 91 [100/391] Loss 0.229 Acc 92.14% ActiveBlocks=54
+    [Train] Epoch 91 [150/391] Loss 0.231 Acc 92.11% ActiveBlocks=54
+    [Train] Epoch 91 [200/391] Loss 0.227 Acc 92.21% ActiveBlocks=54
+    [Train] Epoch 91 [250/391] Loss 0.233 Acc 92.11% ActiveBlocks=54
+    [Train] Epoch 91 [300/391] Loss 0.235 Acc 92.03% ActiveBlocks=54
+    [Train] Epoch 91 [350/391] Loss 0.235 Acc 92.04% ActiveBlocks=54
+[Main] Epoch 91 | Test 86.52% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.5s
+    [Train] Epoch 92 [0/391] Loss 0.215 Acc 92.19% ActiveBlocks=54
+    [Train] Epoch 92 [50/391] Loss 0.215 Acc 92.71% ActiveBlocks=54
+    [Train] Epoch 92 [100/391] Loss 0.223 Acc 92.30% ActiveBlocks=54
+    [Train] Epoch 92 [150/391] Loss 0.227 Acc 92.28% ActiveBlocks=54
+    [Train] Epoch 92 [200/391] Loss 0.229 Acc 92.22% ActiveBlocks=54
+    [Train] Epoch 92 [250/391] Loss 0.228 Acc 92.22% ActiveBlocks=54
+    [Train] Epoch 92 [300/391] Loss 0.234 Acc 92.05% ActiveBlocks=54
+    [Train] Epoch 92 [350/391] Loss 0.233 Acc 92.10% ActiveBlocks=54
+[Main] Epoch 92 | Test 84.79% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.4s
+    [Train] Epoch 93 [0/391] Loss 0.186 Acc 92.19% ActiveBlocks=54
+    [Train] Epoch 93 [50/391] Loss 0.217 Acc 92.75% ActiveBlocks=54
+    [Train] Epoch 93 [100/391] Loss 0.227 Acc 92.40% ActiveBlocks=54
+    [Train] Epoch 93 [150/391] Loss 0.226 Acc 92.36% ActiveBlocks=54
+    [Train] Epoch 93 [200/391] Loss 0.226 Acc 92.25% ActiveBlocks=54
+    [Train] Epoch 93 [250/391] Loss 0.231 Acc 92.18% ActiveBlocks=54
+    [Train] Epoch 93 [300/391] Loss 0.232 Acc 92.17% ActiveBlocks=54
+    [Train] Epoch 93 [350/391] Loss 0.232 Acc 92.12% ActiveBlocks=54
+[Main] Epoch 93 | Test 85.63% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 51.9s
+    [Train] Epoch 94 [0/391] Loss 0.283 Acc 89.06% ActiveBlocks=54
+    [Train] Epoch 94 [50/391] Loss 0.212 Acc 92.72% ActiveBlocks=54
+    [Train] Epoch 94 [100/391] Loss 0.215 Acc 92.52% ActiveBlocks=54
+    [Train] Epoch 94 [150/391] Loss 0.220 Acc 92.31% ActiveBlocks=54
+    [Train] Epoch 94 [200/391] Loss 0.225 Acc 92.17% ActiveBlocks=54
+    [Train] Epoch 94 [250/391] Loss 0.226 Acc 92.11% ActiveBlocks=54
+    [Train] Epoch 94 [300/391] Loss 0.231 Acc 91.99% ActiveBlocks=54
+    [Train] Epoch 94 [350/391] Loss 0.231 Acc 92.01% ActiveBlocks=54
+[Main] Epoch 94 | Test 86.94% | Best 87.46% | TTA@92.1: None | FrozenBlocks 0/54 | Time 51.9s
+    [Train] Epoch 95 [0/391] Loss 0.234 Acc 92.97% ActiveBlocks=54
+    [Train] Epoch 95 [50/391] Loss 0.215 Acc 92.74% ActiveBlocks=54
+    [Train] Epoch 95 [100/391] Loss 0.216 Acc 92.55% ActiveBlocks=54
+    [Train] Epoch 95 [150/391] Loss 0.215 Acc 92.57% ActiveBlocks=54
+    [Train] Epoch 95 [200/391] Loss 0.216 Acc 92.50% ActiveBlocks=54
+    [Train] Epoch 95 [250/391] Loss 0.218 Acc 92.51% ActiveBlocks=54
+    [Train] Epoch 95 [300/391] Loss 0.223 Acc 92.33% ActiveBlocks=54
+    [Train] Epoch 95 [350/391] Loss 0.223 Acc 92.37% ActiveBlocks=54
+[Main] Epoch 95 | Test 88.70% | Best 88.70% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.1s
+    [Train] Epoch 96 [0/391] Loss 0.167 Acc 95.31% ActiveBlocks=54
+    [Train] Epoch 96 [50/391] Loss 0.207 Acc 93.32% ActiveBlocks=54
+    [Train] Epoch 96 [100/391] Loss 0.205 Acc 93.15% ActiveBlocks=54
+    [Train] Epoch 96 [150/391] Loss 0.206 Acc 92.99% ActiveBlocks=54
+    [Train] Epoch 96 [200/391] Loss 0.209 Acc 92.84% ActiveBlocks=54
+    [Train] Epoch 96 [250/391] Loss 0.209 Acc 92.85% ActiveBlocks=54
+    [Train] Epoch 96 [300/391] Loss 0.209 Acc 92.91% ActiveBlocks=54
+    [Train] Epoch 96 [350/391] Loss 0.214 Acc 92.74% ActiveBlocks=54
+[Main] Epoch 96 | Test 89.37% | Best 89.37% | TTA@92.1: None | FrozenBlocks 0/54 | Time 51.9s
+    [Train] Epoch 97 [0/391] Loss 0.090 Acc 99.22% ActiveBlocks=54
+    [Train] Epoch 97 [50/391] Loss 0.193 Acc 93.47% ActiveBlocks=54
+    [Train] Epoch 97 [100/391] Loss 0.198 Acc 93.24% ActiveBlocks=54
+    [Train] Epoch 97 [150/391] Loss 0.197 Acc 93.25% ActiveBlocks=54
+    [Train] Epoch 97 [200/391] Loss 0.197 Acc 93.16% ActiveBlocks=54
+    [Train] Epoch 97 [250/391] Loss 0.202 Acc 93.01% ActiveBlocks=54
+    [Train] Epoch 97 [300/391] Loss 0.203 Acc 92.96% ActiveBlocks=54
+    [Train] Epoch 97 [350/391] Loss 0.206 Acc 92.90% ActiveBlocks=54
+[Main] Epoch 97 | Test 88.21% | Best 89.37% | TTA@92.1: None | FrozenBlocks 0/54 | Time 51.5s
+    [Train] Epoch 98 [0/391] Loss 0.218 Acc 90.62% ActiveBlocks=54
+    [Train] Epoch 98 [50/391] Loss 0.194 Acc 93.35% ActiveBlocks=54
+    [Train] Epoch 98 [100/391] Loss 0.196 Acc 93.25% ActiveBlocks=54
+    [Train] Epoch 98 [150/391] Loss 0.198 Acc 93.19% ActiveBlocks=54
+    [Train] Epoch 98 [200/391] Loss 0.202 Acc 93.07% ActiveBlocks=54
+    [Train] Epoch 98 [250/391] Loss 0.203 Acc 93.11% ActiveBlocks=54
+    [Train] Epoch 98 [300/391] Loss 0.205 Acc 93.05% ActiveBlocks=54
+    [Train] Epoch 98 [350/391] Loss 0.206 Acc 92.97% ActiveBlocks=54
+[Main] Epoch 98 | Test 85.81% | Best 89.37% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.0s
+    [Train] Epoch 99 [0/391] Loss 0.147 Acc 93.75% ActiveBlocks=54
+    [Train] Epoch 99 [50/391] Loss 0.195 Acc 93.15% ActiveBlocks=54
+    [Train] Epoch 99 [100/391] Loss 0.193 Acc 93.36% ActiveBlocks=54
+    [Train] Epoch 99 [150/391] Loss 0.197 Acc 93.19% ActiveBlocks=54
+    [Train] Epoch 99 [200/391] Loss 0.201 Acc 93.06% ActiveBlocks=54
+    [Train] Epoch 99 [250/391] Loss 0.201 Acc 93.05% ActiveBlocks=54
+    [Train] Epoch 99 [300/391] Loss 0.201 Acc 93.07% ActiveBlocks=54
+    [Train] Epoch 99 [350/391] Loss 0.199 Acc 93.16% ActiveBlocks=54
+[Main] Epoch 99 | Test 84.87% | Best 89.37% | TTA@92.1: None | FrozenBlocks 0/54 | Time 52.0s
+    [Train] Epoch 100 [0/391] Loss 0.149 Acc 92.97% ActiveBlocks=53
+    [Train] Epoch 100 [50/391] Loss 0.195 Acc 93.28% ActiveBlocks=53
+    [Train] Epoch 100 [100/391] Loss 0.194 Acc 93.31% ActiveBlocks=53
+    [Train] Epoch 100 [150/391] Loss 0.191 Acc 93.33% ActiveBlocks=53
+    [Train] Epoch 100 [200/391] Loss 0.190 Acc 93.40% ActiveBlocks=53
+    [Train] Epoch 100 [250/391] Loss 0.193 Acc 93.28% ActiveBlocks=53
+    [Train] Epoch 100 [300/391] Loss 0.194 Acc 93.28% ActiveBlocks=53
+    [Train] Epoch 100 [350/391] Loss 0.193 Acc 93.27% ActiveBlocks=53
+[Main] Epoch 100 | Test 87.59% | Best 89.37% | TTA@92.1: None | FrozenBlocks 1/54 | Time 50.7s
+    [Train] Epoch 101 [0/391] Loss 0.173 Acc 94.53% ActiveBlocks=53
+    [Train] Epoch 101 [50/391] Loss 0.166 Acc 94.36% ActiveBlocks=53
+    [Train] Epoch 101 [100/391] Loss 0.171 Acc 94.11% ActiveBlocks=53
+    [Train] Epoch 101 [150/391] Loss 0.175 Acc 93.94% ActiveBlocks=53
+    [Train] Epoch 101 [200/391] Loss 0.180 Acc 93.78% ActiveBlocks=53
+    [Train] Epoch 101 [250/391] Loss 0.180 Acc 93.78% ActiveBlocks=53
+    [Train] Epoch 101 [300/391] Loss 0.183 Acc 93.64% ActiveBlocks=53
+    [Train] Epoch 101 [350/391] Loss 0.186 Acc 93.52% ActiveBlocks=52
+[Main] Epoch 101 | Test 88.17% | Best 89.37% | TTA@92.1: None | FrozenBlocks 2/54 | Time 50.5s
+    [Train] Epoch 102 [0/391] Loss 0.161 Acc 95.31% ActiveBlocks=52
+    [Train] Epoch 102 [50/391] Loss 0.165 Acc 94.49% ActiveBlocks=52
+    [Train] Epoch 102 [100/391] Loss 0.170 Acc 94.17% ActiveBlocks=52
+    [Train] Epoch 102 [150/391] Loss 0.169 Acc 94.13% ActiveBlocks=52
+    [Train] Epoch 102 [200/391] Loss 0.169 Acc 94.20% ActiveBlocks=52
+    [Train] Epoch 102 [250/391] Loss 0.171 Acc 94.11% ActiveBlocks=52
+    [Train] Epoch 102 [300/391] Loss 0.175 Acc 94.01% ActiveBlocks=52
+    [Train] Epoch 102 [350/391] Loss 0.177 Acc 93.96% ActiveBlocks=52
+[Main] Epoch 102 | Test 88.13% | Best 89.37% | TTA@92.1: None | FrozenBlocks 2/54 | Time 49.9s
+    [Train] Epoch 103 [0/391] Loss 0.122 Acc 95.31% ActiveBlocks=52
+    [Train] Epoch 103 [50/391] Loss 0.157 Acc 94.52% ActiveBlocks=52
+    [Train] Epoch 103 [100/391] Loss 0.164 Acc 94.47% ActiveBlocks=52
+    [Train] Epoch 103 [150/391] Loss 0.169 Acc 94.24% ActiveBlocks=52
+    [Train] Epoch 103 [200/391] Loss 0.171 Acc 94.15% ActiveBlocks=52
+    [Train] Epoch 103 [250/391] Loss 0.173 Acc 94.12% ActiveBlocks=52
+    [Train] Epoch 103 [300/391] Loss 0.175 Acc 94.00% ActiveBlocks=52
+    [Train] Epoch 103 [350/391] Loss 0.177 Acc 93.86% ActiveBlocks=51
+[Main] Epoch 103 | Test 88.57% | Best 89.37% | TTA@92.1: None | FrozenBlocks 3/54 | Time 49.5s
+    [Train] Epoch 104 [0/391] Loss 0.130 Acc 95.31% ActiveBlocks=51
+    [Train] Epoch 104 [50/391] Loss 0.154 Acc 95.01% ActiveBlocks=51
+    [Train] Epoch 104 [100/391] Loss 0.160 Acc 94.56% ActiveBlocks=51
+    [Train] Epoch 104 [150/391] Loss 0.168 Acc 94.29% ActiveBlocks=51
+    [Train] Epoch 104 [200/391] Loss 0.171 Acc 94.11% ActiveBlocks=51
+    [Train] Epoch 104 [250/391] Loss 0.170 Acc 94.15% ActiveBlocks=51
+    [Train] Epoch 104 [300/391] Loss 0.172 Acc 94.09% ActiveBlocks=51
+    [Train] Epoch 104 [350/391] Loss 0.172 Acc 94.08% ActiveBlocks=51
+[Main] Epoch 104 | Test 89.39% | Best 89.39% | TTA@92.1: None | FrozenBlocks 3/54 | Time 48.2s
+    [Train] Epoch 105 [0/391] Loss 0.144 Acc 93.75% ActiveBlocks=51
+    [Train] Epoch 105 [50/391] Loss 0.157 Acc 94.75% ActiveBlocks=51
+    [Train] Epoch 105 [100/391] Loss 0.157 Acc 94.67% ActiveBlocks=51
+    [Train] Epoch 105 [150/391] Loss 0.159 Acc 94.69% ActiveBlocks=51
+    [Train] Epoch 105 [200/391] Loss 0.165 Acc 94.47% ActiveBlocks=51
+    [Train] Epoch 105 [250/391] Loss 0.164 Acc 94.45% ActiveBlocks=51
+    [Train] Epoch 105 [300/391] Loss 0.166 Acc 94.42% ActiveBlocks=50
+    [Train] Epoch 105 [350/391] Loss 0.165 Acc 94.44% ActiveBlocks=50
+[Main] Epoch 105 | Test 88.50% | Best 89.39% | TTA@92.1: None | FrozenBlocks 4/54 | Time 47.3s
+    [Train] Epoch 106 [0/391] Loss 0.122 Acc 96.09% ActiveBlocks=50
+    [Train] Epoch 106 [50/391] Loss 0.148 Acc 94.84% ActiveBlocks=50
+    [Train] Epoch 106 [100/391] Loss 0.151 Acc 94.81% ActiveBlocks=50
+    [Train] Epoch 106 [150/391] Loss 0.153 Acc 94.75% ActiveBlocks=50
+    [Train] Epoch 106 [200/391] Loss 0.154 Acc 94.69% ActiveBlocks=50
+    [Train] Epoch 106 [250/391] Loss 0.154 Acc 94.68% ActiveBlocks=50
+    [Train] Epoch 106 [300/391] Loss 0.156 Acc 94.67% ActiveBlocks=50
+    [Train] Epoch 106 [350/391] Loss 0.159 Acc 94.55% ActiveBlocks=50
+[Main] Epoch 106 | Test 89.15% | Best 89.39% | TTA@92.1: None | FrozenBlocks 4/54 | Time 46.8s
+    [Train] Epoch 107 [0/391] Loss 0.202 Acc 93.75% ActiveBlocks=50
+    [Train] Epoch 107 [50/391] Loss 0.137 Acc 95.17% ActiveBlocks=50
+    [Train] Epoch 107 [100/391] Loss 0.139 Acc 95.21% ActiveBlocks=50
+    [Train] Epoch 107 [150/391] Loss 0.145 Acc 95.00% ActiveBlocks=50
+    [Train] Epoch 107 [200/391] Loss 0.148 Acc 94.88% ActiveBlocks=50
+    [Train] Epoch 107 [250/391] Loss 0.148 Acc 94.91% ActiveBlocks=49
+    [Train] Epoch 107 [300/391] Loss 0.151 Acc 94.74% ActiveBlocks=49
+    [Train] Epoch 107 [350/391] Loss 0.152 Acc 94.77% ActiveBlocks=49
+[Main] Epoch 107 | Test 90.12% | Best 90.12% | TTA@92.1: None | FrozenBlocks 5/54 | Time 46.8s
+    [Train] Epoch 108 [0/391] Loss 0.129 Acc 96.09% ActiveBlocks=49
+    [Train] Epoch 108 [50/391] Loss 0.144 Acc 95.14% ActiveBlocks=49
+    [Train] Epoch 108 [100/391] Loss 0.143 Acc 95.20% ActiveBlocks=49
+    [Train] Epoch 108 [150/391] Loss 0.143 Acc 95.15% ActiveBlocks=49
+    [Train] Epoch 108 [200/391] Loss 0.149 Acc 95.00% ActiveBlocks=49
+    [Train] Epoch 108 [250/391] Loss 0.151 Acc 94.85% ActiveBlocks=49
+    [Train] Epoch 108 [300/391] Loss 0.151 Acc 94.86% ActiveBlocks=49
+    [Train] Epoch 108 [350/391] Loss 0.151 Acc 94.84% ActiveBlocks=49
+[Main] Epoch 108 | Test 90.58% | Best 90.58% | TTA@92.1: None | FrozenBlocks 5/54 | Time 46.1s
+    [Train] Epoch 109 [0/391] Loss 0.131 Acc 95.31% ActiveBlocks=49
+    [Train] Epoch 109 [50/391] Loss 0.141 Acc 95.30% ActiveBlocks=49
+    [Train] Epoch 109 [100/391] Loss 0.140 Acc 95.03% ActiveBlocks=49
+    [Train] Epoch 109 [150/391] Loss 0.139 Acc 95.15% ActiveBlocks=49
+    [Train] Epoch 109 [200/391] Loss 0.141 Acc 95.10% ActiveBlocks=48
+    [Train] Epoch 109 [250/391] Loss 0.144 Acc 95.00% ActiveBlocks=48
+    [Train] Epoch 109 [300/391] Loss 0.146 Acc 94.88% ActiveBlocks=48
+    [Train] Epoch 109 [350/391] Loss 0.146 Acc 94.91% ActiveBlocks=48
+[Main] Epoch 109 | Test 89.96% | Best 90.58% | TTA@92.1: None | FrozenBlocks 6/54 | Time 45.4s
+    [Train] Epoch 110 [0/391] Loss 0.125 Acc 94.53% ActiveBlocks=48
+    [Train] Epoch 110 [50/391] Loss 0.148 Acc 95.04% ActiveBlocks=48
+    [Train] Epoch 110 [100/391] Loss 0.148 Acc 94.78% ActiveBlocks=48
+    [Train] Epoch 110 [150/391] Loss 0.145 Acc 94.91% ActiveBlocks=48
+    [Train] Epoch 110 [200/391] Loss 0.144 Acc 95.05% ActiveBlocks=48
+    [Train] Epoch 110 [250/391] Loss 0.145 Acc 94.99% ActiveBlocks=48
+    [Train] Epoch 110 [300/391] Loss 0.146 Acc 95.00% ActiveBlocks=48
+    [Train] Epoch 110 [350/391] Loss 0.147 Acc 94.96% ActiveBlocks=48
+[Main] Epoch 110 | Test 89.24% | Best 90.58% | TTA@92.1: None | FrozenBlocks 6/54 | Time 44.8s
+    [Train] Epoch 111 [0/391] Loss 0.096 Acc 96.88% ActiveBlocks=48
+    [Train] Epoch 111 [50/391] Loss 0.115 Acc 96.12% ActiveBlocks=48
+    [Train] Epoch 111 [100/391] Loss 0.126 Acc 95.75% ActiveBlocks=48
+    [Train] Epoch 111 [150/391] Loss 0.130 Acc 95.70% ActiveBlocks=47
+    [Train] Epoch 111 [200/391] Loss 0.132 Acc 95.65% ActiveBlocks=47
+    [Train] Epoch 111 [250/391] Loss 0.134 Acc 95.56% ActiveBlocks=47
+    [Train] Epoch 111 [300/391] Loss 0.135 Acc 95.53% ActiveBlocks=47
+    [Train] Epoch 111 [350/391] Loss 0.133 Acc 95.56% ActiveBlocks=47
+[Main] Epoch 111 | Test 89.15% | Best 90.58% | TTA@92.1: None | FrozenBlocks 7/54 | Time 44.0s
+    [Train] Epoch 112 [0/391] Loss 0.107 Acc 96.88% ActiveBlocks=47
+    [Train] Epoch 112 [50/391] Loss 0.132 Acc 95.59% ActiveBlocks=47
+    [Train] Epoch 112 [100/391] Loss 0.131 Acc 95.65% ActiveBlocks=47
+    [Train] Epoch 112 [150/391] Loss 0.129 Acc 95.69% ActiveBlocks=47
+    [Train] Epoch 112 [200/391] Loss 0.129 Acc 95.65% ActiveBlocks=47
+    [Train] Epoch 112 [250/391] Loss 0.132 Acc 95.51% ActiveBlocks=47
+    [Train] Epoch 112 [300/391] Loss 0.134 Acc 95.44% ActiveBlocks=47
+    [Train] Epoch 112 [350/391] Loss 0.134 Acc 95.41% ActiveBlocks=47
+[Main] Epoch 112 | Test 89.32% | Best 90.58% | TTA@92.1: None | FrozenBlocks 7/54 | Time 43.3s
+    [Train] Epoch 113 [0/391] Loss 0.113 Acc 96.88% ActiveBlocks=47
+    [Train] Epoch 113 [50/391] Loss 0.125 Acc 96.03% ActiveBlocks=47
+    [Train] Epoch 113 [100/391] Loss 0.120 Acc 95.98% ActiveBlocks=46
+    [Train] Epoch 113 [150/391] Loss 0.125 Acc 95.73% ActiveBlocks=46
+    [Train] Epoch 113 [200/391] Loss 0.126 Acc 95.70% ActiveBlocks=46
+    [Train] Epoch 113 [250/391] Loss 0.126 Acc 95.67% ActiveBlocks=46
+    [Train] Epoch 113 [300/391] Loss 0.128 Acc 95.58% ActiveBlocks=46
+    [Train] Epoch 113 [350/391] Loss 0.127 Acc 95.62% ActiveBlocks=46
+[Main] Epoch 113 | Test 90.35% | Best 90.58% | TTA@92.1: None | FrozenBlocks 8/54 | Time 42.6s
+    [Train] Epoch 114 [0/391] Loss 0.069 Acc 97.66% ActiveBlocks=46
+    [Train] Epoch 114 [50/391] Loss 0.121 Acc 96.00% ActiveBlocks=46
+    [Train] Epoch 114 [100/391] Loss 0.115 Acc 96.09% ActiveBlocks=46
+    [Train] Epoch 114 [150/391] Loss 0.121 Acc 95.91% ActiveBlocks=46
+    [Train] Epoch 114 [200/391] Loss 0.122 Acc 95.83% ActiveBlocks=46
+    [Train] Epoch 114 [250/391] Loss 0.125 Acc 95.72% ActiveBlocks=46
+    [Train] Epoch 114 [300/391] Loss 0.124 Acc 95.74% ActiveBlocks=46
+    [Train] Epoch 114 [350/391] Loss 0.125 Acc 95.72% ActiveBlocks=46
+[Main] Epoch 114 | Test 89.70% | Best 90.58% | TTA@92.1: None | FrozenBlocks 8/54 | Time 42.4s
+    [Train] Epoch 115 [0/391] Loss 0.102 Acc 95.31% ActiveBlocks=46
+    [Train] Epoch 115 [50/391] Loss 0.107 Acc 96.29% ActiveBlocks=45
+    [Train] Epoch 115 [100/391] Loss 0.109 Acc 96.31% ActiveBlocks=45
+    [Train] Epoch 115 [150/391] Loss 0.113 Acc 96.11% ActiveBlocks=45
+    [Train] Epoch 115 [200/391] Loss 0.117 Acc 95.95% ActiveBlocks=45
+    [Train] Epoch 115 [250/391] Loss 0.118 Acc 95.95% ActiveBlocks=45
+    [Train] Epoch 115 [300/391] Loss 0.121 Acc 95.83% ActiveBlocks=45
+    [Train] Epoch 115 [350/391] Loss 0.122 Acc 95.78% ActiveBlocks=45
+[Main] Epoch 115 | Test 91.10% | Best 91.10% | TTA@92.1: None | FrozenBlocks 9/54 | Time 41.6s
+    [Train] Epoch 116 [0/391] Loss 0.121 Acc 96.09% ActiveBlocks=45
+    [Train] Epoch 116 [50/391] Loss 0.098 Acc 96.77% ActiveBlocks=45
+    [Train] Epoch 116 [100/391] Loss 0.101 Acc 96.67% ActiveBlocks=45
+    [Train] Epoch 116 [150/391] Loss 0.103 Acc 96.55% ActiveBlocks=45
+    [Train] Epoch 116 [200/391] Loss 0.104 Acc 96.53% ActiveBlocks=45
+    [Train] Epoch 116 [250/391] Loss 0.105 Acc 96.47% ActiveBlocks=45
+    [Train] Epoch 116 [300/391] Loss 0.108 Acc 96.37% ActiveBlocks=45
+    [Train] Epoch 116 [350/391] Loss 0.109 Acc 96.35% ActiveBlocks=45
+[Main] Epoch 116 | Test 90.39% | Best 91.10% | TTA@92.1: None | FrozenBlocks 10/54 | Time 41.4s
+    [Train] Epoch 117 [0/391] Loss 0.075 Acc 97.66% ActiveBlocks=44
+    [Train] Epoch 117 [50/391] Loss 0.100 Acc 96.75% ActiveBlocks=44
+    [Train] Epoch 117 [100/391] Loss 0.105 Acc 96.45% ActiveBlocks=44
+    [Train] Epoch 117 [150/391] Loss 0.102 Acc 96.46% ActiveBlocks=44
+    [Train] Epoch 117 [200/391] Loss 0.102 Acc 96.48% ActiveBlocks=44
+    [Train] Epoch 117 [250/391] Loss 0.103 Acc 96.44% ActiveBlocks=44
+    [Train] Epoch 117 [300/391] Loss 0.105 Acc 96.39% ActiveBlocks=44
+    [Train] Epoch 117 [350/391] Loss 0.107 Acc 96.33% ActiveBlocks=44
+[Main] Epoch 117 | Test 91.07% | Best 91.10% | TTA@92.1: None | FrozenBlocks 10/54 | Time 40.2s
+    [Train] Epoch 118 [0/391] Loss 0.113 Acc 94.53% ActiveBlocks=44
+    [Train] Epoch 118 [50/391] Loss 0.094 Acc 96.80% ActiveBlocks=44
+    [Train] Epoch 118 [100/391] Loss 0.100 Acc 96.58% ActiveBlocks=44
+    [Train] Epoch 118 [150/391] Loss 0.098 Acc 96.59% ActiveBlocks=44
+    [Train] Epoch 118 [200/391] Loss 0.099 Acc 96.55% ActiveBlocks=44
+    [Train] Epoch 118 [250/391] Loss 0.101 Acc 96.50% ActiveBlocks=44
+    [Train] Epoch 118 [300/391] Loss 0.104 Acc 96.42% ActiveBlocks=44
+    [Train] Epoch 118 [350/391] Loss 0.104 Acc 96.41% ActiveBlocks=43
+[Main] Epoch 118 | Test 88.92% | Best 91.10% | TTA@92.1: None | FrozenBlocks 11/54 | Time 39.4s
+    [Train] Epoch 119 [0/391] Loss 0.129 Acc 96.09% ActiveBlocks=43
+    [Train] Epoch 119 [50/391] Loss 0.097 Acc 96.72% ActiveBlocks=43
+    [Train] Epoch 119 [100/391] Loss 0.097 Acc 96.66% ActiveBlocks=43
+    [Train] Epoch 119 [150/391] Loss 0.098 Acc 96.60% ActiveBlocks=43
+    [Train] Epoch 119 [200/391] Loss 0.099 Acc 96.58% ActiveBlocks=43
+    [Train] Epoch 119 [250/391] Loss 0.099 Acc 96.62% ActiveBlocks=43
+    [Train] Epoch 119 [300/391] Loss 0.099 Acc 96.64% ActiveBlocks=43
+    [Train] Epoch 119 [350/391] Loss 0.099 Acc 96.64% ActiveBlocks=43
+[Main] Epoch 119 | Test 90.51% | Best 91.10% | TTA@92.1: None | FrozenBlocks 11/54 | Time 38.7s
+    [Train] Epoch 120 [0/391] Loss 0.038 Acc 99.22% ActiveBlocks=43
+    [Train] Epoch 120 [50/391] Loss 0.086 Acc 97.18% ActiveBlocks=43
+    [Train] Epoch 120 [100/391] Loss 0.092 Acc 97.00% ActiveBlocks=43
+    [Train] Epoch 120 [150/391] Loss 0.095 Acc 96.86% ActiveBlocks=43
+    [Train] Epoch 120 [200/391] Loss 0.095 Acc 96.80% ActiveBlocks=43
+    [Train] Epoch 120 [250/391] Loss 0.096 Acc 96.77% ActiveBlocks=43
+    [Train] Epoch 120 [300/391] Loss 0.096 Acc 96.77% ActiveBlocks=42
+    [Train] Epoch 120 [350/391] Loss 0.096 Acc 96.81% ActiveBlocks=42
+[Main] Epoch 120 | Test 91.15% | Best 91.15% | TTA@92.1: None | FrozenBlocks 12/54 | Time 38.9s
+    [Train] Epoch 121 [0/391] Loss 0.054 Acc 98.44% ActiveBlocks=42
+    [Train] Epoch 121 [50/391] Loss 0.075 Acc 97.49% ActiveBlocks=42
+    [Train] Epoch 121 [100/391] Loss 0.077 Acc 97.50% ActiveBlocks=42
+    [Train] Epoch 121 [150/391] Loss 0.081 Acc 97.38% ActiveBlocks=42
+    [Train] Epoch 121 [200/391] Loss 0.083 Acc 97.28% ActiveBlocks=42
+    [Train] Epoch 121 [250/391] Loss 0.085 Acc 97.22% ActiveBlocks=42
+    [Train] Epoch 121 [300/391] Loss 0.085 Acc 97.21% ActiveBlocks=42
+    [Train] Epoch 121 [350/391] Loss 0.086 Acc 97.18% ActiveBlocks=42
+[Main] Epoch 121 | Test 90.71% | Best 91.15% | TTA@92.1: None | FrozenBlocks 12/54 | Time 37.9s
+    [Train] Epoch 122 [0/391] Loss 0.064 Acc 97.66% ActiveBlocks=42
+    [Train] Epoch 122 [50/391] Loss 0.085 Acc 97.20% ActiveBlocks=42
+    [Train] Epoch 122 [100/391] Loss 0.082 Acc 97.31% ActiveBlocks=42
+    [Train] Epoch 122 [150/391] Loss 0.082 Acc 97.25% ActiveBlocks=42
+    [Train] Epoch 122 [200/391] Loss 0.083 Acc 97.26% ActiveBlocks=42
+    [Train] Epoch 122 [250/391] Loss 0.083 Acc 97.25% ActiveBlocks=42
+    [Train] Epoch 122 [300/391] Loss 0.085 Acc 97.16% ActiveBlocks=41
+    [Train] Epoch 122 [350/391] Loss 0.086 Acc 97.12% ActiveBlocks=41
+[Main] Epoch 122 | Test 90.76% | Best 91.15% | TTA@92.1: None | FrozenBlocks 13/54 | Time 37.7s
+    [Train] Epoch 123 [0/391] Loss 0.085 Acc 96.09% ActiveBlocks=41
+    [Train] Epoch 123 [50/391] Loss 0.067 Acc 97.90% ActiveBlocks=41
+    [Train] Epoch 123 [100/391] Loss 0.070 Acc 97.81% ActiveBlocks=41
+    [Train] Epoch 123 [150/391] Loss 0.073 Acc 97.69% ActiveBlocks=41
+    [Train] Epoch 123 [200/391] Loss 0.076 Acc 97.54% ActiveBlocks=41
+    [Train] Epoch 123 [250/391] Loss 0.077 Acc 97.50% ActiveBlocks=41
+    [Train] Epoch 123 [300/391] Loss 0.080 Acc 97.39% ActiveBlocks=41
+    [Train] Epoch 123 [350/391] Loss 0.081 Acc 97.35% ActiveBlocks=41
+[Main] Epoch 123 | Test 91.24% | Best 91.24% | TTA@92.1: None | FrozenBlocks 13/54 | Time 36.6s
+    [Train] Epoch 124 [0/391] Loss 0.118 Acc 97.66% ActiveBlocks=41
+    [Train] Epoch 124 [50/391] Loss 0.069 Acc 97.79% ActiveBlocks=41
+    [Train] Epoch 124 [100/391] Loss 0.077 Acc 97.51% ActiveBlocks=41
+    [Train] Epoch 124 [150/391] Loss 0.078 Acc 97.41% ActiveBlocks=41
+    [Train] Epoch 124 [200/391] Loss 0.078 Acc 97.37% ActiveBlocks=41
+    [Train] Epoch 124 [250/391] Loss 0.077 Acc 97.39% ActiveBlocks=40
+    [Train] Epoch 124 [300/391] Loss 0.078 Acc 97.40% ActiveBlocks=40
+    [Train] Epoch 124 [350/391] Loss 0.079 Acc 97.37% ActiveBlocks=40
+[Main] Epoch 124 | Test 90.28% | Best 91.24% | TTA@92.1: None | FrozenBlocks 14/54 | Time 36.3s
+    [Train] Epoch 125 [0/391] Loss 0.065 Acc 97.66% ActiveBlocks=40
+    [Train] Epoch 125 [50/391] Loss 0.071 Acc 97.70% ActiveBlocks=40
+    [Train] Epoch 125 [100/391] Loss 0.066 Acc 97.90% ActiveBlocks=40
+    [Train] Epoch 125 [150/391] Loss 0.070 Acc 97.67% ActiveBlocks=40
+    [Train] Epoch 125 [200/391] Loss 0.072 Acc 97.63% ActiveBlocks=40
+    [Train] Epoch 125 [250/391] Loss 0.072 Acc 97.60% ActiveBlocks=40
+    [Train] Epoch 125 [300/391] Loss 0.074 Acc 97.54% ActiveBlocks=40
+    [Train] Epoch 125 [350/391] Loss 0.074 Acc 97.53% ActiveBlocks=40
+[Main] Epoch 125 | Test 90.80% | Best 91.24% | TTA@92.1: None | FrozenBlocks 14/54 | Time 35.9s
+    [Train] Epoch 126 [0/391] Loss 0.067 Acc 98.44% ActiveBlocks=40
+    [Train] Epoch 126 [50/391] Loss 0.058 Acc 98.21% ActiveBlocks=40
+    [Train] Epoch 126 [100/391] Loss 0.059 Acc 98.17% ActiveBlocks=40
+    [Train] Epoch 126 [150/391] Loss 0.060 Acc 98.11% ActiveBlocks=40
+    [Train] Epoch 126 [200/391] Loss 0.062 Acc 98.03% ActiveBlocks=39
+    [Train] Epoch 126 [250/391] Loss 0.065 Acc 97.91% ActiveBlocks=39
+    [Train] Epoch 126 [300/391] Loss 0.067 Acc 97.82% ActiveBlocks=39
+    [Train] Epoch 126 [350/391] Loss 0.067 Acc 97.83% ActiveBlocks=39
+[Main] Epoch 126 | Test 90.93% | Best 91.24% | TTA@92.1: None | FrozenBlocks 15/54 | Time 35.5s
+    [Train] Epoch 127 [0/391] Loss 0.052 Acc 98.44% ActiveBlocks=39
+    [Train] Epoch 127 [50/391] Loss 0.068 Acc 97.89% ActiveBlocks=39
+    [Train] Epoch 127 [100/391] Loss 0.066 Acc 97.82% ActiveBlocks=39
+    [Train] Epoch 127 [150/391] Loss 0.068 Acc 97.76% ActiveBlocks=39
+    [Train] Epoch 127 [200/391] Loss 0.069 Acc 97.75% ActiveBlocks=39
+    [Train] Epoch 127 [250/391] Loss 0.069 Acc 97.69% ActiveBlocks=39
+    [Train] Epoch 127 [300/391] Loss 0.069 Acc 97.71% ActiveBlocks=39
+    [Train] Epoch 127 [350/391] Loss 0.070 Acc 97.67% ActiveBlocks=39
+[Main] Epoch 127 | Test 90.84% | Best 91.24% | TTA@92.1: None | FrozenBlocks 15/54 | Time 34.4s
+    [Train] Epoch 128 [0/391] Loss 0.038 Acc 97.66% ActiveBlocks=39
+    [Train] Epoch 128 [50/391] Loss 0.055 Acc 98.22% ActiveBlocks=39
+    [Train] Epoch 128 [100/391] Loss 0.060 Acc 97.93% ActiveBlocks=39
+    [Train] Epoch 128 [150/391] Loss 0.062 Acc 97.88% ActiveBlocks=38
+    [Train] Epoch 128 [200/391] Loss 0.061 Acc 97.96% ActiveBlocks=38
+    [Train] Epoch 128 [250/391] Loss 0.061 Acc 97.99% ActiveBlocks=38
+    [Train] Epoch 128 [300/391] Loss 0.061 Acc 98.01% ActiveBlocks=38
+    [Train] Epoch 128 [350/391] Loss 0.061 Acc 98.01% ActiveBlocks=38
+[Main] Epoch 128 | Test 91.14% | Best 91.24% | TTA@92.1: None | FrozenBlocks 16/54 | Time 33.6s
+    [Train] Epoch 129 [0/391] Loss 0.082 Acc 96.09% ActiveBlocks=38
+    [Train] Epoch 129 [50/391] Loss 0.063 Acc 97.87% ActiveBlocks=38
+    [Train] Epoch 129 [100/391] Loss 0.059 Acc 98.00% ActiveBlocks=38
+    [Train] Epoch 129 [150/391] Loss 0.057 Acc 98.08% ActiveBlocks=38
+    [Train] Epoch 129 [200/391] Loss 0.058 Acc 98.08% ActiveBlocks=38
+    [Train] Epoch 129 [250/391] Loss 0.057 Acc 98.08% ActiveBlocks=38
+    [Train] Epoch 129 [300/391] Loss 0.058 Acc 98.06% ActiveBlocks=38
+    [Train] Epoch 129 [350/391] Loss 0.057 Acc 98.07% ActiveBlocks=38
+[Main] Epoch 129 | Test 91.81% | Best 91.81% | TTA@92.1: None | FrozenBlocks 16/54 | Time 33.6s
+    [Train] Epoch 130 [0/391] Loss 0.025 Acc 99.22% ActiveBlocks=38
+    [Train] Epoch 130 [50/391] Loss 0.053 Acc 98.35% ActiveBlocks=38
+    [Train] Epoch 130 [100/391] Loss 0.050 Acc 98.43% ActiveBlocks=37
+    [Train] Epoch 130 [150/391] Loss 0.049 Acc 98.42% ActiveBlocks=37
+    [Train] Epoch 130 [200/391] Loss 0.051 Acc 98.37% ActiveBlocks=37
+    [Train] Epoch 130 [250/391] Loss 0.051 Acc 98.35% ActiveBlocks=37
+    [Train] Epoch 130 [300/391] Loss 0.053 Acc 98.29% ActiveBlocks=37
+    [Train] Epoch 130 [350/391] Loss 0.054 Acc 98.25% ActiveBlocks=37
+[Main] Epoch 130 | Test 92.50% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 17/54 | Time 32.7s
+    [Train] Epoch 131 [0/391] Loss 0.027 Acc 99.22% ActiveBlocks=37
+    [Train] Epoch 131 [50/391] Loss 0.051 Acc 98.31% ActiveBlocks=37
+    [Train] Epoch 131 [100/391] Loss 0.047 Acc 98.47% ActiveBlocks=37
+    [Train] Epoch 131 [150/391] Loss 0.047 Acc 98.54% ActiveBlocks=37
+    [Train] Epoch 131 [200/391] Loss 0.045 Acc 98.60% ActiveBlocks=37
+    [Train] Epoch 131 [250/391] Loss 0.047 Acc 98.53% ActiveBlocks=37
+    [Train] Epoch 131 [300/391] Loss 0.048 Acc 98.52% ActiveBlocks=37
+    [Train] Epoch 131 [350/391] Loss 0.048 Acc 98.49% ActiveBlocks=37
+[Main] Epoch 131 | Test 91.02% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 17/54 | Time 32.5s
+    [Train] Epoch 132 [0/391] Loss 0.056 Acc 96.88% ActiveBlocks=37
+    [Train] Epoch 132 [50/391] Loss 0.052 Acc 98.36% ActiveBlocks=36
+    [Train] Epoch 132 [100/391] Loss 0.048 Acc 98.48% ActiveBlocks=36
+    [Train] Epoch 132 [150/391] Loss 0.047 Acc 98.49% ActiveBlocks=36
+    [Train] Epoch 132 [200/391] Loss 0.048 Acc 98.47% ActiveBlocks=36
+    [Train] Epoch 132 [250/391] Loss 0.048 Acc 98.46% ActiveBlocks=36
+    [Train] Epoch 132 [300/391] Loss 0.048 Acc 98.45% ActiveBlocks=36
+    [Train] Epoch 132 [350/391] Loss 0.049 Acc 98.45% ActiveBlocks=36
+[Main] Epoch 132 | Test 92.39% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 18/54 | Time 30.7s
+    [Train] Epoch 133 [0/391] Loss 0.034 Acc 99.22% ActiveBlocks=36
+    [Train] Epoch 133 [50/391] Loss 0.037 Acc 98.99% ActiveBlocks=36
+    [Train] Epoch 133 [100/391] Loss 0.039 Acc 98.83% ActiveBlocks=36
+    [Train] Epoch 133 [150/391] Loss 0.041 Acc 98.69% ActiveBlocks=36
+    [Train] Epoch 133 [200/391] Loss 0.043 Acc 98.69% ActiveBlocks=36
+    [Train] Epoch 133 [250/391] Loss 0.043 Acc 98.65% ActiveBlocks=36
+    [Train] Epoch 133 [300/391] Loss 0.044 Acc 98.60% ActiveBlocks=36
+    [Train] Epoch 133 [350/391] Loss 0.046 Acc 98.55% ActiveBlocks=36
+[Main] Epoch 133 | Test 91.14% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 19/54 | Time 30.2s
+    [Train] Epoch 134 [0/391] Loss 0.033 Acc 99.22% ActiveBlocks=35
+    [Train] Epoch 134 [50/391] Loss 0.050 Acc 98.30% ActiveBlocks=35
+    [Train] Epoch 134 [100/391] Loss 0.046 Acc 98.44% ActiveBlocks=35
+    [Train] Epoch 134 [150/391] Loss 0.045 Acc 98.48% ActiveBlocks=35
+    [Train] Epoch 134 [200/391] Loss 0.045 Acc 98.50% ActiveBlocks=35
+    [Train] Epoch 134 [250/391] Loss 0.045 Acc 98.53% ActiveBlocks=35
+    [Train] Epoch 134 [300/391] Loss 0.044 Acc 98.59% ActiveBlocks=35
+    [Train] Epoch 134 [350/391] Loss 0.046 Acc 98.53% ActiveBlocks=35
+[Main] Epoch 134 | Test 91.83% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 19/54 | Time 29.6s
+    [Train] Epoch 135 [0/391] Loss 0.057 Acc 98.44% ActiveBlocks=35
+    [Train] Epoch 135 [50/391] Loss 0.045 Acc 98.62% ActiveBlocks=35
+    [Train] Epoch 135 [100/391] Loss 0.042 Acc 98.72% ActiveBlocks=35
+    [Train] Epoch 135 [150/391] Loss 0.041 Acc 98.78% ActiveBlocks=35
+    [Train] Epoch 135 [200/391] Loss 0.041 Acc 98.76% ActiveBlocks=35
+    [Train] Epoch 135 [250/391] Loss 0.042 Acc 98.71% ActiveBlocks=35
+    [Train] Epoch 135 [300/391] Loss 0.042 Acc 98.69% ActiveBlocks=35
+    [Train] Epoch 135 [350/391] Loss 0.042 Acc 98.66% ActiveBlocks=34
+[Main] Epoch 135 | Test 92.41% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 20/54 | Time 29.8s
+    [Train] Epoch 136 [0/391] Loss 0.085 Acc 98.44% ActiveBlocks=34
+    [Train] Epoch 136 [50/391] Loss 0.040 Acc 98.71% ActiveBlocks=34
+    [Train] Epoch 136 [100/391] Loss 0.042 Acc 98.66% ActiveBlocks=34
+    [Train] Epoch 136 [150/391] Loss 0.040 Acc 98.71% ActiveBlocks=34
+    [Train] Epoch 136 [200/391] Loss 0.042 Acc 98.64% ActiveBlocks=34
+    [Train] Epoch 136 [250/391] Loss 0.042 Acc 98.69% ActiveBlocks=34
+    [Train] Epoch 136 [300/391] Loss 0.041 Acc 98.72% ActiveBlocks=34
+    [Train] Epoch 136 [350/391] Loss 0.041 Acc 98.73% ActiveBlocks=34
+[Main] Epoch 136 | Test 92.04% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 20/54 | Time 29.4s
+    [Train] Epoch 137 [0/391] Loss 0.072 Acc 98.44% ActiveBlocks=34
+    [Train] Epoch 137 [50/391] Loss 0.038 Acc 98.87% ActiveBlocks=34
+    [Train] Epoch 137 [100/391] Loss 0.038 Acc 98.89% ActiveBlocks=34
+    [Train] Epoch 137 [150/391] Loss 0.037 Acc 98.87% ActiveBlocks=34
+    [Train] Epoch 137 [200/391] Loss 0.036 Acc 98.90% ActiveBlocks=34
+    [Train] Epoch 137 [250/391] Loss 0.036 Acc 98.88% ActiveBlocks=34
+    [Train] Epoch 137 [300/391] Loss 0.037 Acc 98.85% ActiveBlocks=33
+    [Train] Epoch 137 [350/391] Loss 0.037 Acc 98.82% ActiveBlocks=33
+[Main] Epoch 137 | Test 91.29% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 21/54 | Time 29.2s
+    [Train] Epoch 138 [0/391] Loss 0.067 Acc 97.66% ActiveBlocks=33
+    [Train] Epoch 138 [50/391] Loss 0.038 Acc 98.82% ActiveBlocks=33
+    [Train] Epoch 138 [100/391] Loss 0.038 Acc 98.88% ActiveBlocks=33
+    [Train] Epoch 138 [150/391] Loss 0.039 Acc 98.82% ActiveBlocks=33
+    [Train] Epoch 138 [200/391] Loss 0.037 Acc 98.86% ActiveBlocks=33
+    [Train] Epoch 138 [250/391] Loss 0.037 Acc 98.88% ActiveBlocks=33
+    [Train] Epoch 138 [300/391] Loss 0.036 Acc 98.89% ActiveBlocks=33
+    [Train] Epoch 138 [350/391] Loss 0.036 Acc 98.88% ActiveBlocks=33
+[Main] Epoch 138 | Test 92.11% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 21/54 | Time 29.0s
+    [Train] Epoch 139 [0/391] Loss 0.017 Acc 100.00% ActiveBlocks=33
+    [Train] Epoch 139 [50/391] Loss 0.033 Acc 99.11% ActiveBlocks=33
+    [Train] Epoch 139 [100/391] Loss 0.032 Acc 99.07% ActiveBlocks=33
+    [Train] Epoch 139 [150/391] Loss 0.033 Acc 99.03% ActiveBlocks=33
+    [Train] Epoch 139 [200/391] Loss 0.032 Acc 99.03% ActiveBlocks=33
+    [Train] Epoch 139 [250/391] Loss 0.033 Acc 99.02% ActiveBlocks=32
+    [Train] Epoch 139 [300/391] Loss 0.033 Acc 99.01% ActiveBlocks=32
+    [Train] Epoch 139 [350/391] Loss 0.034 Acc 98.99% ActiveBlocks=32
+[Main] Epoch 139 | Test 92.28% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 22/54 | Time 29.3s
+    [Train] Epoch 140 [0/391] Loss 0.031 Acc 100.00% ActiveBlocks=32
+    [Train] Epoch 140 [50/391] Loss 0.029 Acc 99.02% ActiveBlocks=32
+    [Train] Epoch 140 [100/391] Loss 0.029 Acc 99.13% ActiveBlocks=32
+    [Train] Epoch 140 [150/391] Loss 0.028 Acc 99.17% ActiveBlocks=32
+    [Train] Epoch 140 [200/391] Loss 0.030 Acc 99.10% ActiveBlocks=32
+    [Train] Epoch 140 [250/391] Loss 0.029 Acc 99.17% ActiveBlocks=32
+    [Train] Epoch 140 [300/391] Loss 0.029 Acc 99.11% ActiveBlocks=32
+    [Train] Epoch 140 [350/391] Loss 0.029 Acc 99.12% ActiveBlocks=32
+[Main] Epoch 140 | Test 92.08% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 22/54 | Time 28.5s
+    [Train] Epoch 141 [0/391] Loss 0.023 Acc 99.22% ActiveBlocks=32
+    [Train] Epoch 141 [50/391] Loss 0.030 Acc 99.05% ActiveBlocks=32
+    [Train] Epoch 141 [100/391] Loss 0.033 Acc 99.02% ActiveBlocks=32
+    [Train] Epoch 141 [150/391] Loss 0.032 Acc 99.03% ActiveBlocks=32
+    [Train] Epoch 141 [200/391] Loss 0.032 Acc 99.04% ActiveBlocks=31
+    [Train] Epoch 141 [250/391] Loss 0.032 Acc 99.06% ActiveBlocks=31
+    [Train] Epoch 141 [300/391] Loss 0.032 Acc 99.07% ActiveBlocks=31
+    [Train] Epoch 141 [350/391] Loss 0.032 Acc 99.09% ActiveBlocks=31
+[Main] Epoch 141 | Test 92.07% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 23/54 | Time 28.0s
+    [Train] Epoch 142 [0/391] Loss 0.018 Acc 100.00% ActiveBlocks=31
+    [Train] Epoch 142 [50/391] Loss 0.027 Acc 99.25% ActiveBlocks=31
+    [Train] Epoch 142 [100/391] Loss 0.030 Acc 99.09% ActiveBlocks=31
+    [Train] Epoch 142 [150/391] Loss 0.029 Acc 99.11% ActiveBlocks=31
+    [Train] Epoch 142 [200/391] Loss 0.029 Acc 99.13% ActiveBlocks=31
+    [Train] Epoch 142 [250/391] Loss 0.029 Acc 99.16% ActiveBlocks=31
+    [Train] Epoch 142 [300/391] Loss 0.029 Acc 99.15% ActiveBlocks=31
+    [Train] Epoch 142 [350/391] Loss 0.028 Acc 99.14% ActiveBlocks=31
+[Main] Epoch 142 | Test 91.91% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 23/54 | Time 27.9s
+    [Train] Epoch 143 [0/391] Loss 0.035 Acc 98.44% ActiveBlocks=31
+    [Train] Epoch 143 [50/391] Loss 0.025 Acc 99.26% ActiveBlocks=31
+    [Train] Epoch 143 [100/391] Loss 0.027 Acc 99.17% ActiveBlocks=31
+    [Train] Epoch 143 [150/391] Loss 0.026 Acc 99.20% ActiveBlocks=31
+    [Train] Epoch 143 [200/391] Loss 0.027 Acc 99.19% ActiveBlocks=30
+    [Train] Epoch 143 [250/391] Loss 0.027 Acc 99.17% ActiveBlocks=30
+    [Train] Epoch 143 [300/391] Loss 0.028 Acc 99.15% ActiveBlocks=30
+    [Train] Epoch 143 [350/391] Loss 0.028 Acc 99.17% ActiveBlocks=30
+[Main] Epoch 143 | Test 92.41% | Best 92.50% | TTA@92.1: 6518.230856180191 | FrozenBlocks 24/54 | Time 27.8s
+    [Train] Epoch 144 [0/391] Loss 0.010 Acc 100.00% ActiveBlocks=30
+    [Train] Epoch 144 [50/391] Loss 0.019 Acc 99.56% ActiveBlocks=30
+    [Train] Epoch 144 [100/391] Loss 0.023 Acc 99.39% ActiveBlocks=30
+    [Train] Epoch 144 [150/391] Loss 0.023 Acc 99.36% ActiveBlocks=30
+    [Train] Epoch 144 [200/391] Loss 0.023 Acc 99.38% ActiveBlocks=30
+    [Train] Epoch 144 [250/391] Loss 0.023 Acc 99.35% ActiveBlocks=30
+    [Train] Epoch 144 [300/391] Loss 0.024 Acc 99.32% ActiveBlocks=30
+    [Train] Epoch 144 [350/391] Loss 0.024 Acc 99.29% ActiveBlocks=30
+[Main] Epoch 144 | Test 92.66% | Best 92.66% | TTA@92.1: 6518.230856180191 | FrozenBlocks 24/54 | Time 27.6s
+    [Train] Epoch 145 [0/391] Loss 0.014 Acc 99.22% ActiveBlocks=30
+    [Train] Epoch 145 [50/391] Loss 0.025 Acc 99.37% ActiveBlocks=30
+    [Train] Epoch 145 [100/391] Loss 0.024 Acc 99.39% ActiveBlocks=30
+    [Train] Epoch 145 [150/391] Loss 0.023 Acc 99.39% ActiveBlocks=29
+    [Train] Epoch 145 [200/391] Loss 0.025 Acc 99.32% ActiveBlocks=29
+    [Train] Epoch 145 [250/391] Loss 0.024 Acc 99.34% ActiveBlocks=29
+    [Train] Epoch 145 [300/391] Loss 0.024 Acc 99.36% ActiveBlocks=29
+    [Train] Epoch 145 [350/391] Loss 0.024 Acc 99.33% ActiveBlocks=29
+[Main] Epoch 145 | Test 92.43% | Best 92.66% | TTA@92.1: 6518.230856180191 | FrozenBlocks 25/54 | Time 27.4s
+    [Train] Epoch 146 [0/391] Loss 0.017 Acc 100.00% ActiveBlocks=29
+    [Train] Epoch 146 [50/391] Loss 0.022 Acc 99.45% ActiveBlocks=29
+    [Train] Epoch 146 [100/391] Loss 0.022 Acc 99.40% ActiveBlocks=29
+    [Train] Epoch 146 [150/391] Loss 0.023 Acc 99.41% ActiveBlocks=29
+    [Train] Epoch 146 [200/391] Loss 0.023 Acc 99.41% ActiveBlocks=29
+    [Train] Epoch 146 [250/391] Loss 0.023 Acc 99.39% ActiveBlocks=29
+    [Train] Epoch 146 [300/391] Loss 0.023 Acc 99.38% ActiveBlocks=29
+    [Train] Epoch 146 [350/391] Loss 0.024 Acc 99.36% ActiveBlocks=29
+[Main] Epoch 146 | Test 92.33% | Best 92.66% | TTA@92.1: 6518.230856180191 | FrozenBlocks 25/54 | Time 27.6s
+    [Train] Epoch 147 [0/391] Loss 0.060 Acc 99.22% ActiveBlocks=29
+    [Train] Epoch 147 [50/391] Loss 0.031 Acc 99.02% ActiveBlocks=29
+    [Train] Epoch 147 [100/391] Loss 0.028 Acc 99.16% ActiveBlocks=28
+    [Train] Epoch 147 [150/391] Loss 0.025 Acc 99.27% ActiveBlocks=28
+    [Train] Epoch 147 [200/391] Loss 0.024 Acc 99.32% ActiveBlocks=28
+    [Train] Epoch 147 [250/391] Loss 0.024 Acc 99.33% ActiveBlocks=28
+    [Train] Epoch 147 [300/391] Loss 0.024 Acc 99.33% ActiveBlocks=28
+    [Train] Epoch 147 [350/391] Loss 0.024 Acc 99.33% ActiveBlocks=28
+[Main] Epoch 147 | Test 92.15% | Best 92.66% | TTA@92.1: 6518.230856180191 | FrozenBlocks 26/54 | Time 26.8s
+    [Train] Epoch 148 [0/391] Loss 0.008 Acc 100.00% ActiveBlocks=28
+    [Train] Epoch 148 [50/391] Loss 0.021 Acc 99.46% ActiveBlocks=28
+    [Train] Epoch 148 [100/391] Loss 0.025 Acc 99.23% ActiveBlocks=28
+    [Train] Epoch 148 [150/391] Loss 0.024 Acc 99.29% ActiveBlocks=28
+    [Train] Epoch 148 [200/391] Loss 0.025 Acc 99.30% ActiveBlocks=28
+    [Train] Epoch 148 [250/391] Loss 0.025 Acc 99.27% ActiveBlocks=28
+    [Train] Epoch 148 [300/391] Loss 0.025 Acc 99.30% ActiveBlocks=28
+    [Train] Epoch 148 [350/391] Loss 0.024 Acc 99.31% ActiveBlocks=28
+[Main] Epoch 148 | Test 92.25% | Best 92.66% | TTA@92.1: 6518.230856180191 | FrozenBlocks 26/54 | Time 26.6s
+    [Train] Epoch 149 [0/391] Loss 0.009 Acc 100.00% ActiveBlocks=28
+    [Train] Epoch 149 [50/391] Loss 0.019 Acc 99.56% ActiveBlocks=27
+    [Train] Epoch 149 [100/391] Loss 0.019 Acc 99.50% ActiveBlocks=27
+    [Train] Epoch 149 [150/391] Loss 0.019 Acc 99.51% ActiveBlocks=27
+    [Train] Epoch 149 [200/391] Loss 0.020 Acc 99.49% ActiveBlocks=27
+    [Train] Epoch 149 [250/391] Loss 0.020 Acc 99.48% ActiveBlocks=27
+    [Train] Epoch 149 [300/391] Loss 0.019 Acc 99.50% ActiveBlocks=27
+    [Train] Epoch 149 [350/391] Loss 0.020 Acc 99.47% ActiveBlocks=27
+[Main] Epoch 149 | Test 92.74% | Best 92.74% | TTA@92.1: 6518.230856180191 | FrozenBlocks 27/54 | Time 25.9s
+    [Train] Epoch 150 [0/391] Loss 0.009 Acc 100.00% ActiveBlocks=27
+    [Train] Epoch 150 [50/391] Loss 0.015 Acc 99.72% ActiveBlocks=27
+    [Train] Epoch 150 [100/391] Loss 0.018 Acc 99.61% ActiveBlocks=27
+    [Train] Epoch 150 [150/391] Loss 0.019 Acc 99.53% ActiveBlocks=27
+    [Train] Epoch 150 [200/391] Loss 0.020 Acc 99.49% ActiveBlocks=27
+    [Train] Epoch 150 [250/391] Loss 0.020 Acc 99.49% ActiveBlocks=27
+    [Train] Epoch 150 [300/391] Loss 0.021 Acc 99.47% ActiveBlocks=27
+    [Train] Epoch 150 [350/391] Loss 0.021 Acc 99.45% ActiveBlocks=27
+[Main] Epoch 150 | Test 92.63% | Best 92.74% | TTA@92.1: 6518.230856180191 | FrozenBlocks 28/54 | Time 26.1s
+    [Train] Epoch 151 [0/391] Loss 0.012 Acc 100.00% ActiveBlocks=26
+    [Train] Epoch 151 [50/391] Loss 0.013 Acc 99.71% ActiveBlocks=26
+    [Train] Epoch 151 [100/391] Loss 0.014 Acc 99.64% ActiveBlocks=26
+    [Train] Epoch 151 [150/391] Loss 0.015 Acc 99.60% ActiveBlocks=26
+    [Train] Epoch 151 [200/391] Loss 0.017 Acc 99.55% ActiveBlocks=26
+    [Train] Epoch 151 [250/391] Loss 0.018 Acc 99.53% ActiveBlocks=26
+    [Train] Epoch 151 [300/391] Loss 0.018 Acc 99.54% ActiveBlocks=26
+    [Train] Epoch 151 [350/391] Loss 0.018 Acc 99.52% ActiveBlocks=26
+[Main] Epoch 151 | Test 92.73% | Best 92.74% | TTA@92.1: 6518.230856180191 | FrozenBlocks 28/54 | Time 26.0s
+    [Train] Epoch 152 [0/391] Loss 0.016 Acc 99.22% ActiveBlocks=26
+    [Train] Epoch 152 [50/391] Loss 0.020 Acc 99.40% ActiveBlocks=26
+    [Train] Epoch 152 [100/391] Loss 0.019 Acc 99.47% ActiveBlocks=26
+    [Train] Epoch 152 [150/391] Loss 0.018 Acc 99.51% ActiveBlocks=26
+    [Train] Epoch 152 [200/391] Loss 0.021 Acc 99.39% ActiveBlocks=26
+    [Train] Epoch 152 [250/391] Loss 0.021 Acc 99.41% ActiveBlocks=26
+    [Train] Epoch 152 [300/391] Loss 0.021 Acc 99.42% ActiveBlocks=26
+    [Train] Epoch 152 [350/391] Loss 0.021 Acc 99.42% ActiveBlocks=25
+[Main] Epoch 152 | Test 92.32% | Best 92.74% | TTA@92.1: 6518.230856180191 | FrozenBlocks 29/54 | Time 26.1s
+    [Train] Epoch 153 [0/391] Loss 0.033 Acc 99.22% ActiveBlocks=25
+    [Train] Epoch 153 [50/391] Loss 0.017 Acc 99.57% ActiveBlocks=25
+    [Train] Epoch 153 [100/391] Loss 0.016 Acc 99.64% ActiveBlocks=25
+    [Train] Epoch 153 [150/391] Loss 0.017 Acc 99.61% ActiveBlocks=25
+    [Train] Epoch 153 [200/391] Loss 0.017 Acc 99.56% ActiveBlocks=25
+    [Train] Epoch 153 [250/391] Loss 0.017 Acc 99.57% ActiveBlocks=25
+    [Train] Epoch 153 [300/391] Loss 0.017 Acc 99.57% ActiveBlocks=25
+    [Train] Epoch 153 [350/391] Loss 0.018 Acc 99.55% ActiveBlocks=25
+[Main] Epoch 153 | Test 92.92% | Best 92.92% | TTA@92.1: 6518.230856180191 | FrozenBlocks 29/54 | Time 25.6s
+    [Train] Epoch 154 [0/391] Loss 0.007 Acc 100.00% ActiveBlocks=25
+    [Train] Epoch 154 [50/391] Loss 0.019 Acc 99.51% ActiveBlocks=25
+    [Train] Epoch 154 [100/391] Loss 0.019 Acc 99.53% ActiveBlocks=25
+    [Train] Epoch 154 [150/391] Loss 0.018 Acc 99.53% ActiveBlocks=25
+    [Train] Epoch 154 [200/391] Loss 0.019 Acc 99.52% ActiveBlocks=25
+    [Train] Epoch 154 [250/391] Loss 0.019 Acc 99.50% ActiveBlocks=25
+    [Train] Epoch 154 [300/391] Loss 0.018 Acc 99.52% ActiveBlocks=24
+    [Train] Epoch 154 [350/391] Loss 0.018 Acc 99.53% ActiveBlocks=24
+[Main] Epoch 154 | Test 92.82% | Best 92.92% | TTA@92.1: 6518.230856180191 | FrozenBlocks 30/54 | Time 24.8s
+    [Train] Epoch 155 [0/391] Loss 0.019 Acc 99.22% ActiveBlocks=24
+    [Train] Epoch 155 [50/391] Loss 0.017 Acc 99.63% ActiveBlocks=24
+    [Train] Epoch 155 [100/391] Loss 0.017 Acc 99.61% ActiveBlocks=24
+    [Train] Epoch 155 [150/391] Loss 0.017 Acc 99.58% ActiveBlocks=24
+    [Train] Epoch 155 [200/391] Loss 0.016 Acc 99.58% ActiveBlocks=24
+    [Train] Epoch 155 [250/391] Loss 0.016 Acc 99.59% ActiveBlocks=24
+    [Train] Epoch 155 [300/391] Loss 0.016 Acc 99.62% ActiveBlocks=24
+    [Train] Epoch 155 [350/391] Loss 0.016 Acc 99.62% ActiveBlocks=24
+[Main] Epoch 155 | Test 92.82% | Best 92.92% | TTA@92.1: 6518.230856180191 | FrozenBlocks 30/54 | Time 24.2s
+    [Train] Epoch 156 [0/391] Loss 0.025 Acc 99.22% ActiveBlocks=24
+    [Train] Epoch 156 [50/391] Loss 0.016 Acc 99.65% ActiveBlocks=24
+    [Train] Epoch 156 [100/391] Loss 0.015 Acc 99.70% ActiveBlocks=24
+    [Train] Epoch 156 [150/391] Loss 0.014 Acc 99.71% ActiveBlocks=24
+    [Train] Epoch 156 [200/391] Loss 0.015 Acc 99.68% ActiveBlocks=24
+    [Train] Epoch 156 [250/391] Loss 0.015 Acc 99.65% ActiveBlocks=23
+    [Train] Epoch 156 [300/391] Loss 0.015 Acc 99.64% ActiveBlocks=23
+    [Train] Epoch 156 [350/391] Loss 0.015 Acc 99.63% ActiveBlocks=23
+[Main] Epoch 156 | Test 92.72% | Best 92.92% | TTA@92.1: 6518.230856180191 | FrozenBlocks 31/54 | Time 24.5s
+    [Train] Epoch 157 [0/391] Loss 0.053 Acc 97.66% ActiveBlocks=23
+    [Train] Epoch 157 [50/391] Loss 0.021 Acc 99.42% ActiveBlocks=23
+    [Train] Epoch 157 [100/391] Loss 0.020 Acc 99.46% ActiveBlocks=23
+    [Train] Epoch 157 [150/391] Loss 0.018 Acc 99.52% ActiveBlocks=23
+    [Train] Epoch 157 [200/391] Loss 0.017 Acc 99.56% ActiveBlocks=23
+    [Train] Epoch 157 [250/391] Loss 0.016 Acc 99.59% ActiveBlocks=23
+    [Train] Epoch 157 [300/391] Loss 0.016 Acc 99.60% ActiveBlocks=23
+    [Train] Epoch 157 [350/391] Loss 0.016 Acc 99.59% ActiveBlocks=23
+[Main] Epoch 157 | Test 92.48% | Best 92.92% | TTA@92.1: 6518.230856180191 | FrozenBlocks 31/54 | Time 24.5s
+    [Train] Epoch 158 [0/391] Loss 0.009 Acc 100.00% ActiveBlocks=23
+    [Train] Epoch 158 [50/391] Loss 0.015 Acc 99.66% ActiveBlocks=23
+    [Train] Epoch 158 [100/391] Loss 0.016 Acc 99.58% ActiveBlocks=23
+    [Train] Epoch 158 [150/391] Loss 0.016 Acc 99.60% ActiveBlocks=23
+    [Train] Epoch 158 [200/391] Loss 0.016 Acc 99.57% ActiveBlocks=22
+    [Train] Epoch 158 [250/391] Loss 0.016 Acc 99.59% ActiveBlocks=22
+    [Train] Epoch 158 [300/391] Loss 0.016 Acc 99.61% ActiveBlocks=22
+    [Train] Epoch 158 [350/391] Loss 0.015 Acc 99.61% ActiveBlocks=22
+[Main] Epoch 158 | Test 92.67% | Best 92.92% | TTA@92.1: 6518.230856180191 | FrozenBlocks 32/54 | Time 24.4s
+    [Train] Epoch 159 [0/391] Loss 0.018 Acc 99.22% ActiveBlocks=22
+    [Train] Epoch 159 [50/391] Loss 0.013 Acc 99.62% ActiveBlocks=22
+    [Train] Epoch 159 [100/391] Loss 0.013 Acc 99.64% ActiveBlocks=22
+    [Train] Epoch 159 [150/391] Loss 0.013 Acc 99.67% ActiveBlocks=22
+    [Train] Epoch 159 [200/391] Loss 0.013 Acc 99.70% ActiveBlocks=22
+    [Train] Epoch 159 [250/391] Loss 0.013 Acc 99.69% ActiveBlocks=22
+    [Train] Epoch 159 [300/391] Loss 0.013 Acc 99.68% ActiveBlocks=22
+    [Train] Epoch 159 [350/391] Loss 0.013 Acc 99.70% ActiveBlocks=22
+[Main] Epoch 159 | Test 92.79% | Best 92.92% | TTA@92.1: 6518.230856180191 | FrozenBlocks 32/54 | Time 23.9s
+    [Train] Epoch 160 [0/391] Loss 0.005 Acc 100.00% ActiveBlocks=22
+    [Train] Epoch 160 [50/391] Loss 0.013 Acc 99.69% ActiveBlocks=22
+    [Train] Epoch 160 [100/391] Loss 0.013 Acc 99.71% ActiveBlocks=22
+    [Train] Epoch 160 [150/391] Loss 0.014 Acc 99.66% ActiveBlocks=21
+    [Train] Epoch 160 [200/391] Loss 0.013 Acc 99.69% ActiveBlocks=21
+    [Train] Epoch 160 [250/391] Loss 0.013 Acc 99.69% ActiveBlocks=21
+    [Train] Epoch 160 [300/391] Loss 0.014 Acc 99.66% ActiveBlocks=21
+    [Train] Epoch 160 [350/391] Loss 0.014 Acc 99.66% ActiveBlocks=21
+[Main] Epoch 160 | Test 92.79% | Best 92.92% | TTA@92.1: 6518.230856180191 | FrozenBlocks 33/54 | Time 23.3s
+    [Train] Epoch 161 [0/391] Loss 0.004 Acc 100.00% ActiveBlocks=21
+    [Train] Epoch 161 [50/391] Loss 0.013 Acc 99.68% ActiveBlocks=21
+    [Train] Epoch 161 [100/391] Loss 0.014 Acc 99.69% ActiveBlocks=21
+    [Train] Epoch 161 [150/391] Loss 0.014 Acc 99.67% ActiveBlocks=21
+    [Train] Epoch 161 [200/391] Loss 0.013 Acc 99.72% ActiveBlocks=21
+    [Train] Epoch 161 [250/391] Loss 0.012 Acc 99.75% ActiveBlocks=21
+    [Train] Epoch 161 [300/391] Loss 0.012 Acc 99.75% ActiveBlocks=21
+    [Train] Epoch 161 [350/391] Loss 0.012 Acc 99.75% ActiveBlocks=21
+[Main] Epoch 161 | Test 92.56% | Best 92.92% | TTA@92.1: 6518.230856180191 | FrozenBlocks 33/54 | Time 23.6s
+    [Train] Epoch 162 [0/391] Loss 0.052 Acc 99.22% ActiveBlocks=21
+    [Train] Epoch 162 [50/391] Loss 0.016 Acc 99.56% ActiveBlocks=21
+    [Train] Epoch 162 [100/391] Loss 0.014 Acc 99.61% ActiveBlocks=21
+    [Train] Epoch 162 [150/391] Loss 0.013 Acc 99.65% ActiveBlocks=20
+    [Train] Epoch 162 [200/391] Loss 0.013 Acc 99.64% ActiveBlocks=20
+    [Train] Epoch 162 [250/391] Loss 0.013 Acc 99.65% ActiveBlocks=20
+    [Train] Epoch 162 [300/391] Loss 0.013 Acc 99.67% ActiveBlocks=20
+    [Train] Epoch 162 [350/391] Loss 0.013 Acc 99.67% ActiveBlocks=20
+[Main] Epoch 162 | Test 92.99% | Best 92.99% | TTA@92.1: 6518.230856180191 | FrozenBlocks 34/54 | Time 22.8s
+    [Train] Epoch 163 [0/391] Loss 0.013 Acc 99.22% ActiveBlocks=20
+    [Train] Epoch 163 [50/391] Loss 0.013 Acc 99.66% ActiveBlocks=20
+    [Train] Epoch 163 [100/391] Loss 0.012 Acc 99.71% ActiveBlocks=20
+    [Train] Epoch 163 [150/391] Loss 0.011 Acc 99.72% ActiveBlocks=20
+    [Train] Epoch 163 [200/391] Loss 0.012 Acc 99.68% ActiveBlocks=20
+    [Train] Epoch 163 [250/391] Loss 0.013 Acc 99.67% ActiveBlocks=20
+    [Train] Epoch 163 [300/391] Loss 0.012 Acc 99.67% ActiveBlocks=20
+    [Train] Epoch 163 [350/391] Loss 0.012 Acc 99.68% ActiveBlocks=20
+[Main] Epoch 163 | Test 93.08% | Best 93.08% | TTA@92.1: 6518.230856180191 | FrozenBlocks 34/54 | Time 22.9s
+    [Train] Epoch 164 [0/391] Loss 0.005 Acc 100.00% ActiveBlocks=20
+    [Train] Epoch 164 [50/391] Loss 0.013 Acc 99.66% ActiveBlocks=20
+    [Train] Epoch 164 [100/391] Loss 0.012 Acc 99.74% ActiveBlocks=19
+    [Train] Epoch 164 [150/391] Loss 0.013 Acc 99.67% ActiveBlocks=19
+    [Train] Epoch 164 [200/391] Loss 0.012 Acc 99.72% ActiveBlocks=19
+    [Train] Epoch 164 [250/391] Loss 0.012 Acc 99.74% ActiveBlocks=19
+    [Train] Epoch 164 [300/391] Loss 0.012 Acc 99.74% ActiveBlocks=19
+    [Train] Epoch 164 [350/391] Loss 0.012 Acc 99.73% ActiveBlocks=19
+[Main] Epoch 164 | Test 93.03% | Best 93.08% | TTA@92.1: 6518.230856180191 | FrozenBlocks 35/54 | Time 22.5s
+    [Train] Epoch 165 [0/391] Loss 0.010 Acc 100.00% ActiveBlocks=19
+    [Train] Epoch 165 [50/391] Loss 0.011 Acc 99.75% ActiveBlocks=19
+    [Train] Epoch 165 [100/391] Loss 0.011 Acc 99.78% ActiveBlocks=19
+    [Train] Epoch 165 [150/391] Loss 0.011 Acc 99.73% ActiveBlocks=19
+    [Train] Epoch 165 [200/391] Loss 0.012 Acc 99.73% ActiveBlocks=19
+    [Train] Epoch 165 [250/391] Loss 0.012 Acc 99.74% ActiveBlocks=19
+    [Train] Epoch 165 [300/391] Loss 0.012 Acc 99.72% ActiveBlocks=19
+    [Train] Epoch 165 [350/391] Loss 0.012 Acc 99.72% ActiveBlocks=19
+[Main] Epoch 165 | Test 92.88% | Best 93.08% | TTA@92.1: 6518.230856180191 | FrozenBlocks 35/54 | Time 22.8s
+    [Train] Epoch 166 [0/391] Loss 0.006 Acc 100.00% ActiveBlocks=19
+    [Train] Epoch 166 [50/391] Loss 0.008 Acc 99.82% ActiveBlocks=18
+    [Train] Epoch 166 [100/391] Loss 0.009 Acc 99.83% ActiveBlocks=18
+    [Train] Epoch 166 [150/391] Loss 0.009 Acc 99.82% ActiveBlocks=18
+    [Train] Epoch 166 [200/391] Loss 0.010 Acc 99.79% ActiveBlocks=18
+    [Train] Epoch 166 [250/391] Loss 0.010 Acc 99.79% ActiveBlocks=18
+    [Train] Epoch 166 [300/391] Loss 0.010 Acc 99.78% ActiveBlocks=18
+    [Train] Epoch 166 [350/391] Loss 0.010 Acc 99.77% ActiveBlocks=18
+[Main] Epoch 166 | Test 92.78% | Best 93.08% | TTA@92.1: 6518.230856180191 | FrozenBlocks 36/54 | Time 22.2s
+    [Train] Epoch 167 [0/391] Loss 0.006 Acc 100.00% ActiveBlocks=18
+    [Train] Epoch 167 [50/391] Loss 0.010 Acc 99.77% ActiveBlocks=18
+    [Train] Epoch 167 [100/391] Loss 0.010 Acc 99.76% ActiveBlocks=18
+    [Train] Epoch 167 [150/391] Loss 0.010 Acc 99.75% ActiveBlocks=18
+    [Train] Epoch 167 [200/391] Loss 0.011 Acc 99.72% ActiveBlocks=18
+    [Train] Epoch 167 [250/391] Loss 0.012 Acc 99.70% ActiveBlocks=18
+    [Train] Epoch 167 [300/391] Loss 0.012 Acc 99.70% ActiveBlocks=18
+    [Train] Epoch 167 [350/391] Loss 0.012 Acc 99.71% ActiveBlocks=18
+[Main] Epoch 167 | Test 93.03% | Best 93.08% | TTA@92.1: 6518.230856180191 | FrozenBlocks 37/54 | Time 22.0s
+    [Train] Epoch 168 [0/391] Loss 0.009 Acc 100.00% ActiveBlocks=17
+    [Train] Epoch 168 [50/391] Loss 0.009 Acc 99.80% ActiveBlocks=17
+    [Train] Epoch 168 [100/391] Loss 0.009 Acc 99.80% ActiveBlocks=17
+    [Train] Epoch 168 [150/391] Loss 0.009 Acc 99.81% ActiveBlocks=17
+    [Train] Epoch 168 [200/391] Loss 0.009 Acc 99.83% ActiveBlocks=17
+    [Train] Epoch 168 [250/391] Loss 0.009 Acc 99.83% ActiveBlocks=17
+    [Train] Epoch 168 [300/391] Loss 0.009 Acc 99.82% ActiveBlocks=17
+    [Train] Epoch 168 [350/391] Loss 0.009 Acc 99.82% ActiveBlocks=17
+[Main] Epoch 168 | Test 93.13% | Best 93.13% | TTA@92.1: 6518.230856180191 | FrozenBlocks 37/54 | Time 20.9s
+    [Train] Epoch 169 [0/391] Loss 0.002 Acc 100.00% ActiveBlocks=17
+    [Train] Epoch 169 [50/391] Loss 0.010 Acc 99.74% ActiveBlocks=17
+    [Train] Epoch 169 [100/391] Loss 0.010 Acc 99.77% ActiveBlocks=17
+    [Train] Epoch 169 [150/391] Loss 0.009 Acc 99.82% ActiveBlocks=17
+    [Train] Epoch 169 [200/391] Loss 0.008 Acc 99.83% ActiveBlocks=17
+    [Train] Epoch 169 [250/391] Loss 0.008 Acc 99.84% ActiveBlocks=17
+    [Train] Epoch 169 [300/391] Loss 0.008 Acc 99.85% ActiveBlocks=17
+    [Train] Epoch 169 [350/391] Loss 0.008 Acc 99.85% ActiveBlocks=16
+[Main] Epoch 169 | Test 92.91% | Best 93.13% | TTA@92.1: 6518.230856180191 | FrozenBlocks 38/54 | Time 21.3s
+    [Train] Epoch 170 [0/391] Loss 0.006 Acc 100.00% ActiveBlocks=16
+    [Train] Epoch 170 [50/391] Loss 0.009 Acc 99.83% ActiveBlocks=16
+    [Train] Epoch 170 [100/391] Loss 0.008 Acc 99.87% ActiveBlocks=16
+    [Train] Epoch 170 [150/391] Loss 0.008 Acc 99.85% ActiveBlocks=16
+    [Train] Epoch 170 [200/391] Loss 0.008 Acc 99.84% ActiveBlocks=16
+    [Train] Epoch 170 [250/391] Loss 0.008 Acc 99.85% ActiveBlocks=16
+    [Train] Epoch 170 [300/391] Loss 0.008 Acc 99.85% ActiveBlocks=16
+    [Train] Epoch 170 [350/391] Loss 0.008 Acc 99.85% ActiveBlocks=16
+[Main] Epoch 170 | Test 93.11% | Best 93.13% | TTA@92.1: 6518.230856180191 | FrozenBlocks 38/54 | Time 21.1s
+    [Train] Epoch 171 [0/391] Loss 0.006 Acc 100.00% ActiveBlocks=16
+    [Train] Epoch 171 [50/391] Loss 0.008 Acc 99.88% ActiveBlocks=16
+    [Train] Epoch 171 [100/391] Loss 0.007 Acc 99.88% ActiveBlocks=16
+    [Train] Epoch 171 [150/391] Loss 0.007 Acc 99.89% ActiveBlocks=16
+    [Train] Epoch 171 [200/391] Loss 0.008 Acc 99.86% ActiveBlocks=16
+    [Train] Epoch 171 [250/391] Loss 0.008 Acc 99.86% ActiveBlocks=16
+    [Train] Epoch 171 [300/391] Loss 0.008 Acc 99.87% ActiveBlocks=15
+    [Train] Epoch 171 [350/391] Loss 0.008 Acc 99.86% ActiveBlocks=15
+[Main] Epoch 171 | Test 92.97% | Best 93.13% | TTA@92.1: 6518.230856180191 | FrozenBlocks 39/54 | Time 20.9s
+    [Train] Epoch 172 [0/391] Loss 0.027 Acc 99.22% ActiveBlocks=15
+    [Train] Epoch 172 [50/391] Loss 0.008 Acc 99.86% ActiveBlocks=15
+    [Train] Epoch 172 [100/391] Loss 0.007 Acc 99.88% ActiveBlocks=15
+    [Train] Epoch 172 [150/391] Loss 0.008 Acc 99.86% ActiveBlocks=15
+    [Train] Epoch 172 [200/391] Loss 0.007 Acc 99.88% ActiveBlocks=15
+    [Train] Epoch 172 [250/391] Loss 0.007 Acc 99.88% ActiveBlocks=15
+    [Train] Epoch 172 [300/391] Loss 0.007 Acc 99.87% ActiveBlocks=15
+    [Train] Epoch 172 [350/391] Loss 0.007 Acc 99.87% ActiveBlocks=15
+[Main] Epoch 172 | Test 92.99% | Best 93.13% | TTA@92.1: 6518.230856180191 | FrozenBlocks 39/54 | Time 19.9s
+    [Train] Epoch 173 [0/391] Loss 0.003 Acc 100.00% ActiveBlocks=15
+    [Train] Epoch 173 [50/391] Loss 0.008 Acc 99.82% ActiveBlocks=15
+    [Train] Epoch 173 [100/391] Loss 0.008 Acc 99.83% ActiveBlocks=15
+    [Train] Epoch 173 [150/391] Loss 0.008 Acc 99.87% ActiveBlocks=15
+    [Train] Epoch 173 [200/391] Loss 0.008 Acc 99.86% ActiveBlocks=15
+    [Train] Epoch 173 [250/391] Loss 0.007 Acc 99.86% ActiveBlocks=14
+    [Train] Epoch 173 [300/391] Loss 0.007 Acc 99.87% ActiveBlocks=14
+    [Train] Epoch 173 [350/391] Loss 0.007 Acc 99.86% ActiveBlocks=14
+[Main] Epoch 173 | Test 93.06% | Best 93.13% | TTA@92.1: 6518.230856180191 | FrozenBlocks 40/54 | Time 20.3s
+    [Train] Epoch 174 [0/391] Loss 0.004 Acc 100.00% ActiveBlocks=14
+    [Train] Epoch 174 [50/391] Loss 0.007 Acc 99.89% ActiveBlocks=14
+    [Train] Epoch 174 [100/391] Loss 0.006 Acc 99.88% ActiveBlocks=14
+    [Train] Epoch 174 [150/391] Loss 0.006 Acc 99.90% ActiveBlocks=14
+    [Train] Epoch 174 [200/391] Loss 0.007 Acc 99.90% ActiveBlocks=14
+    [Train] Epoch 174 [250/391] Loss 0.006 Acc 99.91% ActiveBlocks=14
+    [Train] Epoch 174 [300/391] Loss 0.006 Acc 99.91% ActiveBlocks=14
+    [Train] Epoch 174 [350/391] Loss 0.007 Acc 99.90% ActiveBlocks=14
+[Main] Epoch 174 | Test 93.16% | Best 93.16% | TTA@92.1: 6518.230856180191 | FrozenBlocks 40/54 | Time 20.1s
+    [Train] Epoch 175 [0/391] Loss 0.014 Acc 99.22% ActiveBlocks=14
+    [Train] Epoch 175 [50/391] Loss 0.007 Acc 99.88% ActiveBlocks=14
+    [Train] Epoch 175 [100/391] Loss 0.007 Acc 99.90% ActiveBlocks=14
+    [Train] Epoch 175 [150/391] Loss 0.007 Acc 99.90% ActiveBlocks=14
+    [Train] Epoch 175 [200/391] Loss 0.007 Acc 99.88% ActiveBlocks=13
+    [Train] Epoch 175 [250/391] Loss 0.007 Acc 99.87% ActiveBlocks=13
+    [Train] Epoch 175 [300/391] Loss 0.007 Acc 99.86% ActiveBlocks=13
+    [Train] Epoch 175 [350/391] Loss 0.007 Acc 99.86% ActiveBlocks=13
+[Main] Epoch 175 | Test 92.97% | Best 93.16% | TTA@92.1: 6518.230856180191 | FrozenBlocks 41/54 | Time 20.1s
+    [Train] Epoch 176 [0/391] Loss 0.004 Acc 100.00% ActiveBlocks=13
+    [Train] Epoch 176 [50/391] Loss 0.007 Acc 99.88% ActiveBlocks=13
+    [Train] Epoch 176 [100/391] Loss 0.007 Acc 99.86% ActiveBlocks=13
+    [Train] Epoch 176 [150/391] Loss 0.007 Acc 99.87% ActiveBlocks=13
+    [Train] Epoch 176 [200/391] Loss 0.007 Acc 99.86% ActiveBlocks=13
+    [Train] Epoch 176 [250/391] Loss 0.007 Acc 99.87% ActiveBlocks=13
+    [Train] Epoch 176 [300/391] Loss 0.007 Acc 99.88% ActiveBlocks=13
+    [Train] Epoch 176 [350/391] Loss 0.007 Acc 99.88% ActiveBlocks=13
+[Main] Epoch 176 | Test 93.07% | Best 93.16% | TTA@92.1: 6518.230856180191 | FrozenBlocks 41/54 | Time 18.1s
+    [Train] Epoch 177 [0/391] Loss 0.005 Acc 100.00% ActiveBlocks=13
+    [Train] Epoch 177 [50/391] Loss 0.006 Acc 99.94% ActiveBlocks=13
+    [Train] Epoch 177 [100/391] Loss 0.006 Acc 99.93% ActiveBlocks=13
+    [Train] Epoch 177 [150/391] Loss 0.006 Acc 99.90% ActiveBlocks=12
+    [Train] Epoch 177 [200/391] Loss 0.006 Acc 99.91% ActiveBlocks=12
+    [Train] Epoch 177 [250/391] Loss 0.006 Acc 99.91% ActiveBlocks=12
+    [Train] Epoch 177 [300/391] Loss 0.006 Acc 99.90% ActiveBlocks=12
+    [Train] Epoch 177 [350/391] Loss 0.006 Acc 99.91% ActiveBlocks=12
+[Main] Epoch 177 | Test 93.22% | Best 93.22% | TTA@92.1: 6518.230856180191 | FrozenBlocks 42/54 | Time 13.2s
+    [Train] Epoch 178 [0/391] Loss 0.001 Acc 100.00% ActiveBlocks=12
+    [Train] Epoch 178 [50/391] Loss 0.005 Acc 99.95% ActiveBlocks=12
+    [Train] Epoch 178 [100/391] Loss 0.006 Acc 99.91% ActiveBlocks=12
+    [Train] Epoch 178 [150/391] Loss 0.006 Acc 99.90% ActiveBlocks=12
+    [Train] Epoch 178 [200/391] Loss 0.006 Acc 99.90% ActiveBlocks=12
+    [Train] Epoch 178 [250/391] Loss 0.007 Acc 99.90% ActiveBlocks=12
+    [Train] Epoch 178 [300/391] Loss 0.006 Acc 99.90% ActiveBlocks=12
+    [Train] Epoch 178 [350/391] Loss 0.006 Acc 99.90% ActiveBlocks=12
+[Main] Epoch 178 | Test 93.19% | Best 93.22% | TTA@92.1: 6518.230856180191 | FrozenBlocks 42/54 | Time 11.9s
+    [Train] Epoch 179 [0/391] Loss 0.006 Acc 100.00% ActiveBlocks=12
+    [Train] Epoch 179 [50/391] Loss 0.006 Acc 99.89% ActiveBlocks=12
+    [Train] Epoch 179 [100/391] Loss 0.005 Acc 99.94% ActiveBlocks=11
+    [Train] Epoch 179 [150/391] Loss 0.006 Acc 99.92% ActiveBlocks=11
+    [Train] Epoch 179 [200/391] Loss 0.006 Acc 99.90% ActiveBlocks=11
+    [Train] Epoch 179 [250/391] Loss 0.006 Acc 99.89% ActiveBlocks=11
+    [Train] Epoch 179 [300/391] Loss 0.006 Acc 99.90% ActiveBlocks=11
+    [Train] Epoch 179 [350/391] Loss 0.006 Acc 99.90% ActiveBlocks=11
+[Main] Epoch 179 | Test 93.11% | Best 93.22% | TTA@92.1: 6518.230856180191 | FrozenBlocks 43/54 | Time 11.4s
+    [Train] Epoch 180 [0/391] Loss 0.004 Acc 100.00% ActiveBlocks=11
+    [Train] Epoch 180 [50/391] Loss 0.006 Acc 99.88% ActiveBlocks=11
+    [Train] Epoch 180 [100/391] Loss 0.006 Acc 99.89% ActiveBlocks=11
+    [Train] Epoch 180 [150/391] Loss 0.006 Acc 99.90% ActiveBlocks=11
+    [Train] Epoch 180 [200/391] Loss 0.006 Acc 99.91% ActiveBlocks=11
+    [Train] Epoch 180 [250/391] Loss 0.006 Acc 99.91% ActiveBlocks=11
+    [Train] Epoch 180 [300/391] Loss 0.006 Acc 99.91% ActiveBlocks=11
+    [Train] Epoch 180 [350/391] Loss 0.006 Acc 99.91% ActiveBlocks=11
+[Main] Epoch 180 | Test 93.15% | Best 93.22% | TTA@92.1: 6518.230856180191 | FrozenBlocks 43/54 | Time 11.2s
+    [Train] Epoch 181 [0/391] Loss 0.005 Acc 100.00% ActiveBlocks=11
+    [Train] Epoch 181 [50/391] Loss 0.005 Acc 99.94% ActiveBlocks=11
+    [Train] Epoch 181 [100/391] Loss 0.006 Acc 99.91% ActiveBlocks=10
+    [Train] Epoch 181 [150/391] Loss 0.005 Acc 99.92% ActiveBlocks=10
+    [Train] Epoch 181 [200/391] Loss 0.006 Acc 99.91% ActiveBlocks=10
+    [Train] Epoch 181 [250/391] Loss 0.006 Acc 99.92% ActiveBlocks=10
+    [Train] Epoch 181 [300/391] Loss 0.006 Acc 99.92% ActiveBlocks=10
+    [Train] Epoch 181 [350/391] Loss 0.006 Acc 99.92% ActiveBlocks=10
+[Main] Epoch 181 | Test 93.14% | Best 93.22% | TTA@92.1: 6518.230856180191 | FrozenBlocks 44/54 | Time 10.9s
+    [Train] Epoch 182 [0/391] Loss 0.014 Acc 99.22% ActiveBlocks=10
+    [Train] Epoch 182 [50/391] Loss 0.007 Acc 99.86% ActiveBlocks=10
+    [Train] Epoch 182 [100/391] Loss 0.006 Acc 99.90% ActiveBlocks=10
+    [Train] Epoch 182 [150/391] Loss 0.006 Acc 99.91% ActiveBlocks=10
+    [Train] Epoch 182 [200/391] Loss 0.006 Acc 99.91% ActiveBlocks=10
+    [Train] Epoch 182 [250/391] Loss 0.006 Acc 99.92% ActiveBlocks=10
+    [Train] Epoch 182 [300/391] Loss 0.006 Acc 99.91% ActiveBlocks=10
+    [Train] Epoch 182 [350/391] Loss 0.006 Acc 99.92% ActiveBlocks=10
+[Main] Epoch 182 | Test 93.25% | Best 93.25% | TTA@92.1: 6518.230856180191 | FrozenBlocks 44/54 | Time 11.0s
+    [Train] Epoch 183 [0/391] Loss 0.013 Acc 99.22% ActiveBlocks=10
+    [Train] Epoch 183 [50/391] Loss 0.004 Acc 99.95% ActiveBlocks=9
+    [Train] Epoch 183 [100/391] Loss 0.005 Acc 99.92% ActiveBlocks=9
+    [Train] Epoch 183 [150/391] Loss 0.005 Acc 99.94% ActiveBlocks=9
+    [Train] Epoch 183 [200/391] Loss 0.005 Acc 99.93% ActiveBlocks=9
+    [Train] Epoch 183 [250/391] Loss 0.006 Acc 99.93% ActiveBlocks=9
+    [Train] Epoch 183 [300/391] Loss 0.005 Acc 99.92% ActiveBlocks=9
+    [Train] Epoch 183 [350/391] Loss 0.005 Acc 99.92% ActiveBlocks=9
+[Main] Epoch 183 | Test 93.18% | Best 93.25% | TTA@92.1: 6518.230856180191 | FrozenBlocks 45/54 | Time 10.3s
+    [Train] Epoch 184 [0/391] Loss 0.017 Acc 99.22% ActiveBlocks=9
+    [Train] Epoch 184 [50/391] Loss 0.007 Acc 99.88% ActiveBlocks=9
+    [Train] Epoch 184 [100/391] Loss 0.006 Acc 99.90% ActiveBlocks=9
+    [Train] Epoch 184 [150/391] Loss 0.005 Acc 99.93% ActiveBlocks=9
+    [Train] Epoch 184 [200/391] Loss 0.005 Acc 99.93% ActiveBlocks=9
+    [Train] Epoch 184 [250/391] Loss 0.005 Acc 99.93% ActiveBlocks=9
+    [Train] Epoch 184 [300/391] Loss 0.005 Acc 99.92% ActiveBlocks=9
+    [Train] Epoch 184 [350/391] Loss 0.005 Acc 99.92% ActiveBlocks=9
+[Main] Epoch 184 | Test 93.31% | Best 93.31% | TTA@92.1: 6518.230856180191 | FrozenBlocks 46/54 | Time 10.1s
+    [Train] Epoch 185 [0/391] Loss 0.003 Acc 100.00% ActiveBlocks=8
+    [Train] Epoch 185 [50/391] Loss 0.006 Acc 99.88% ActiveBlocks=8
+    [Train] Epoch 185 [100/391] Loss 0.006 Acc 99.91% ActiveBlocks=8
+    [Train] Epoch 185 [150/391] Loss 0.006 Acc 99.91% ActiveBlocks=8
+    [Train] Epoch 185 [200/391] Loss 0.006 Acc 99.91% ActiveBlocks=8
+    [Train] Epoch 185 [250/391] Loss 0.006 Acc 99.91% ActiveBlocks=8
+    [Train] Epoch 185 [300/391] Loss 0.005 Acc 99.91% ActiveBlocks=8
+    [Train] Epoch 185 [350/391] Loss 0.006 Acc 99.90% ActiveBlocks=8
+[Main] Epoch 185 | Test 93.22% | Best 93.31% | TTA@92.1: 6518.230856180191 | FrozenBlocks 46/54 | Time 9.7s
+    [Train] Epoch 186 [0/391] Loss 0.004 Acc 100.00% ActiveBlocks=8
+    [Train] Epoch 186 [50/391] Loss 0.005 Acc 99.94% ActiveBlocks=8
+    [Train] Epoch 186 [100/391] Loss 0.006 Acc 99.95% ActiveBlocks=8
+    [Train] Epoch 186 [150/391] Loss 0.006 Acc 99.93% ActiveBlocks=8
+    [Train] Epoch 186 [200/391] Loss 0.005 Acc 99.94% ActiveBlocks=8
+    [Train] Epoch 186 [250/391] Loss 0.005 Acc 99.94% ActiveBlocks=8
+    [Train] Epoch 186 [300/391] Loss 0.005 Acc 99.94% ActiveBlocks=8
+    [Train] Epoch 186 [350/391] Loss 0.005 Acc 99.94% ActiveBlocks=7
+[Main] Epoch 186 | Test 93.11% | Best 93.31% | TTA@92.1: 6518.230856180191 | FrozenBlocks 47/54 | Time 9.8s
+    [Train] Epoch 187 [0/391] Loss 0.003 Acc 100.00% ActiveBlocks=7
+    [Train] Epoch 187 [50/391] Loss 0.006 Acc 99.88% ActiveBlocks=7
+    [Train] Epoch 187 [100/391] Loss 0.006 Acc 99.92% ActiveBlocks=7
+    [Train] Epoch 187 [150/391] Loss 0.005 Acc 99.92% ActiveBlocks=7
+    [Train] Epoch 187 [200/391] Loss 0.005 Acc 99.91% ActiveBlocks=7
+    [Train] Epoch 187 [250/391] Loss 0.005 Acc 99.92% ActiveBlocks=7
+    [Train] Epoch 187 [300/391] Loss 0.005 Acc 99.91% ActiveBlocks=7
+    [Train] Epoch 187 [350/391] Loss 0.005 Acc 99.91% ActiveBlocks=7
+[Main] Epoch 187 | Test 93.22% | Best 93.31% | TTA@92.1: 6518.230856180191 | FrozenBlocks 47/54 | Time 10.0s
+    [Train] Epoch 188 [0/391] Loss 0.003 Acc 100.00% ActiveBlocks=7
+    [Train] Epoch 188 [50/391] Loss 0.005 Acc 99.94% ActiveBlocks=7
+    [Train] Epoch 188 [100/391] Loss 0.005 Acc 99.94% ActiveBlocks=7
+    [Train] Epoch 188 [150/391] Loss 0.006 Acc 99.92% ActiveBlocks=7
+    [Train] Epoch 188 [200/391] Loss 0.005 Acc 99.93% ActiveBlocks=7
+    [Train] Epoch 188 [250/391] Loss 0.005 Acc 99.93% ActiveBlocks=7
+    [Train] Epoch 188 [300/391] Loss 0.005 Acc 99.94% ActiveBlocks=6
+    [Train] Epoch 188 [350/391] Loss 0.005 Acc 99.94% ActiveBlocks=6
+[Main] Epoch 188 | Test 93.34% | Best 93.34% | TTA@92.1: 6518.230856180191 | FrozenBlocks 48/54 | Time 9.7s
+    [Train] Epoch 189 [0/391] Loss 0.007 Acc 100.00% ActiveBlocks=6
+    [Train] Epoch 189 [50/391] Loss 0.006 Acc 99.88% ActiveBlocks=6
+    [Train] Epoch 189 [100/391] Loss 0.006 Acc 99.91% ActiveBlocks=6
+    [Train] Epoch 189 [150/391] Loss 0.005 Acc 99.93% ActiveBlocks=6
+    [Train] Epoch 189 [200/391] Loss 0.005 Acc 99.93% ActiveBlocks=6
+    [Train] Epoch 189 [250/391] Loss 0.005 Acc 99.93% ActiveBlocks=6
+    [Train] Epoch 189 [300/391] Loss 0.005 Acc 99.93% ActiveBlocks=6
+    [Train] Epoch 189 [350/391] Loss 0.005 Acc 99.93% ActiveBlocks=6
+[Main] Epoch 189 | Test 93.24% | Best 93.34% | TTA@92.1: 6518.230856180191 | FrozenBlocks 48/54 | Time 9.2s
+    [Train] Epoch 190 [0/391] Loss 0.003 Acc 100.00% ActiveBlocks=6
+    [Train] Epoch 190 [50/391] Loss 0.005 Acc 99.97% ActiveBlocks=6
+    [Train] Epoch 190 [100/391] Loss 0.005 Acc 99.94% ActiveBlocks=6
+    [Train] Epoch 190 [150/391] Loss 0.005 Acc 99.95% ActiveBlocks=6
+    [Train] Epoch 190 [200/391] Loss 0.005 Acc 99.95% ActiveBlocks=6
+    [Train] Epoch 190 [250/391] Loss 0.005 Acc 99.93% ActiveBlocks=5
+    [Train] Epoch 190 [300/391] Loss 0.005 Acc 99.93% ActiveBlocks=5
+    [Train] Epoch 190 [350/391] Loss 0.005 Acc 99.93% ActiveBlocks=5
+[Main] Epoch 190 | Test 93.35% | Best 93.35% | TTA@92.1: 6518.230856180191 | FrozenBlocks 49/54 | Time 9.2s
+    [Train] Epoch 191 [0/391] Loss 0.002 Acc 100.00% ActiveBlocks=5
+    [Train] Epoch 191 [50/391] Loss 0.005 Acc 99.97% ActiveBlocks=5
+    [Train] Epoch 191 [100/391] Loss 0.005 Acc 99.95% ActiveBlocks=5
+    [Train] Epoch 191 [150/391] Loss 0.005 Acc 99.96% ActiveBlocks=5
+    [Train] Epoch 191 [200/391] Loss 0.005 Acc 99.95% ActiveBlocks=5
+    [Train] Epoch 191 [250/391] Loss 0.005 Acc 99.93% ActiveBlocks=5
+    [Train] Epoch 191 [300/391] Loss 0.005 Acc 99.94% ActiveBlocks=5
+    [Train] Epoch 191 [350/391] Loss 0.005 Acc 99.94% ActiveBlocks=5
+[Main] Epoch 191 | Test 93.23% | Best 93.35% | TTA@92.1: 6518.230856180191 | FrozenBlocks 49/54 | Time 8.9s
+    [Train] Epoch 192 [0/391] Loss 0.004 Acc 100.00% ActiveBlocks=5
+    [Train] Epoch 192 [50/391] Loss 0.006 Acc 99.94% ActiveBlocks=5
+    [Train] Epoch 192 [100/391] Loss 0.006 Acc 99.92% ActiveBlocks=5
+    [Train] Epoch 192 [150/391] Loss 0.006 Acc 99.94% ActiveBlocks=5
+    [Train] Epoch 192 [200/391] Loss 0.005 Acc 99.94% ActiveBlocks=4
+    [Train] Epoch 192 [250/391] Loss 0.006 Acc 99.93% ActiveBlocks=4
+    [Train] Epoch 192 [300/391] Loss 0.005 Acc 99.93% ActiveBlocks=4
+    [Train] Epoch 192 [350/391] Loss 0.005 Acc 99.93% ActiveBlocks=4
+[Main] Epoch 192 | Test 93.29% | Best 93.35% | TTA@92.1: 6518.230856180191 | FrozenBlocks 50/54 | Time 8.6s
+    [Train] Epoch 193 [0/391] Loss 0.003 Acc 100.00% ActiveBlocks=4
+    [Train] Epoch 193 [50/391] Loss 0.005 Acc 99.94% ActiveBlocks=4
+    [Train] Epoch 193 [100/391] Loss 0.005 Acc 99.94% ActiveBlocks=4
+    [Train] Epoch 193 [150/391] Loss 0.005 Acc 99.94% ActiveBlocks=4
+    [Train] Epoch 193 [200/391] Loss 0.005 Acc 99.93% ActiveBlocks=4
+    [Train] Epoch 193 [250/391] Loss 0.005 Acc 99.92% ActiveBlocks=4
+    [Train] Epoch 193 [300/391] Loss 0.005 Acc 99.93% ActiveBlocks=4
+    [Train] Epoch 193 [350/391] Loss 0.005 Acc 99.93% ActiveBlocks=4
+[Main] Epoch 193 | Test 93.21% | Best 93.35% | TTA@92.1: 6518.230856180191 | FrozenBlocks 50/54 | Time 9.0s
+    [Train] Epoch 194 [0/391] Loss 0.002 Acc 100.00% ActiveBlocks=4
+    [Train] Epoch 194 [50/391] Loss 0.005 Acc 99.92% ActiveBlocks=4
+    [Train] Epoch 194 [100/391] Loss 0.005 Acc 99.95% ActiveBlocks=4
+    [Train] Epoch 194 [150/391] Loss 0.005 Acc 99.93% ActiveBlocks=3
+    [Train] Epoch 194 [200/391] Loss 0.005 Acc 99.93% ActiveBlocks=3
+    [Train] Epoch 194 [250/391] Loss 0.005 Acc 99.93% ActiveBlocks=3
+    [Train] Epoch 194 [300/391] Loss 0.005 Acc 99.94% ActiveBlocks=3
+    [Train] Epoch 194 [350/391] Loss 0.005 Acc 99.94% ActiveBlocks=3
+[Main] Epoch 194 | Test 93.22% | Best 93.35% | TTA@92.1: 6518.230856180191 | FrozenBlocks 51/54 | Time 8.7s
+    [Train] Epoch 195 [0/391] Loss 0.003 Acc 100.00% ActiveBlocks=3
+    [Train] Epoch 195 [50/391] Loss 0.005 Acc 99.92% ActiveBlocks=3
+    [Train] Epoch 195 [100/391] Loss 0.005 Acc 99.94% ActiveBlocks=3
+    [Train] Epoch 195 [150/391] Loss 0.005 Acc 99.95% ActiveBlocks=3
+    [Train] Epoch 195 [200/391] Loss 0.005 Acc 99.95% ActiveBlocks=3
+    [Train] Epoch 195 [250/391] Loss 0.005 Acc 99.96% ActiveBlocks=3
+    [Train] Epoch 195 [300/391] Loss 0.005 Acc 99.96% ActiveBlocks=3
+    [Train] Epoch 195 [350/391] Loss 0.005 Acc 99.96% ActiveBlocks=3
+[Main] Epoch 195 | Test 93.21% | Best 93.35% | TTA@92.1: 6518.230856180191 | FrozenBlocks 51/54 | Time 8.9s
+    [Train] Epoch 196 [0/391] Loss 0.003 Acc 100.00% ActiveBlocks=3
+    [Train] Epoch 196 [50/391] Loss 0.005 Acc 99.92% ActiveBlocks=3
+    [Train] Epoch 196 [100/391] Loss 0.005 Acc 99.94% ActiveBlocks=2
+    [Train] Epoch 196 [150/391] Loss 0.005 Acc 99.94% ActiveBlocks=2
+    [Train] Epoch 196 [200/391] Loss 0.005 Acc 99.94% ActiveBlocks=2
+    [Train] Epoch 196 [250/391] Loss 0.005 Acc 99.94% ActiveBlocks=2
+    [Train] Epoch 196 [300/391] Loss 0.005 Acc 99.95% ActiveBlocks=2
+    [Train] Epoch 196 [350/391] Loss 0.005 Acc 99.94% ActiveBlocks=2
+[Main] Epoch 196 | Test 93.25% | Best 93.35% | TTA@92.1: 6518.230856180191 | FrozenBlocks 52/54 | Time 8.7s
+    [Train] Epoch 197 [0/391] Loss 0.005 Acc 100.00% ActiveBlocks=2
+    [Train] Epoch 197 [50/391] Loss 0.005 Acc 99.97% ActiveBlocks=2
+    [Train] Epoch 197 [100/391] Loss 0.004 Acc 99.97% ActiveBlocks=2
+    [Train] Epoch 197 [150/391] Loss 0.004 Acc 99.97% ActiveBlocks=2
+    [Train] Epoch 197 [200/391] Loss 0.005 Acc 99.97% ActiveBlocks=2
+    [Train] Epoch 197 [250/391] Loss 0.005 Acc 99.95% ActiveBlocks=2
+    [Train] Epoch 197 [300/391] Loss 0.005 Acc 99.95% ActiveBlocks=2
+    [Train] Epoch 197 [350/391] Loss 0.005 Acc 99.95% ActiveBlocks=2
+[Main] Epoch 197 | Test 93.32% | Best 93.35% | TTA@92.1: 6518.230856180191 | FrozenBlocks 52/54 | Time 8.9s
+    [Train] Epoch 198 [0/391] Loss 0.012 Acc 99.22% ActiveBlocks=2
+    [Train] Epoch 198 [50/391] Loss 0.005 Acc 99.95% ActiveBlocks=1
+    [Train] Epoch 198 [100/391] Loss 0.004 Acc 99.97% ActiveBlocks=1
+    [Train] Epoch 198 [150/391] Loss 0.004 Acc 99.98% ActiveBlocks=1
+    [Train] Epoch 198 [200/391] Loss 0.004 Acc 99.98% ActiveBlocks=1
+    [Train] Epoch 198 [250/391] Loss 0.004 Acc 99.98% ActiveBlocks=1
+    [Train] Epoch 198 [300/391] Loss 0.004 Acc 99.98% ActiveBlocks=1
+    [Train] Epoch 198 [350/391] Loss 0.004 Acc 99.97% ActiveBlocks=1
+[Main] Epoch 198 | Test 93.33% | Best 93.35% | TTA@92.1: 6518.230856180191 | FrozenBlocks 53/54 | Time 8.8s
+    [Train] Epoch 199 [0/391] Loss 0.002 Acc 100.00% ActiveBlocks=1
+    [Train] Epoch 199 [50/391] Loss 0.005 Acc 99.95% ActiveBlocks=1
+    [Train] Epoch 199 [100/391] Loss 0.004 Acc 99.98% ActiveBlocks=1
+    [Train] Epoch 199 [150/391] Loss 0.005 Acc 99.96% ActiveBlocks=1
+    [Train] Epoch 199 [200/391] Loss 0.005 Acc 99.96% ActiveBlocks=1
+    [Train] Epoch 199 [250/391] Loss 0.005 Acc 99.95% ActiveBlocks=1
+    [Train] Epoch 199 [300/391] Loss 0.005 Acc 99.95% ActiveBlocks=1
+    [Train] Epoch 199 [350/391] Loss 0.005 Acc 99.96% ActiveBlocks=1
+[Main] Epoch 199 | Test 93.24% | Best 93.35% | TTA@92.1: 6518.230856180191 | FrozenBlocks 53/54 | Time 8.9s
+[Main] Done: /mnt/data2/freezeout_repro_cifar10_resnet110_seed42/results/freezeout_linear_unscaled_t05_seed42.jsonl
+[monitor] launching: python3 /mnt/data2/freezeout_resnet_cifar_repro.py --dataset cifar10 --depth 110 --data_root /mnt/data2/data --output_json /mnt/data2/freezeout_repro_cifar10_resnet110_seed42/results/freezeout_linear_unscaled_t05_seed42.jsonl --epochs 200 --batch_size 128 --num_workers 2 --lr 0.1 --target_acc 92.1 --seed 42 --device cuda --schedule linear --t0 0.5 --no_scale_lr
+[monitor] metrics: /mnt/data2/freezeout_repro_cifar10_resnet110_seed42/metrics/freezeout_linear_unscaled_t05_seed42_metrics.csv
+{
+  "name": "freezeout_linear_unscaled_t05_seed42",
+  "cmd": [
+    "python3",
+    "/mnt/data2/freezeout_resnet_cifar_repro.py",
+    "--dataset",
+    "cifar10",
+    "--depth",
+    "110",
+    "--data_root",
+    "/mnt/data2/data",
+    "--output_json",
+    "/mnt/data2/freezeout_repro_cifar10_resnet110_seed42/results/freezeout_linear_unscaled_t05_seed42.jsonl",
+    "--epochs",
+    "200",
+    "--batch_size",
+    "128",
+    "--num_workers",
+    "2",
+    "--lr",
+    "0.1",
+    "--target_acc",
+    "92.1",
+    "--seed",
+    "42",
+    "--device",
+    "cuda",
+    "--schedule",
+    "linear",
+    "--t0",
+    "0.5",
+    "--no_scale_lr"
+  ],
+  "returncode": 0,
+  "wall_time_sec": 7913.296371936798,
+  "gpu_index": 1,
+  "energy_j_est": 1105265.1551568792,
+  "energy_wh_est": 307.0180986546887,
+  "peak_gpu_mem_mb": 4848.0,
+  "peak_gpu_util_pct": 100.0,
+  "peak_process_tree_rss_mb": 12733.62890625,
+  "final_read_bytes": 0,
+  "final_write_bytes": 0,
+  "metrics_csv": "/mnt/data2/freezeout_repro_cifar10_resnet110_seed42/metrics/freezeout_linear_unscaled_t05_seed42_metrics.csv"
+}

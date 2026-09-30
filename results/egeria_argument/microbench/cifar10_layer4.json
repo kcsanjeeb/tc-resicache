@@ -1,0 +1,22 @@
+{
+  "dataset": "cifar10",
+  "boundary": "layer4",
+  "batch_size": 32,
+  "feature_shape": [
+    2048,
+    7,
+    7
+  ],
+  "estimated_full_bank_gb": 9.34600830078125,
+  "prefix_forward": {
+    "mean_ms": 29.9544534413144,
+    "median_ms": 29.941202607005835,
+    "p90_ms": 30.058004148304462
+  },
+  "gpu_bank_lookup_clone": {
+    "mean_ms": 0.09910031221807003,
+    "median_ms": 0.09744754061102867,
+    "p90_ms": 0.10315552353858948
+  },
+  "speedup_lookup_vs_prefix": 302.263966387913
+}

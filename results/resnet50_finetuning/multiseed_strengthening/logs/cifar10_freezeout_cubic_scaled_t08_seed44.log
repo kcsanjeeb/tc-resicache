@@ -1,0 +1,227 @@
+[cmd] CUDA_VISIBLE_DEVICES=1 python3 /mnt/data2/monitor_command.py --name cifar10_freezeout_cubic_scaled_t08_seed44 --out-dir /mnt/data2/resnet50_multiseed_strengthening/metrics --gpu-index 1 -- python3 /mnt/data2/freezeout_resnet50_cifar_exact_mechanism.py --dataset cifar10 --data_root /mnt/data2/data --output_json /mnt/data2/resnet50_multiseed_strengthening/results/cifar10_freezeout_cubic_scaled_t08_seed44.jsonl --epochs 10 --batch_size 32 --num_workers 4 --seed 44 --target_acc 96.10 --weights default --lr 0.001 --schedule cubic --t0 0.8 --scale_lr 
+/mnt/data2/freezeout_resnet50_cifar_exact_mechanism.py:206: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  criterion = nn.CrossEntropyLoss(); scaler = torch.cuda.amp.GradScaler(enabled=args.amp)
+[Main] FreezeOut exact-mechanism ResNet50 CIFAR comparison
+[Main] dataset=cifar10 target=96.1 schedule=cubic t0=0.8 scale_lr=True
+[Main] units=17 total_steps=15630
+[Main] freeze_steps={'stem': 8003, 'layer1.0': 8384, 'layer1.1': 8776, 'layer1.2': 9181, 'layer2.0': 9599, 'layer2.1': 10029, 'layer2.2': 10471, 'layer2.3': 10926, 'layer3.0': 11394, 'layer3.1': 11876, 'layer3.2': 12370, 'layer3.3': 12879, 'layer3.4': 13401, 'layer3.5': 13937, 'layer4.0': 14487, 'layer4.1': 15051, 'layer4.2': 15630}
+/mnt/data2/freezeout_resnet50_cifar_exact_mechanism.py:155: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=args.amp):
+    [Train] step=0 batch=0/1563 loss=2.3006 acc=12.50 active=17 frozen=0
+    [Train] step=100 batch=100/1563 loss=2.1630 acc=23.73 active=17 frozen=0
+    [Train] step=200 batch=200/1563 loss=1.9543 acc=33.96 active=17 frozen=0
+    [Train] step=300 batch=300/1563 loss=1.7808 acc=39.98 active=17 frozen=0
+    [Train] step=400 batch=400/1563 loss=1.6358 acc=44.92 active=17 frozen=0
+    [Train] step=500 batch=500/1563 loss=1.5140 acc=48.95 active=17 frozen=0
+    [Train] step=600 batch=600/1563 loss=1.4194 acc=52.05 active=17 frozen=0
+    [Train] step=700 batch=700/1563 loss=1.3442 acc=54.54 active=17 frozen=0
+    [Train] step=800 batch=800/1563 loss=1.2800 acc=56.66 active=17 frozen=0
+    [Train] step=900 batch=900/1563 loss=1.2247 acc=58.43 active=17 frozen=0
+    [Train] step=1000 batch=1000/1563 loss=1.1844 acc=59.79 active=17 frozen=0
+    [Train] step=1100 batch=1100/1563 loss=1.1473 acc=61.02 active=17 frozen=0
+    [Train] step=1200 batch=1200/1563 loss=1.1114 acc=62.20 active=17 frozen=0
+    [Train] step=1300 batch=1300/1563 loss=1.0795 acc=63.17 active=17 frozen=0
+    [Train] step=1400 batch=1400/1563 loss=1.0527 acc=64.07 active=17 frozen=0
+    [Train] step=1500 batch=1500/1563 loss=1.0260 acc=64.96 active=17 frozen=0
+/mnt/data2/freezeout_resnet50_cifar_exact_mechanism.py:143: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp):
+[Main] Epoch 0 | Test 92.75% | Best 92.75% | TTA@96.1: None | Frozen 0/17 | Time 177.5s
+    [Train] step=1563 batch=0/1563 loss=0.4688 acc=87.50 active=17 frozen=0
+    [Train] step=1663 batch=100/1563 loss=0.6456 acc=77.29 active=17 frozen=0
+    [Train] step=1763 batch=200/1563 loss=0.6352 acc=77.77 active=17 frozen=0
+    [Train] step=1863 batch=300/1563 loss=0.6378 acc=77.81 active=17 frozen=0
+    [Train] step=1963 batch=400/1563 loss=0.6284 acc=78.20 active=17 frozen=0
+    [Train] step=2063 batch=500/1563 loss=0.6235 acc=78.50 active=17 frozen=0
+    [Train] step=2163 batch=600/1563 loss=0.6207 acc=78.58 active=17 frozen=0
+    [Train] step=2263 batch=700/1563 loss=0.6187 acc=78.70 active=17 frozen=0
+    [Train] step=2363 batch=800/1563 loss=0.6125 acc=78.91 active=17 frozen=0
+    [Train] step=2463 batch=900/1563 loss=0.6084 acc=79.01 active=17 frozen=0
+    [Train] step=2563 batch=1000/1563 loss=0.6070 acc=79.09 active=17 frozen=0
+    [Train] step=2663 batch=1100/1563 loss=0.6050 acc=79.14 active=17 frozen=0
+    [Train] step=2763 batch=1200/1563 loss=0.6011 acc=79.28 active=17 frozen=0
+    [Train] step=2863 batch=1300/1563 loss=0.5994 acc=79.32 active=17 frozen=0
+    [Train] step=2963 batch=1400/1563 loss=0.5958 acc=79.43 active=17 frozen=0
+    [Train] step=3063 batch=1500/1563 loss=0.5934 acc=79.51 active=17 frozen=0
+[Main] Epoch 1 | Test 94.64% | Best 94.64% | TTA@96.1: None | Frozen 0/17 | Time 168.8s
+    [Train] step=3126 batch=0/1563 loss=0.7841 acc=71.88 active=17 frozen=0
+    [Train] step=3226 batch=100/1563 loss=0.5316 acc=82.36 active=17 frozen=0
+    [Train] step=3326 batch=200/1563 loss=0.5260 acc=82.21 active=17 frozen=0
+    [Train] step=3426 batch=300/1563 loss=0.5266 acc=82.05 active=17 frozen=0
+    [Train] step=3526 batch=400/1563 loss=0.5138 acc=82.53 active=17 frozen=0
+    [Train] step=3626 batch=500/1563 loss=0.5145 acc=82.49 active=17 frozen=0
+    [Train] step=3726 batch=600/1563 loss=0.5163 acc=82.32 active=17 frozen=0
+    [Train] step=3826 batch=700/1563 loss=0.5167 acc=82.22 active=17 frozen=0
+    [Train] step=3926 batch=800/1563 loss=0.5170 acc=82.12 active=17 frozen=0
+    [Train] step=4026 batch=900/1563 loss=0.5168 acc=82.08 active=17 frozen=0
+    [Train] step=4126 batch=1000/1563 loss=0.5150 acc=82.18 active=17 frozen=0
+    [Train] step=4226 batch=1100/1563 loss=0.5149 acc=82.21 active=17 frozen=0
+    [Train] step=4326 batch=1200/1563 loss=0.5153 acc=82.19 active=17 frozen=0
+    [Train] step=4426 batch=1300/1563 loss=0.5132 acc=82.28 active=17 frozen=0
+    [Train] step=4526 batch=1400/1563 loss=0.5113 acc=82.37 active=17 frozen=0
+    [Train] step=4626 batch=1500/1563 loss=0.5096 acc=82.42 active=17 frozen=0
+[Main] Epoch 2 | Test 95.78% | Best 95.78% | TTA@96.1: None | Frozen 0/17 | Time 168.7s
+    [Train] step=4689 batch=0/1563 loss=0.2002 acc=96.88 active=17 frozen=0
+    [Train] step=4789 batch=100/1563 loss=0.4793 acc=83.45 active=17 frozen=0
+    [Train] step=4889 batch=200/1563 loss=0.4712 acc=83.72 active=17 frozen=0
+    [Train] step=4989 batch=300/1563 loss=0.4772 acc=83.63 active=17 frozen=0
+    [Train] step=5089 batch=400/1563 loss=0.4753 acc=83.72 active=17 frozen=0
+    [Train] step=5189 batch=500/1563 loss=0.4722 acc=83.81 active=17 frozen=0
+    [Train] step=5289 batch=600/1563 loss=0.4745 acc=83.74 active=17 frozen=0
+    [Train] step=5389 batch=700/1563 loss=0.4712 acc=83.84 active=17 frozen=0
+    [Train] step=5489 batch=800/1563 loss=0.4709 acc=83.85 active=17 frozen=0
+    [Train] step=5589 batch=900/1563 loss=0.4678 acc=83.94 active=17 frozen=0
+    [Train] step=5689 batch=1000/1563 loss=0.4670 acc=84.01 active=17 frozen=0
+    [Train] step=5789 batch=1100/1563 loss=0.4669 acc=83.97 active=17 frozen=0
+    [Train] step=5889 batch=1200/1563 loss=0.4672 acc=83.97 active=17 frozen=0
+    [Train] step=5989 batch=1300/1563 loss=0.4640 acc=84.08 active=17 frozen=0
+    [Train] step=6089 batch=1400/1563 loss=0.4634 acc=84.07 active=17 frozen=0
+    [Train] step=6189 batch=1500/1563 loss=0.4628 acc=84.08 active=17 frozen=0
+[Main] Epoch 3 | Test 96.25% | Best 96.25% | TTA@96.1: 683.6022005081177 | Frozen 0/17 | Time 168.7s
+    [Train] step=6252 batch=0/1563 loss=0.5804 acc=81.25 active=17 frozen=0
+    [Train] step=6352 batch=100/1563 loss=0.4710 acc=84.00 active=17 frozen=0
+    [Train] step=6452 batch=200/1563 loss=0.4527 acc=84.58 active=17 frozen=0
+    [Train] step=6552 batch=300/1563 loss=0.4416 acc=84.83 active=17 frozen=0
+    [Train] step=6652 batch=400/1563 loss=0.4335 acc=85.14 active=17 frozen=0
+    [Train] step=6752 batch=500/1563 loss=0.4291 acc=85.34 active=17 frozen=0
+    [Train] step=6852 batch=600/1563 loss=0.4298 acc=85.17 active=17 frozen=0
+    [Train] step=6952 batch=700/1563 loss=0.4313 acc=85.15 active=17 frozen=0
+    [Train] step=7052 batch=800/1563 loss=0.4311 acc=85.21 active=17 frozen=0
+    [Train] step=7152 batch=900/1563 loss=0.4331 acc=85.14 active=17 frozen=0
+    [Train] step=7252 batch=1000/1563 loss=0.4311 acc=85.22 active=17 frozen=0
+    [Train] step=7352 batch=1100/1563 loss=0.4318 acc=85.14 active=17 frozen=0
+    [Train] step=7452 batch=1200/1563 loss=0.4283 acc=85.26 active=17 frozen=0
+    [Train] step=7552 batch=1300/1563 loss=0.4277 acc=85.29 active=17 frozen=0
+    [Train] step=7652 batch=1400/1563 loss=0.4271 acc=85.32 active=17 frozen=0
+    [Train] step=7752 batch=1500/1563 loss=0.4276 acc=85.25 active=17 frozen=0
+[Main] Epoch 4 | Test 96.39% | Best 96.39% | TTA@96.1: 683.6022005081177 | Frozen 0/17 | Time 168.7s
+    [Train] step=7815 batch=0/1563 loss=0.5050 acc=84.38 active=17 frozen=0
+    [Train] step=7915 batch=100/1563 loss=0.3944 acc=86.26 active=17 frozen=0
+    [Train] step=8015 batch=200/1563 loss=0.3928 acc=86.40 active=16 frozen=1
+    [Train] step=8115 batch=300/1563 loss=0.4120 acc=85.61 active=16 frozen=1
+    [Train] step=8215 batch=400/1563 loss=0.4117 acc=85.70 active=16 frozen=1
+    [Train] step=8315 batch=500/1563 loss=0.4094 acc=85.72 active=16 frozen=1
+    [Train] step=8415 batch=600/1563 loss=0.4070 acc=85.84 active=15 frozen=2
+    [Train] step=8515 batch=700/1563 loss=0.4048 acc=85.90 active=15 frozen=2
+    [Train] step=8615 batch=800/1563 loss=0.4030 acc=85.99 active=15 frozen=2
+    [Train] step=8715 batch=900/1563 loss=0.4027 acc=86.03 active=15 frozen=2
+    [Train] step=8815 batch=1000/1563 loss=0.4019 acc=86.02 active=14 frozen=3
+    [Train] step=8915 batch=1100/1563 loss=0.4015 acc=86.05 active=14 frozen=3
+    [Train] step=9015 batch=1200/1563 loss=0.4010 acc=86.07 active=14 frozen=3
+    [Train] step=9115 batch=1300/1563 loss=0.4012 acc=86.11 active=14 frozen=3
+    [Train] step=9215 batch=1400/1563 loss=0.3995 acc=86.15 active=13 frozen=4
+    [Train] step=9315 batch=1500/1563 loss=0.4002 acc=86.11 active=13 frozen=4
+[Main] Epoch 5 | Test 96.65% | Best 96.65% | TTA@96.1: 683.6022005081177 | Frozen 4/17 | Time 151.8s
+    [Train] step=9378 batch=0/1563 loss=0.2397 acc=93.75 active=13 frozen=4
+    [Train] step=9478 batch=100/1563 loss=0.3925 acc=86.20 active=13 frozen=4
+    [Train] step=9578 batch=200/1563 loss=0.3852 acc=86.66 active=13 frozen=4
+    [Train] step=9678 batch=300/1563 loss=0.3883 acc=86.62 active=12 frozen=5
+    [Train] step=9778 batch=400/1563 loss=0.3933 acc=86.53 active=12 frozen=5
+    [Train] step=9878 batch=500/1563 loss=0.3995 acc=86.18 active=12 frozen=5
+    [Train] step=9978 batch=600/1563 loss=0.3971 acc=86.43 active=12 frozen=5
+    [Train] step=10078 batch=700/1563 loss=0.4018 acc=86.26 active=11 frozen=6
+    [Train] step=10178 batch=800/1563 loss=0.3998 acc=86.32 active=11 frozen=6
+    [Train] step=10278 batch=900/1563 loss=0.3998 acc=86.29 active=11 frozen=6
+    [Train] step=10378 batch=1000/1563 loss=0.4020 acc=86.20 active=11 frozen=6
+    [Train] step=10478 batch=1100/1563 loss=0.4003 acc=86.29 active=10 frozen=7
+    [Train] step=10578 batch=1200/1563 loss=0.4004 acc=86.33 active=10 frozen=7
+    [Train] step=10678 batch=1300/1563 loss=0.3992 acc=86.38 active=10 frozen=7
+    [Train] step=10778 batch=1400/1563 loss=0.4009 acc=86.30 active=10 frozen=7
+    [Train] step=10878 batch=1500/1563 loss=0.3999 acc=86.32 active=10 frozen=7
+[Main] Epoch 6 | Test 96.71% | Best 96.71% | TTA@96.1: 683.6022005081177 | Frozen 8/17 | Time 121.4s
+    [Train] step=10941 batch=0/1563 loss=0.2573 acc=90.62 active=9 frozen=8
+    [Train] step=11041 batch=100/1563 loss=0.3945 acc=86.70 active=9 frozen=8
+    [Train] step=11141 batch=200/1563 loss=0.3799 acc=87.13 active=9 frozen=8
+    [Train] step=11241 batch=300/1563 loss=0.3901 acc=86.61 active=9 frozen=8
+    [Train] step=11341 batch=400/1563 loss=0.3885 acc=86.63 active=9 frozen=8
+    [Train] step=11441 batch=500/1563 loss=0.3862 acc=86.68 active=8 frozen=9
+    [Train] step=11541 batch=600/1563 loss=0.3831 acc=86.77 active=8 frozen=9
+    [Train] step=11641 batch=700/1563 loss=0.3853 acc=86.67 active=8 frozen=9
+    [Train] step=11741 batch=800/1563 loss=0.3839 acc=86.70 active=8 frozen=9
+    [Train] step=11841 batch=900/1563 loss=0.3850 acc=86.71 active=8 frozen=9
+    [Train] step=11941 batch=1000/1563 loss=0.3854 acc=86.64 active=7 frozen=10
+    [Train] step=12041 batch=1100/1563 loss=0.3847 acc=86.71 active=7 frozen=10
+    [Train] step=12141 batch=1200/1563 loss=0.3841 acc=86.71 active=7 frozen=10
+    [Train] step=12241 batch=1300/1563 loss=0.3853 acc=86.65 active=7 frozen=10
+    [Train] step=12341 batch=1400/1563 loss=0.3836 acc=86.69 active=7 frozen=10
+    [Train] step=12441 batch=1500/1563 loss=0.3836 acc=86.68 active=6 frozen=11
+[Main] Epoch 7 | Test 96.72% | Best 96.72% | TTA@96.1: 683.6022005081177 | Frozen 11/17 | Time 100.3s
+    [Train] step=12504 batch=0/1563 loss=0.3026 acc=93.75 active=6 frozen=11
+    [Train] step=12604 batch=100/1563 loss=0.3927 acc=86.42 active=6 frozen=11
+    [Train] step=12704 batch=200/1563 loss=0.3846 acc=86.63 active=6 frozen=11
+    [Train] step=12804 batch=300/1563 loss=0.3893 acc=86.61 active=6 frozen=11
+    [Train] step=12904 batch=400/1563 loss=0.3882 acc=86.61 active=5 frozen=12
+    [Train] step=13004 batch=500/1563 loss=0.3919 acc=86.51 active=5 frozen=12
+    [Train] step=13104 batch=600/1563 loss=0.3883 acc=86.62 active=5 frozen=12
+    [Train] step=13204 batch=700/1563 loss=0.3906 acc=86.56 active=5 frozen=12
+    [Train] step=13304 batch=800/1563 loss=0.3883 acc=86.63 active=5 frozen=12
+    [Train] step=13404 batch=900/1563 loss=0.3864 acc=86.65 active=4 frozen=13
+    [Train] step=13504 batch=1000/1563 loss=0.3848 acc=86.73 active=4 frozen=13
+    [Train] step=13604 batch=1100/1563 loss=0.3851 acc=86.73 active=4 frozen=13
+    [Train] step=13704 batch=1200/1563 loss=0.3845 acc=86.77 active=4 frozen=13
+    [Train] step=13804 batch=1300/1563 loss=0.3828 acc=86.84 active=4 frozen=13
+    [Train] step=13904 batch=1400/1563 loss=0.3816 acc=86.84 active=4 frozen=13
+    [Train] step=14004 batch=1500/1563 loss=0.3833 acc=86.79 active=3 frozen=14
+[Main] Epoch 8 | Test 97.04% | Best 97.04% | TTA@96.1: 683.6022005081177 | Frozen 14/17 | Time 86.8s
+    [Train] step=14067 batch=0/1563 loss=0.3837 acc=84.38 active=3 frozen=14
+    [Train] step=14167 batch=100/1563 loss=0.3706 acc=86.85 active=3 frozen=14
+    [Train] step=14267 batch=200/1563 loss=0.3664 acc=87.33 active=3 frozen=14
+    [Train] step=14367 batch=300/1563 loss=0.3814 acc=86.68 active=3 frozen=14
+    [Train] step=14467 batch=400/1563 loss=0.3808 acc=86.77 active=3 frozen=14
+    [Train] step=14567 batch=500/1563 loss=0.3782 acc=86.85 active=2 frozen=15
+    [Train] step=14667 batch=600/1563 loss=0.3752 acc=86.96 active=2 frozen=15
+    [Train] step=14767 batch=700/1563 loss=0.3709 acc=87.09 active=2 frozen=15
+    [Train] step=14867 batch=800/1563 loss=0.3727 acc=87.02 active=2 frozen=15
+    [Train] step=14967 batch=900/1563 loss=0.3729 acc=86.99 active=2 frozen=15
+    [Train] step=15067 batch=1000/1563 loss=0.3700 acc=87.11 active=1 frozen=16
+    [Train] step=15167 batch=1100/1563 loss=0.3694 acc=87.14 active=1 frozen=16
+    [Train] step=15267 batch=1200/1563 loss=0.3675 acc=87.20 active=1 frozen=16
+    [Train] step=15367 batch=1300/1563 loss=0.3682 acc=87.21 active=1 frozen=16
+    [Train] step=15467 batch=1400/1563 loss=0.3675 acc=87.26 active=1 frozen=16
+    [Train] step=15567 batch=1500/1563 loss=0.3673 acc=87.28 active=1 frozen=16
+[Main] Epoch 9 | Test 96.84% | Best 97.04% | TTA@96.1: 683.6022005081177 | Frozen 16/17 | Time 71.5s
+[Done] wrote /mnt/data2/resnet50_multiseed_strengthening/results/cifar10_freezeout_cubic_scaled_t08_seed44.jsonl
+[monitor] launching: python3 /mnt/data2/freezeout_resnet50_cifar_exact_mechanism.py --dataset cifar10 --data_root /mnt/data2/data --output_json /mnt/data2/resnet50_multiseed_strengthening/results/cifar10_freezeout_cubic_scaled_t08_seed44.jsonl --epochs 10 --batch_size 32 --num_workers 4 --seed 44 --target_acc 96.10 --weights default --lr 0.001 --schedule cubic --t0 0.8 --scale_lr
+[monitor] metrics: /mnt/data2/resnet50_multiseed_strengthening/metrics/cifar10_freezeout_cubic_scaled_t08_seed44_metrics.csv
+{
+  "name": "cifar10_freezeout_cubic_scaled_t08_seed44",
+  "cmd": [
+    "python3",
+    "/mnt/data2/freezeout_resnet50_cifar_exact_mechanism.py",
+    "--dataset",
+    "cifar10",
+    "--data_root",
+    "/mnt/data2/data",
+    "--output_json",
+    "/mnt/data2/resnet50_multiseed_strengthening/results/cifar10_freezeout_cubic_scaled_t08_seed44.jsonl",
+    "--epochs",
+    "10",
+    "--batch_size",
+    "32",
+    "--num_workers",
+    "4",
+    "--seed",
+    "44",
+    "--target_acc",
+    "96.10",
+    "--weights",
+    "default",
+    "--lr",
+    "0.001",
+    "--schedule",
+    "cubic",
+    "--t0",
+    "0.8",
+    "--scale_lr"
+  ],
+  "returncode": 0,
+  "wall_time_sec": 1396.6298637390137,
+  "gpu_index": 1,
+  "energy_j_est": 264762.47797043086,
+  "energy_wh_est": 73.54513276956413,
+  "peak_gpu_mem_mb": 22796.0,
+  "peak_gpu_util_pct": 100.0,
+  "peak_process_tree_rss_mb": 31167.96484375,
+  "final_read_bytes": 0,
+  "final_write_bytes": 0,
+  "metrics_csv": "/mnt/data2/resnet50_multiseed_strengthening/metrics/cifar10_freezeout_cubic_scaled_t08_seed44_metrics.csv"
+}

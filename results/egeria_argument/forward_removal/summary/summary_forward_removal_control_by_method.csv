@@ -1,0 +1,3 @@
+dataset,method,n,target_reached_count,final_ge_target_count,mean_best_acc,mean_final_acc,mean_tta_sec,mean_total_time_sec,mean_energy_wh_est,mean_peak_gpu_mem_mb,mean_memory_hits,mean_disk_hits,mean_prefix_sec_last_epoch,mean_bank_get_sec_last_epoch
+cifar10,freeze_layer4_e5,3,3,3,96.52666666666666,96.48333333333333,866.9101592699686,1149.8615903059642,66.09027435500735,11650.0,0.0,0.0,8.682574351628622,0.0
+cifar100,freeze_layer3_e4,3,3,3,82.88666666666667,82.85000000000001,854.415186325709,1130.1586248079936,59.92968996943258,6152.0,0.0,0.0,6.216038068135579,0.0

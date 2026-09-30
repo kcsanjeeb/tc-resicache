@@ -1,0 +1,2 @@
+dataset,boundary,batch_size,feature_shape,estimated_full_bank_gb,prefix_mean_ms,lookup_mean_ms,speedup_lookup_vs_prefix
+cifar10,layer4,32,"(2048, 7, 7)",9.34600830078125,29.9544534413144,0.09910031221807003,302.263966387913

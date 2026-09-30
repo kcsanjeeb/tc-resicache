@@ -1,0 +1,5 @@
+name,method,dataset,seed,target_acc,complete,target_reached,final_ge_target,best_acc,best_epoch,final_acc,tta_epoch,tta_sec,total_time_sec,epoch_time_last_sec,energy_wh_est,peak_gpu_mem_mb,peak_gpu_util_pct,final_read_bytes,final_write_bytes,memory_hits,stored,misses,disk_hits,bank_allocated_gb
+cifar10_tc_l3_e4_c5_seed44,tc_layer3_e4_c5,cifar10,44,96.1,True,True,False,96.3,7,96.03,4,752.715311050415,991.3178541660309,40.304203033447266,51.29975883965093,22798.0,100.0,0,0,50000,0,0,0,18.6920166015625
+cifar10_tc_l3_e5_c6_seed44,tc_layer3_e5_c6,cifar10,44,96.1,True,True,True,96.64,8,96.2,5,971.6705629825592,1205.8423781394958,48.30735754966736,61.245412228865774,21124.0,100.0,0,0,50000,0,0,0,18.6920166015625
+cifar10_tc_l4_e5_c6_seed44,tc_layer4_e5_c6,cifar10,44,96.1,True,True,True,96.43,9,96.43,3,677.9773035049438,1078.4507236480713,35.28576922416687,58.50931691874465,21480.0,100.0,0,0,50000,0,0,0,9.34600830078125
+cifar10_tc_l4_e6_c7_seed44,tc_layer4_e6_c7,cifar10,44,96.1,True,True,True,96.59,6,96.55,4,845.6061816215515,1203.558005809784,32.331969261169434,62.680179675290326,21480.0,100.0,0,0,50000,0,0,0,9.34600830078125
